@@ -1,0 +1,169 @@
+{
+    "experiment_timestamp": "2025-09-16T18:08:01.973780",
+    "hyperparameters": {
+        "task_name": "California_Housing",
+        "num_models_max": 30,
+        "epochs_per_model": 1000,
+        "shallow_depth_per_cofrnet": 4,
+        "polynomial_degree": 4,
+        "boosting_learning_rate": 0.1,
+        "learning_rate_adam": 0.001,
+        "weight_decay": 1e-05,
+        "batch_size": 1024,
+        "early_stopping_patience": 200,
+        "output_dim": 1,
+        "input_dim": 8
+    },
+    "results_per_submodel": [
+        {
+            "attempt": 1,
+            "accepted": false,
+            "current_best_rmse": 0.5914832897181225
+        },
+        {
+            "attempt": 2,
+            "accepted": false,
+            "current_best_rmse": 0.5744842316310395
+        },
+        {
+            "attempt": 3,
+            "accepted": false,
+            "current_best_rmse": 0.5640590685150031
+        },
+        {
+            "attempt": 4,
+            "accepted": false,
+            "current_best_rmse": 0.5626095232684037
+        },
+        {
+            "attempt": 5,
+            "accepted": false,
+            "current_best_rmse": 0.5615441461800253
+        },
+        {
+            "attempt": 6,
+            "accepted": false,
+            "current_best_rmse": 0.5608375572924776
+        },
+        {
+            "attempt": 7,
+            "accepted": false,
+            "current_best_rmse": 0.5602776865274429
+        },
+        {
+            "attempt": 8,
+            "accepted": false,
+            "current_best_rmse": 0.5584700703861321
+        },
+        {
+            "attempt": 9,
+            "accepted": false,
+            "current_best_rmse": 0.5582063807964724
+        },
+        {
+            "attempt": 10,
+            "accepted": false,
+            "current_best_rmse": 0.5527704721196163
+        },
+        {
+            "attempt": 11,
+            "accepted": false,
+            "current_best_rmse": 0.5523380479637193
+        },
+        {
+            "attempt": 12,
+            "accepted": false,
+            "current_best_rmse": 0.551082688512148
+        },
+        {
+            "attempt": 13,
+            "accepted": false,
+            "current_best_rmse": 0.5499599511261787
+        },
+        {
+            "attempt": 14,
+            "accepted": false,
+            "current_best_rmse": 0.5476011552028139
+        },
+        {
+            "attempt": 15,
+            "accepted": false,
+            "current_best_rmse": 0.5476011552028139
+        },
+        {
+            "attempt": 16,
+            "accepted": false,
+            "current_best_rmse": 0.5473639639481976
+        },
+        {
+            "attempt": 17,
+            "accepted": false,
+            "current_best_rmse": 0.5473033357621331
+        },
+        {
+            "attempt": 18,
+            "accepted": false,
+            "current_best_rmse": 0.5473033357621331
+        },
+        {
+            "attempt": 19,
+            "accepted": false,
+            "current_best_rmse": 0.5468503631753813
+        },
+        {
+            "attempt": 20,
+            "accepted": false,
+            "current_best_rmse": 0.5465173671415315
+        },
+        {
+            "attempt": 21,
+            "accepted": false,
+            "current_best_rmse": 0.5464732432740221
+        },
+        {
+            "attempt": 22,
+            "accepted": false,
+            "current_best_rmse": 0.5459128520207411
+        },
+        {
+            "attempt": 23,
+            "accepted": false,
+            "current_best_rmse": 0.5446062356978595
+        },
+        {
+            "attempt": 24,
+            "accepted": false,
+            "current_best_rmse": 0.5444046166089719
+        },
+        {
+            "attempt": 25,
+            "accepted": false,
+            "current_best_rmse": 0.5438893125181383
+        },
+        {
+            "attempt": 26,
+            "accepted": false,
+            "current_best_rmse": 0.5438013258240373
+        },
+        {
+            "attempt": 27,
+            "accepted": false,
+            "current_best_rmse": 0.5431295904146474
+        },
+        {
+            "attempt": 28,
+            "accepted": false,
+            "current_best_rmse": 0.542602416546176
+        },
+        {
+            "attempt": 29,
+            "accepted": false,
+            "current_best_rmse": 0.5425688838208487
+        },
+        {
+            "attempt": 30,
+            "accepted": false,
+            "current_best_rmse": 0.5424786937240269
+        }
+    ]
+}
