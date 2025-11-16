@@ -23,69 +23,69 @@ os.makedirs(RESULTS_DIR, exist_ok=True)
 
 # 定义要测试的函数列表 (保持不变)
 FUNCTIONS_TO_TEST = [
-    # {
-    #     'name': 'Jacobian_Elliptic_sn',
-    #     'func': lambda x, y: sp.ellipj(x, y)[0],
-    #     'domain': {'x': (-5, 5), 'y': (0, 1)},
-    #     'is_complex': False,
-    #     'n_points': 50
-    # },
-    # {
-    #     'name': 'Incomplete_Elliptic_Integral_K',
-    #     'func': lambda x, y: sp.ellipkinc(x, y),
-    #     'domain': {'x': (0, 2 * np.pi), 'y': (0, 1)},
-    #     'is_complex': False,
-    #     'n_points': 40
-    # },
-    # {
-    #     'name': 'Incomplete_Elliptic_Integral_E',
-    #     'func': lambda x, y: sp.ellipeinc(x, y),
-    #     'domain': {'x': (0, 2 * np.pi), 'y': (0, 1)},
-    #     'is_complex': False,
-    #     'n_points': 40
-    # },
-    # {
-    #     'name': 'Bessel_Jv',
-    #     'func': lambda x, y: sp.jv(x, y),
-    #     'domain': {'x': (0, 10), 'y': (0.1, 15)},
-    #     'is_complex': False,
-    #     'n_points': 50
-    # },
-    # {
-    #     'name': 'Bessel_Yv',
-    #     'func': lambda x, y: sp.yv(x, y),
-    #     'domain': {'x': (0, 10), 'y': (0.1, 15)},
-    #     'is_complex': False,
-    #     'n_points': 50
-    # },
-    # {
-    #     'name': 'Modified_Bessel_Kv',
-    #     'func': lambda x, y: sp.kv(x, y),
-    #     'domain': {'x': (0, 5), 'y': (0.1, 5)},
-    #     'is_complex': False,
-    #     'n_points': 40
-    # },
-    # {
-    #     'name': 'Modified_Bessel_Iv',
-    #     'func': lambda x, y: sp.iv(x, y),
-    #     'domain': {'x': (0, 5), 'y': (0, 5)},
-    #     'is_complex': False,
-    #     'n_points': 40
-    # },
-    # {
-    #     'name': 'Associated_Legendre_m0',
-    #     'func': lambda x, y: sp.lpmv(0, x, y),
-    #     'domain': {'x': (0, 10), 'y': (-1, 1)},
-    #     'is_complex': False,
-    #     'n_points': 40
-    # },
-    # {
-    #     'name': 'Associated_Legendre_m1',
-    #     'func': lambda x, y: sp.lpmv(1, x, y),
-    #     'domain': {'x': (1, 10), 'y': (-1, 1)},
-    #     'is_complex': False,
-    #     'n_points': 40
-    # },
+    {
+        'name': 'Jacobian_Elliptic_sn',
+        'func': lambda x, y: sp.ellipj(x, y)[0],
+        'domain': {'x': (-5, 5), 'y': (0, 1)},
+        'is_complex': False,
+        'n_points': 50
+    },
+    {
+        'name': 'Incomplete_Elliptic_Integral_K',
+        'func': lambda x, y: sp.ellipkinc(x, y),
+        'domain': {'x': (0, 2 * np.pi), 'y': (0, 1)},
+        'is_complex': False,
+        'n_points': 40
+    },
+    {
+        'name': 'Incomplete_Elliptic_Integral_E',
+        'func': lambda x, y: sp.ellipeinc(x, y),
+        'domain': {'x': (0, 2 * np.pi), 'y': (0, 1)},
+        'is_complex': False,
+        'n_points': 40
+    },
+    {
+        'name': 'Bessel_Jv',
+        'func': lambda x, y: sp.jv(x, y),
+        'domain': {'x': (0, 10), 'y': (0.1, 15)},
+        'is_complex': False,
+        'n_points': 50
+    },
+    {
+        'name': 'Bessel_Yv',
+        'func': lambda x, y: sp.yv(x, y),
+         'domain': {'x': (0, 10), 'y': (0.1, 15)},
+        'is_complex': False,
+        'n_points': 50
+    },
+    {
+        'name': 'Modified_Bessel_Kv',
+        'func': lambda x, y: sp.kv(x, y),
+        'domain': {'x': (0, 5), 'y': (0.1, 5)},
+        'is_complex': False,
+        'n_points': 40
+    },
+    {
+        'name': 'Modified_Bessel_Iv',
+        'func': lambda x, y: sp.iv(x, y),
+        'domain': {'x': (0, 5), 'y': (0, 5)},
+        'is_complex': False,
+        'n_points': 40
+    },
+    {
+        'name': 'Associated_Legendre_m0',
+        'func': lambda x, y: sp.lpmv(0, x, y),
+        'domain': {'x': (0, 10), 'y': (-1, 1)},
+        'is_complex': False,
+        'n_points': 40
+    },
+    {
+        'name': 'Associated_Legendre_m1',
+        'func': lambda x, y: sp.lpmv(1, x, y),
+        'domain': {'x': (1, 10), 'y': (-1, 1)},
+        'is_complex': False,
+        'n_points': 40
+    },
     {
         'name': 'Spherical_Harmonics_m0_n1',
         'func': lambda x, y: sp.sph_harm(0, 1, x, y),
