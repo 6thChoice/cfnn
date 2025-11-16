@@ -1,0 +1,44 @@
+{
+    "model_name": "CoFrNetRegressor_MoE_Iterative",
+    "dataset": "California Housing",
+    "evaluation_metric": "RMSE on original target scale (after training on log-transformed target)",
+    "hyperparameters": {
+        "input_dim": 8,
+        "output_dim": 1,
+        "shallow_depth_per_cofrnet": 3,
+        "polynomial_degree": 3,
+        "max_experts": 10,
+        "epochs_per_model": 500,
+        "batch_size": 128,
+        "learning_rate_adam": 0.001,
+        "weight_decay": 1e-06,
+        "early_stopping_patience": 50
+    },
+    "num_runs": 10,
+    "seeds_used": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+    ],
+    "test_rmses_per_run": [
+        0.5226252637682445,
+        0.7054229376346552,
+        0.5177981658789215,
+        0.5165735428249529,
+        0.5168721776001938,
+        0.5227243832334643,
+        0.5209396483102394,
+        0.5006142686607385,
+        0.5342675240836929,
+        0.5162061332679483
+    ],
+    "mean_test_rmse": 0.5374044045263051,
+    "std_test_rmse": 0.05655781488686278
+}

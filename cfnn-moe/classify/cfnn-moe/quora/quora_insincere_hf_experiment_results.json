@@ -1,0 +1,32 @@
+{
+    "dataset_name": "Quora Insincere Questions (from Hugging Face)",
+    "used_subset": true,
+    "accuracies": [
+        0.9,
+        0.8944,
+        0.9216,
+        0.9344,
+        0.9136,
+        0.9192,
+        0.9344,
+        0.9148,
+        0.8884,
+        0.9396
+    ],
+    "mean_accuracy": 0.9160400000000001,
+    "std_accuracy": 0.016634854973819287,
+    "num_runs": 10,
+    "tfidf_max_features": 5000,
+    "hyperparameters": {
+        "input_dim": 5000,
+        "output_dim": 2,
+        "shallow_depth_per_cofrnet": 4,
+        "polynomial_degree": 3,
+        "learning_rate_adam": 0.001,
+        "weight_decay": 0.0001,
+        "epochs_per_model": 250,
+        "batch_size": 256,
+        "early_stopping_patience": 25,
+        "max_experts": 8
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "model_name": "CoFrNetRegressor_MoE_Iterative",
+    "dataset": "UCI Boston Housing",
+    "ethical_warning": "This dataset contains features based on race and has been deprecated by scikit-learn due to ethical concerns.",
+    "hyperparameters": {
+        "input_dim": 13,
+        "output_dim": 1,
+        "shallow_depth_per_cofrnet": 3,
+        "polynomial_degree": 3,
+        "max_experts": 10,
+        "epochs_per_model": 500,
+        "batch_size": 64,
+        "learning_rate_adam": 0.001,
+        "weight_decay": 1e-05,
+        "early_stopping_patience": 50
+    },
+    "num_runs": 10,
+    "seeds_used": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+    ],
+    "test_rmses_per_run": [
+        3.258687775763592,
+        2.9886002024139176,
+        2.996147929563804,
+        3.491628694706067,
+        2.9977429883118916,
+        3.63023896693208,
+        3.390380255148954,
+        3.7255847496095247,
+        3.5695746812537075,
+        3.2733385316049266
+    ],
+    "mean_test_rmse": 3.332192477530847,
+    "std_test_rmse": 0.26085436621636027
+}

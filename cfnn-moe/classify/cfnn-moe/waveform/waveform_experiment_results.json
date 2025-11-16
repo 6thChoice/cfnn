@@ -1,0 +1,29 @@
+{
+    "accuracies": [
+        0.8653333333333333,
+        0.8693333333333333,
+        0.8453333333333334,
+        0.8613333333333333,
+        0.872,
+        0.856,
+        0.8493333333333334,
+        0.8573333333333333,
+        0.8853333333333333,
+        0.8586666666666667
+    ],
+    "mean_accuracy": 0.8619999999999999,
+    "std_accuracy": 0.011031268688998942,
+    "num_runs": 10,
+    "hyperparameters": {
+        "input_dim": 40,
+        "output_dim": 3,
+        "shallow_depth_per_cofrnet": 4,
+        "polynomial_degree": 4,
+        "learning_rate_adam": 1,
+        "weight_decay": 0.01,
+        "epochs_per_model": 500,
+        "batch_size": 2560,
+        "early_stopping_patience": 100,
+        "max_experts": 10
+    }
+}

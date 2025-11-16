@@ -1,0 +1,44 @@
+{
+    "model_name": "CoFrNetRegressor_MoE_Iterative",
+    "dataset": "FICO Loan Data",
+    "evaluation_metric": "RMSE on FICO score",
+    "hyperparameters": {
+        "input_dim": 19,
+        "output_dim": 1,
+        "shallow_depth_per_cofrnet": 3,
+        "polynomial_degree": 3,
+        "max_experts": 10,
+        "epochs_per_model": 1000,
+        "batch_size": 128,
+        "learning_rate_adam": 10,
+        "weight_decay": 0.01,
+        "early_stopping_patience": 200
+    },
+    "num_runs": 10,
+    "seeds_used": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+    ],
+    "test_rmses_per_run": [
+        35.88742775267023,
+        36.82845480070828,
+        38.525158873273156,
+        37.780388935080296,
+        38.29402051020417,
+        31.142254684840477,
+        38.92350113273069,
+        39.3045096957318,
+        36.7291657434652,
+        33.32140879644328
+    ],
+    "mean_test_rmse": 36.67362909251476,
+    "std_test_rmse": 2.48477074974652
+}

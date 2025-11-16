@@ -1,0 +1,31 @@
+{
+    "dataset_name": "IMDb (from Hugging Face)",
+    "accuracies": [
+        0.8389333333333333,
+        0.7608,
+        0.8598666666666667,
+        0.8612,
+        0.8626666666666667,
+        0.8604,
+        0.8646666666666667,
+        0.8494666666666667,
+        0.8742666666666666,
+        0.8684
+    ],
+    "mean_accuracy": 0.8500666666666665,
+    "std_accuracy": 0.031166149728333273,
+    "num_runs": 10,
+    "tfidf_max_features": 5000,
+    "hyperparameters": {
+        "input_dim": 5000,
+        "output_dim": 2,
+        "shallow_depth_per_cofrnet": 4,
+        "polynomial_degree": 3,
+        "learning_rate_adam": 0.001,
+        "weight_decay": 0.0001,
+        "epochs_per_model": 250,
+        "batch_size": 128,
+        "early_stopping_patience": 25,
+        "max_experts": 8
+    }
+}

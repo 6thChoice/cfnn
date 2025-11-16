@@ -1,0 +1,30 @@
+{
+    "dataset_name": "Default of Credit Card Clients",
+    "accuracies": [
+        0.8113333333333334,
+        0.8186666666666667,
+        0.812,
+        0.8202222222222222,
+        0.82,
+        0.8166666666666667,
+        0.8111111111111111,
+        0.8217777777777778,
+        0.8073333333333333,
+        0.8188888888888889
+    ],
+    "mean_accuracy": 0.8158,
+    "std_accuracy": 0.004685095885549197,
+    "num_runs": 10,
+    "hyperparameters": {
+        "input_dim": 30,
+        "output_dim": 2,
+        "shallow_depth_per_cofrnet": 4,
+        "polynomial_degree": 3,
+        "learning_rate_adam": 0.001,
+        "weight_decay": 1e-05,
+        "epochs_per_model": 250,
+        "batch_size": 256,
+        "early_stopping_patience": 25,
+        "max_experts": 8
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "model_name": "CoFrNetRegressor_MoE_Iterative",
+    "dataset": "Ames Housing",
+    "hyperparameters": {
+        "input_dim": 286,
+        "output_dim": 1,
+        "shallow_depth_per_cofrnet": 3,
+        "polynomial_degree": 3,
+        "max_experts": 10,
+        "epochs_per_model": 500,
+        "batch_size": 128,
+        "learning_rate_adam": 0.001,
+        "weight_decay": 1e-06,
+        "early_stopping_patience": 50
+    },
+    "num_runs": 10,
+    "seeds_used": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+    ],
+    "test_rmses_per_run": [
+        0.14556022381323636,
+        0.1568419907237993,
+        0.1551760998271505,
+        0.14145558543656417,
+        0.14356601254810947,
+        0.14818250180763834,
+        0.22311306060843591,
+        0.1316459790056333,
+        0.1494439235986192,
+        0.1362105363224722
+    ],
+    "mean_test_rmse": 0.15311959136916584,
+    "std_test_rmse": 0.02446743288145015
+}

@@ -1,0 +1,30 @@
+{
+    "dataset_name": "MAGIC Gamma Telescope",
+    "accuracies": [
+        0.8720644935155977,
+        0.8675078864353313,
+        0.8615492464072906,
+        0.8675078864353313,
+        0.8720644935155977,
+        0.8559411146161935,
+        0.8689099193831055,
+        0.8706624605678234,
+        0.8489309498773221,
+        0.8622502628811777
+    ],
+    "mean_accuracy": 0.864738871363477,
+    "std_accuracy": 0.007202837666139644,
+    "num_runs": 10,
+    "hyperparameters": {
+        "input_dim": 10,
+        "output_dim": 2,
+        "shallow_depth_per_cofrnet": 4,
+        "polynomial_degree": 4,
+        "learning_rate_adam": 0.1,
+        "weight_decay": 0.001,
+        "epochs_per_model": 500,
+        "batch_size": 2560,
+        "early_stopping_patience": 100,
+        "max_experts": 10
+    }
+}

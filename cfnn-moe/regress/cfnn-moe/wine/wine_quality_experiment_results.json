@@ -1,0 +1,43 @@
+{
+    "model_name": "CoFrNetRegressor_MoE_Iterative",
+    "dataset": "UCI Wine Quality (Red)",
+    "hyperparameters": {
+        "input_dim": 11,
+        "output_dim": 1,
+        "shallow_depth_per_cofrnet": 3,
+        "polynomial_degree": 3,
+        "max_experts": 10,
+        "epochs_per_model": 500,
+        "batch_size": 128,
+        "learning_rate_adam": 0.1,
+        "weight_decay": 0.001,
+        "early_stopping_patience": 50
+    },
+    "num_runs": 10,
+    "seeds_used": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+    ],
+    "test_rmses_per_run": [
+        0.5979588309871564,
+        0.5842748321525127,
+        0.6697162056670283,
+        0.6070327002705613,
+        0.6586719054777609,
+        0.6383962473936502,
+        0.6042531269514988,
+        0.5845592055458856,
+        0.6144018201513574,
+        0.6450992277984894
+    ],
+    "mean_test_rmse": 0.6204364102395902,
+    "std_test_rmse": 0.028981565081794503
+}
