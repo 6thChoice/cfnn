@@ -1,0 +1,44 @@
+{
+    "model_name": "CoFrNetRegressor_MoE_Iterative",
+    "dataset": "UCI Online News Popularity",
+    "note": "RMSE\u8ba1\u7b97\u5728\u5bf9\u6570\u5c3a\u5ea6(log(shares+1))\u4e0a\u8fdb\u884c",
+    "hyperparameters": {
+        "input_dim": 58,
+        "output_dim": 1,
+        "shallow_depth_per_cofrnet": 3,
+        "polynomial_degree": 3,
+        "max_experts": 10,
+        "epochs_per_model": 500,
+        "batch_size": 256,
+        "learning_rate_adam": 0.1,
+        "weight_decay": 0.001,
+        "early_stopping_patience": 50
+    },
+    "num_runs": 10,
+    "seeds_used": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+    ],
+    "test_rmses_log_scale": [
+        0.8641318314968349,
+        0.8906571159317609,
+        0.8550222055473813,
+        0.8712900105374454,
+        0.8938410238577456,
+        0.8755237487316446,
+        0.8726341937056291,
+        0.881258255573463,
+        0.8632058863054385,
+        0.889907712917067
+    ],
+    "mean_test_rmse_log_scale": 0.8757471984604409,
+    "std_test_rmse_log_scale": 0.012377067183987971
+}
