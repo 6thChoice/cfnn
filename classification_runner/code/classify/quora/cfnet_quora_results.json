@@ -1,0 +1,29 @@
+{
+    "dataset": "Quora Insincere Questions",
+    "model": "CFNet_Complicate",
+    "hyperparameters": {
+        "depth": 4,
+        "poly_degree": 3,
+        "epochs": 100,
+        "batch_size": 256,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "early_stopping_patience": 15,
+        "subset_size": 50000,
+        "max_features": 5000
+    },
+    "mean_accuracy": 0.92804,
+    "std_accuracy": 0.0015557634781675587,
+    "all_accuracies": [
+        0.9271,
+        0.9288,
+        0.9323,
+        0.9273,
+        0.9268,
+        0.9278,
+        0.9278,
+        0.9285,
+        0.9269,
+        0.9271
+    ]
+}

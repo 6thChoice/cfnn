@@ -1,0 +1,32 @@
+{
+    "model": "KAN_V2_Standardized",
+    "dataset": "IMDB",
+    "hyperparameters": {
+        "epochs": 100,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "early_stopping_patience": 15,
+        "max_features": 5000
+    },
+    "model_config": {
+        "hidden_dim": 64,
+        "num_layers": 2,
+        "grid_size": 10,
+        "spline_order": 3
+    },
+    "mean_accuracy": 0.8834133333333332,
+    "std_accuracy": 0.002678772521552024,
+    "all_accuracies": [
+        0.8796,
+        0.8818666666666667,
+        0.8833333333333333,
+        0.8873333333333333,
+        0.8824,
+        0.8812,
+        0.8832,
+        0.8810666666666667,
+        0.8878666666666667,
+        0.8862666666666666
+    ]
+}

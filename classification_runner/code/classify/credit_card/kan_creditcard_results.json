@@ -1,0 +1,33 @@
+{
+    "model": "KAN",
+    "dataset": "CreditCard",
+    "hyperparameters": {
+        "epochs": 200,
+        "batch_size": 128,
+        "learning_rate": 0.005,
+        "weight_decay": 0.0001,
+        "early_stopping_patience": 20
+    },
+    "model_config": {
+        "hidden_dim": 4,
+        "num_layers": 2,
+        "grid_size": 10,
+        "spline_order": 3,
+        "target_params": 354,
+        "actual_params": 1678.0
+    },
+    "mean_accuracy": 0.8196444444444445,
+    "std_accuracy": 0.0038066867742868955,
+    "all_accuracies": [
+        0.8135555555555556,
+        0.8184444444444444,
+        0.8166666666666667,
+        0.82,
+        0.8233333333333334,
+        0.8206666666666667,
+        0.8246666666666667,
+        0.8211111111111111,
+        0.8137777777777778,
+        0.8242222222222222
+    ]
+}

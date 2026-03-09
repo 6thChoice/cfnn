@@ -1,0 +1,1274 @@
+{
+  "experiment": "memory_usage",
+  "device": "cuda",
+  "detailed_results": [
+    {
+      "model_type": "CFNet",
+      "model_config": {
+        "depth": 5,
+        "poly_degree": 3
+      },
+      "model_info": {
+        "type": "CFNet",
+        "depth": 5,
+        "poly_degree": 3,
+        "params": 154
+      },
+      "param_count": 154,
+      "param_size_mb": 0.00058746337890625,
+      "batch_results": {
+        "32": {
+          "train": {
+            "model_params_mb": 0.00058746337890625,
+            "forward_peak_mb": 9.15234375,
+            "backward_peak_mb": 16.2822265625,
+            "total_peak_mb": 16.282814025878906,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.00058746337890625,
+            "inference_peak_mb": 17.271484375,
+            "device": "cuda"
+          }
+        },
+        "128": {
+          "train": {
+            "model_params_mb": 0.00058746337890625,
+            "forward_peak_mb": 17.3125,
+            "backward_peak_mb": 16.32958984375,
+            "total_peak_mb": 16.330177307128906,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.00058746337890625,
+            "inference_peak_mb": 17.27587890625,
+            "device": "cuda"
+          }
+        },
+        "512": {
+          "train": {
+            "model_params_mb": 0.00058746337890625,
+            "forward_peak_mb": 17.4384765625,
+            "backward_peak_mb": 16.50244140625,
+            "total_peak_mb": 16.503028869628906,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.00058746337890625,
+            "inference_peak_mb": 17.29638671875,
+            "device": "cuda"
+          }
+        }
+      },
+      "dataset_config": {
+        "name": "Small (MAGIC-like)",
+        "input_dim": 10,
+        "output_dim": 2,
+        "batch_sizes": [
+          32,
+          128,
+          512
+        ]
+      }
+    },
+    {
+      "model_type": "Hybrid",
+      "model_config": {
+        "num_units": 10,
+        "unit_degree": 10
+      },
+      "model_info": {
+        "type": "Hybrid",
+        "num_units": 10,
+        "unit_degree": 10,
+        "params": 902
+      },
+      "param_count": 902,
+      "param_size_mb": 0.00344085693359375,
+      "batch_results": {
+        "32": {
+          "train": {
+            "model_params_mb": 0.00344085693359375,
+            "forward_peak_mb": 17.45458984375,
+            "backward_peak_mb": 16.47021484375,
+            "total_peak_mb": 16.473655700683594,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.00344085693359375,
+            "inference_peak_mb": 17.3134765625,
+            "device": "cuda"
+          }
+        },
+        "128": {
+          "train": {
+            "model_params_mb": 0.00344085693359375,
+            "forward_peak_mb": 17.75390625,
+            "backward_peak_mb": 16.79833984375,
+            "total_peak_mb": 16.801780700683594,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.00344085693359375,
+            "inference_peak_mb": 17.318359375,
+            "device": "cuda"
+          }
+        },
+        "512": {
+          "train": {
+            "model_params_mb": 0.00344085693359375,
+            "forward_peak_mb": 19.083984375,
+            "backward_peak_mb": 18.25732421875,
+            "total_peak_mb": 18.260765075683594,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.00344085693359375,
+            "inference_peak_mb": 17.341796875,
+            "device": "cuda"
+          }
+        }
+      },
+      "dataset_config": {
+        "name": "Small (MAGIC-like)",
+        "input_dim": 10,
+        "output_dim": 2,
+        "batch_sizes": [
+          32,
+          128,
+          512
+        ]
+      }
+    },
+    {
+      "model_type": "KAN",
+      "model_config": {
+        "hidden_dim": 32,
+        "grid_size": 10,
+        "spline_order": 3
+      },
+      "model_info": {
+        "type": "KAN",
+        "hidden_dim": 32,
+        "grid_size": 10,
+        "spline_order": 3,
+        "params": 5090
+      },
+      "param_count": 5090,
+      "param_size_mb": 0.01941680908203125,
+      "batch_results": {
+        "32": {
+          "train": {
+            "model_params_mb": 0.01941680908203125,
+            "forward_peak_mb": 16.552734375,
+            "backward_peak_mb": 16.61083984375,
+            "total_peak_mb": 16.63025665283203,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.01941680908203125,
+            "inference_peak_mb": 16.451171875,
+            "device": "cuda"
+          }
+        },
+        "128": {
+          "train": {
+            "model_params_mb": 0.01941680908203125,
+            "forward_peak_mb": 17.41015625,
+            "backward_peak_mb": 17.62060546875,
+            "total_peak_mb": 17.64002227783203,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.01941680908203125,
+            "inference_peak_mb": 16.92333984375,
+            "device": "cuda"
+          }
+        },
+        "512": {
+          "train": {
+            "model_params_mb": 0.01941680908203125,
+            "forward_peak_mb": 20.76025390625,
+            "backward_peak_mb": 21.58447265625,
+            "total_peak_mb": 21.60388946533203,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.01941680908203125,
+            "inference_peak_mb": 18.81298828125,
+            "device": "cuda"
+          }
+        }
+      },
+      "dataset_config": {
+        "name": "Small (MAGIC-like)",
+        "input_dim": 10,
+        "output_dim": 2,
+        "batch_sizes": [
+          32,
+          128,
+          512
+        ]
+      }
+    },
+    {
+      "model_type": "MLP",
+      "model_config": {
+        "hidden_dim": 128,
+        "num_layers": 2
+      },
+      "model_info": {
+        "type": "MLP",
+        "hidden_dim": 128,
+        "num_layers": 2,
+        "params": 1666
+      },
+      "param_count": 1666,
+      "param_size_mb": 0.00635528564453125,
+      "batch_results": {
+        "32": {
+          "train": {
+            "model_params_mb": 0.00635528564453125,
+            "forward_peak_mb": 17.2744140625,
+            "backward_peak_mb": 16.30810546875,
+            "total_peak_mb": 16.31446075439453,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.00635528564453125,
+            "inference_peak_mb": 17.28125,
+            "device": "cuda"
+          }
+        },
+        "128": {
+          "train": {
+            "model_params_mb": 0.00635528564453125,
+            "forward_peak_mb": 17.33203125,
+            "backward_peak_mb": 16.4580078125,
+            "total_peak_mb": 16.46436309814453,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.00635528564453125,
+            "inference_peak_mb": 17.33203125,
+            "device": "cuda"
+          }
+        },
+        "512": {
+          "train": {
+            "model_params_mb": 0.00635528564453125,
+            "forward_peak_mb": 17.537109375,
+            "backward_peak_mb": 17.0380859375,
+            "total_peak_mb": 17.04444122314453,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.00635528564453125,
+            "inference_peak_mb": 17.537109375,
+            "device": "cuda"
+          }
+        }
+      },
+      "dataset_config": {
+        "name": "Small (MAGIC-like)",
+        "input_dim": 10,
+        "output_dim": 2,
+        "batch_sizes": [
+          32,
+          128,
+          512
+        ]
+      }
+    },
+    {
+      "model_type": "CFNet",
+      "model_config": {
+        "depth": 5,
+        "poly_degree": 3
+      },
+      "model_info": {
+        "type": "CFNet",
+        "depth": 5,
+        "poly_degree": 3,
+        "params": 679
+      },
+      "param_count": 679,
+      "param_size_mb": 0.002590179443359375,
+      "batch_results": {
+        "32": {
+          "train": {
+            "model_params_mb": 0.002590179443359375,
+            "forward_peak_mb": 17.28271484375,
+            "backward_peak_mb": 16.29052734375,
+            "total_peak_mb": 16.29311752319336,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.002590179443359375,
+            "inference_peak_mb": 17.27490234375,
+            "device": "cuda"
+          }
+        },
+        "128": {
+          "train": {
+            "model_params_mb": 0.002590179443359375,
+            "forward_peak_mb": 17.345703125,
+            "backward_peak_mb": 16.37060546875,
+            "total_peak_mb": 16.37319564819336,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.002590179443359375,
+            "inference_peak_mb": 17.29150390625,
+            "device": "cuda"
+          }
+        },
+        "512": {
+          "train": {
+            "model_params_mb": 0.002590179443359375,
+            "forward_peak_mb": 17.5712890625,
+            "backward_peak_mb": 16.66650390625,
+            "total_peak_mb": 16.66909408569336,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.002590179443359375,
+            "inference_peak_mb": 17.35888671875,
+            "device": "cuda"
+          }
+        }
+      },
+      "dataset_config": {
+        "name": "Medium (Waveform-like)",
+        "input_dim": 40,
+        "output_dim": 3,
+        "batch_sizes": [
+          32,
+          128,
+          512
+        ]
+      }
+    },
+    {
+      "model_type": "Hybrid",
+      "model_config": {
+        "num_units": 10,
+        "unit_degree": 10
+      },
+      "model_info": {
+        "type": "Hybrid",
+        "num_units": 10,
+        "unit_degree": 10,
+        "params": 3243
+      },
+      "param_count": 3243,
+      "param_size_mb": 0.012371063232421875,
+      "batch_results": {
+        "32": {
+          "train": {
+            "model_params_mb": 0.012371063232421875,
+            "forward_peak_mb": 17.48583984375,
+            "backward_peak_mb": 16.505859375,
+            "total_peak_mb": 16.518230438232422,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.012371063232421875,
+            "inference_peak_mb": 17.31689453125,
+            "device": "cuda"
+          }
+        },
+        "128": {
+          "train": {
+            "model_params_mb": 0.012371063232421875,
+            "forward_peak_mb": 17.98779296875,
+            "backward_peak_mb": 17.0537109375,
+            "total_peak_mb": 17.066082000732422,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.012371063232421875,
+            "inference_peak_mb": 17.33447265625,
+            "device": "cuda"
+          }
+        },
+        "512": {
+          "train": {
+            "model_params_mb": 0.012371063232421875,
+            "forward_peak_mb": 20.01953125,
+            "backward_peak_mb": 19.27880859375,
+            "total_peak_mb": 19.291179656982422,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.012371063232421875,
+            "inference_peak_mb": 17.40625,
+            "device": "cuda"
+          }
+        }
+      },
+      "dataset_config": {
+        "name": "Medium (Waveform-like)",
+        "input_dim": 40,
+        "output_dim": 3,
+        "batch_sizes": [
+          32,
+          128,
+          512
+        ]
+      }
+    },
+    {
+      "model_type": "KAN",
+      "model_config": {
+        "hidden_dim": 32,
+        "grid_size": 10,
+        "spline_order": 3
+      },
+      "model_info": {
+        "type": "KAN",
+        "hidden_dim": 32,
+        "grid_size": 10,
+        "spline_order": 3,
+        "params": 17987
+      },
+      "param_count": 17987,
+      "param_size_mb": 0.06861495971679688,
+      "batch_results": {
+        "32": {
+          "train": {
+            "model_params_mb": 0.06861495971679688,
+            "forward_peak_mb": 16.65234375,
+            "backward_peak_mb": 16.71240234375,
+            "total_peak_mb": 16.781017303466797,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.06861495971679688,
+            "inference_peak_mb": 16.58642578125,
+            "device": "cuda"
+          }
+        },
+        "128": {
+          "train": {
+            "model_params_mb": 0.06861495971679688,
+            "forward_peak_mb": 17.712890625,
+            "backward_peak_mb": 17.9267578125,
+            "total_peak_mb": 17.995372772216797,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.06861495971679688,
+            "inference_peak_mb": 17.17236328125,
+            "device": "cuda"
+          }
+        },
+        "512": {
+          "train": {
+            "model_params_mb": 0.06861495971679688,
+            "forward_peak_mb": 22.38134765625,
+            "backward_peak_mb": 23.21484375,
+            "total_peak_mb": 23.283458709716797,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.06861495971679688,
+            "inference_peak_mb": 20.21923828125,
+            "device": "cuda"
+          }
+        }
+      },
+      "dataset_config": {
+        "name": "Medium (Waveform-like)",
+        "input_dim": 40,
+        "output_dim": 3,
+        "batch_sizes": [
+          32,
+          128,
+          512
+        ]
+      }
+    },
+    {
+      "model_type": "MLP",
+      "model_config": {
+        "hidden_dim": 128,
+        "num_layers": 2
+      },
+      "model_info": {
+        "type": "MLP",
+        "hidden_dim": 128,
+        "num_layers": 2,
+        "params": 5635
+      },
+      "param_count": 5635,
+      "param_size_mb": 0.021495819091796875,
+      "batch_results": {
+        "32": {
+          "train": {
+            "model_params_mb": 0.021495819091796875,
+            "forward_peak_mb": 17.29296875,
+            "backward_peak_mb": 16.3271484375,
+            "total_peak_mb": 16.348644256591797,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.021495819091796875,
+            "inference_peak_mb": 17.31494140625,
+            "device": "cuda"
+          }
+        },
+        "128": {
+          "train": {
+            "model_params_mb": 0.021495819091796875,
+            "forward_peak_mb": 17.37744140625,
+            "backward_peak_mb": 16.50341796875,
+            "total_peak_mb": 16.524913787841797,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.021495819091796875,
+            "inference_peak_mb": 17.37744140625,
+            "device": "cuda"
+          }
+        },
+        "512": {
+          "train": {
+            "model_params_mb": 0.021495819091796875,
+            "forward_peak_mb": 17.6279296875,
+            "backward_peak_mb": 17.12890625,
+            "total_peak_mb": 17.150402069091797,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.021495819091796875,
+            "inference_peak_mb": 17.6279296875,
+            "device": "cuda"
+          }
+        }
+      },
+      "dataset_config": {
+        "name": "Medium (Waveform-like)",
+        "input_dim": 40,
+        "output_dim": 3,
+        "batch_sizes": [
+          32,
+          128,
+          512
+        ]
+      }
+    },
+    {
+      "model_type": "CFNet",
+      "model_config": {
+        "depth": 5,
+        "poly_degree": 3
+      },
+      "model_info": {
+        "type": "CFNet",
+        "depth": 5,
+        "poly_degree": 3,
+        "params": 50054
+      },
+      "param_count": 50054,
+      "param_size_mb": 0.19094085693359375,
+      "batch_results": {
+        "32": {
+          "train": {
+            "model_params_mb": 0.19094085693359375,
+            "forward_peak_mb": 18.07666015625,
+            "backward_peak_mb": 17.26171875,
+            "total_peak_mb": 17.452659606933594,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.19094085693359375,
+            "inference_peak_mb": 18.26123046875,
+            "device": "cuda"
+          }
+        },
+        "64": {
+          "train": {
+            "model_params_mb": 0.19094085693359375,
+            "forward_peak_mb": 18.890625,
+            "backward_peak_mb": 17.93115234375,
+            "total_peak_mb": 18.122093200683594,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.19094085693359375,
+            "inference_peak_mb": 18.87158203125,
+            "device": "cuda"
+          }
+        },
+        "128": {
+          "train": {
+            "model_params_mb": 0.19094085693359375,
+            "forward_peak_mb": 20.1298828125,
+            "backward_peak_mb": 19.1708984375,
+            "total_peak_mb": 19.361839294433594,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.19094085693359375,
+            "inference_peak_mb": 20.09326171875,
+            "device": "cuda"
+          }
+        }
+      },
+      "dataset_config": {
+        "name": "Large (IMDB-like)",
+        "input_dim": 5000,
+        "output_dim": 2,
+        "batch_sizes": [
+          32,
+          64,
+          128
+        ]
+      }
+    },
+    {
+      "model_type": "Hybrid",
+      "model_config": {
+        "num_units": 10,
+        "unit_degree": 10
+      },
+      "model_info": {
+        "type": "Hybrid",
+        "num_units": 10,
+        "unit_degree": 10,
+        "params": 210482
+      },
+      "param_count": 210482,
+      "param_size_mb": 0.8029251098632812,
+      "batch_results": {
+        "32": {
+          "train": {
+            "model_params_mb": 0.8029251098632812,
+            "forward_peak_mb": 18.86328125,
+            "backward_peak_mb": 18.52197265625,
+            "total_peak_mb": 19.32489776611328,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.8029251098632812,
+            "inference_peak_mb": 19.52197265625,
+            "device": "cuda"
+          }
+        },
+        "64": {
+          "train": {
+            "model_params_mb": 0.8029251098632812,
+            "forward_peak_mb": 20.35009765625,
+            "backward_peak_mb": 19.39013671875,
+            "total_peak_mb": 20.19306182861328,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.8029251098632812,
+            "inference_peak_mb": 20.13232421875,
+            "device": "cuda"
+          }
+        },
+        "128": {
+          "train": {
+            "model_params_mb": 0.8029251098632812,
+            "forward_peak_mb": 21.7900390625,
+            "backward_peak_mb": 20.83447265625,
+            "total_peak_mb": 21.63739776611328,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 0.8029251098632812,
+            "inference_peak_mb": 21.3544921875,
+            "device": "cuda"
+          }
+        }
+      },
+      "dataset_config": {
+        "name": "Large (IMDB-like)",
+        "input_dim": 5000,
+        "output_dim": 2,
+        "batch_sizes": [
+          32,
+          64,
+          128
+        ]
+      }
+    },
+    {
+      "model_type": "KAN",
+      "model_config": {
+        "hidden_dim": 32,
+        "grid_size": 10,
+        "spline_order": 3
+      },
+      "model_info": {
+        "type": "KAN",
+        "hidden_dim": 32,
+        "grid_size": 10,
+        "spline_order": 3,
+        "params": 2080930
+      },
+      "param_count": 2080930,
+      "param_size_mb": 7.938117980957031,
+      "batch_results": {
+        "32": {
+          "train": {
+            "model_params_mb": 7.938117980957031,
+            "forward_peak_mb": 48.6044921875,
+            "backward_peak_mb": 56.54931640625,
+            "total_peak_mb": 64.48743438720703,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 7.938117980957031,
+            "inference_peak_mb": 56.54443359375,
+            "device": "cuda"
+          }
+        },
+        "64": {
+          "train": {
+            "model_params_mb": 7.938117980957031,
+            "forward_peak_mb": 81.35107421875,
+            "backward_peak_mb": 73.54296875,
+            "total_peak_mb": 81.48108673095703,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 7.938117980957031,
+            "inference_peak_mb": 81.35107421875,
+            "device": "cuda"
+          }
+        },
+        "128": {
+          "train": {
+            "model_params_mb": 7.938117980957031,
+            "forward_peak_mb": 130.57177734375,
+            "backward_peak_mb": 106.77197265625,
+            "total_peak_mb": 114.71009063720703,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 7.938117980957031,
+            "inference_peak_mb": 130.57177734375,
+            "device": "cuda"
+          }
+        }
+      },
+      "dataset_config": {
+        "name": "Large (IMDB-like)",
+        "input_dim": 5000,
+        "output_dim": 2,
+        "batch_sizes": [
+          32,
+          64,
+          128
+        ]
+      }
+    },
+    {
+      "model_type": "MLP",
+      "model_config": {
+        "hidden_dim": 128,
+        "num_layers": 2
+      },
+      "model_info": {
+        "type": "MLP",
+        "hidden_dim": 128,
+        "num_layers": 2,
+        "params": 640386
+      },
+      "param_count": 640386,
+      "param_size_mb": 2.4428787231445312,
+      "batch_results": {
+        "32": {
+          "train": {
+            "model_params_mb": 2.4428787231445312,
+            "forward_peak_mb": 20.31982421875,
+            "backward_peak_mb": 21.76416015625,
+            "total_peak_mb": 24.20703887939453,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 2.4428787231445312,
+            "inference_peak_mb": 22.76318359375,
+            "device": "cuda"
+          }
+        },
+        "64": {
+          "train": {
+            "model_params_mb": 2.4428787231445312,
+            "forward_peak_mb": 23.47705078125,
+            "backward_peak_mb": 24.919921875,
+            "total_peak_mb": 27.36280059814453,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 2.4428787231445312,
+            "inference_peak_mb": 23.47705078125,
+            "device": "cuda"
+          }
+        },
+        "128": {
+          "train": {
+            "model_params_mb": 2.4428787231445312,
+            "forward_peak_mb": 24.6416015625,
+            "backward_peak_mb": 26.08447265625,
+            "total_peak_mb": 28.52735137939453,
+            "device": "cuda"
+          },
+          "inference": {
+            "model_params_mb": 2.4428787231445312,
+            "inference_peak_mb": 24.6416015625,
+            "device": "cuda"
+          }
+        }
+      },
+      "dataset_config": {
+        "name": "Large (IMDB-like)",
+        "input_dim": 5000,
+        "output_dim": 2,
+        "batch_sizes": [
+          32,
+          64,
+          128
+        ]
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "dataset": "Small (MAGIC-like)",
+      "model": "CFNet",
+      "batch_size": 32,
+      "params": 154,
+      "param_mb": 0.00058746337890625,
+      "forward_mb": 9.15234375,
+      "backward_mb": 16.2822265625,
+      "total_mb": 16.282814025878906,
+      "inference_mb": 17.271484375,
+      "memory_per_param": 105732.5586096033
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "model": "CFNet",
+      "batch_size": 128,
+      "params": 154,
+      "param_mb": 0.00058746337890625,
+      "forward_mb": 17.3125,
+      "backward_mb": 16.32958984375,
+      "total_mb": 16.330177307128906,
+      "inference_mb": 17.27587890625,
+      "memory_per_param": 106040.11238395394
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "model": "CFNet",
+      "batch_size": 512,
+      "params": 154,
+      "param_mb": 0.00058746337890625,
+      "forward_mb": 17.4384765625,
+      "backward_mb": 16.50244140625,
+      "total_mb": 16.503028869628906,
+      "inference_mb": 17.29638671875,
+      "memory_per_param": 107162.52512746042
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "model": "Hybrid",
+      "batch_size": 32,
+      "params": 902,
+      "param_mb": 0.00344085693359375,
+      "forward_mb": 17.45458984375,
+      "backward_mb": 16.47021484375,
+      "total_mb": 16.473655700683594,
+      "inference_mb": 17.3134765625,
+      "memory_per_param": 18263.476386567178
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "model": "Hybrid",
+      "batch_size": 128,
+      "params": 902,
+      "param_mb": 0.00344085693359375,
+      "forward_mb": 17.75390625,
+      "backward_mb": 16.79833984375,
+      "total_mb": 16.801780700683594,
+      "inference_mb": 17.318359375,
+      "memory_per_param": 18627.251331134805
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "model": "Hybrid",
+      "batch_size": 512,
+      "params": 902,
+      "param_mb": 0.00344085693359375,
+      "forward_mb": 19.083984375,
+      "backward_mb": 18.25732421875,
+      "total_mb": 18.260765075683594,
+      "inference_mb": 17.341796875,
+      "memory_per_param": 20244.750638230147
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "model": "KAN",
+      "batch_size": 32,
+      "params": 5090,
+      "param_mb": 0.01941680908203125,
+      "forward_mb": 16.552734375,
+      "backward_mb": 16.61083984375,
+      "total_mb": 16.63025665283203,
+      "inference_mb": 16.451171875,
+      "memory_per_param": 3267.2409926978453
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "model": "KAN",
+      "batch_size": 128,
+      "params": 5090,
+      "param_mb": 0.01941680908203125,
+      "forward_mb": 17.41015625,
+      "backward_mb": 17.62060546875,
+      "total_mb": 17.64002227783203,
+      "inference_mb": 16.92333984375,
+      "memory_per_param": 3465.623237295095
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "model": "KAN",
+      "batch_size": 512,
+      "params": 5090,
+      "param_mb": 0.01941680908203125,
+      "forward_mb": 20.76025390625,
+      "backward_mb": 21.58447265625,
+      "total_mb": 21.60388946533203,
+      "inference_mb": 18.81298828125,
+      "memory_per_param": 4244.379069809829
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "model": "MLP",
+      "batch_size": 32,
+      "params": 1666,
+      "param_mb": 0.00635528564453125,
+      "forward_mb": 17.2744140625,
+      "backward_mb": 16.30810546875,
+      "total_mb": 16.31446075439453,
+      "inference_mb": 17.28125,
+      "memory_per_param": 9792.593490032732
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "model": "MLP",
+      "batch_size": 128,
+      "params": 1666,
+      "param_mb": 0.00635528564453125,
+      "forward_mb": 17.33203125,
+      "backward_mb": 16.4580078125,
+      "total_mb": 16.46436309814453,
+      "inference_mb": 17.33203125,
+      "memory_per_param": 9882.570887241616
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "model": "MLP",
+      "batch_size": 512,
+      "params": 1666,
+      "param_mb": 0.00635528564453125,
+      "forward_mb": 17.537109375,
+      "backward_mb": 17.0380859375,
+      "total_mb": 17.04444122314453,
+      "inference_mb": 17.537109375,
+      "memory_per_param": 10230.7570367014
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "model": "CFNet",
+      "batch_size": 32,
+      "params": 679,
+      "param_mb": 0.002590179443359375,
+      "forward_mb": 17.28271484375,
+      "backward_mb": 16.29052734375,
+      "total_mb": 16.29311752319336,
+      "inference_mb": 17.27490234375,
+      "memory_per_param": 23995.754820608778
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "model": "CFNet",
+      "batch_size": 128,
+      "params": 679,
+      "param_mb": 0.002590179443359375,
+      "forward_mb": 17.345703125,
+      "backward_mb": 16.37060546875,
+      "total_mb": 16.37319564819336,
+      "inference_mb": 17.29150390625,
+      "memory_per_param": 24113.690203524828
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "model": "CFNet",
+      "batch_size": 512,
+      "params": 679,
+      "param_mb": 0.002590179443359375,
+      "forward_mb": 17.5712890625,
+      "backward_mb": 16.66650390625,
+      "total_mb": 16.66909408569336,
+      "inference_mb": 17.35888671875,
+      "memory_per_param": 24549.475825763417
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "model": "Hybrid",
+      "batch_size": 32,
+      "params": 3243,
+      "param_mb": 0.012371063232421875,
+      "forward_mb": 17.48583984375,
+      "backward_mb": 16.505859375,
+      "total_mb": 16.518230438232422,
+      "inference_mb": 17.31689453125,
+      "memory_per_param": 5093.503064518169
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "model": "Hybrid",
+      "batch_size": 128,
+      "params": 3243,
+      "param_mb": 0.012371063232421875,
+      "forward_mb": 17.98779296875,
+      "backward_mb": 17.0537109375,
+      "total_mb": 17.066082000732422,
+      "inference_mb": 17.33447265625,
+      "memory_per_param": 5262.436632973303
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "model": "Hybrid",
+      "batch_size": 512,
+      "params": 3243,
+      "param_mb": 0.012371063232421875,
+      "forward_mb": 20.01953125,
+      "backward_mb": 19.27880859375,
+      "total_mb": 19.291179656982422,
+      "inference_mb": 17.40625,
+      "memory_per_param": 5948.559869559797
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "model": "KAN",
+      "batch_size": 32,
+      "params": 17987,
+      "param_mb": 0.06861495971679688,
+      "forward_mb": 16.65234375,
+      "backward_mb": 16.71240234375,
+      "total_mb": 16.781017303466797,
+      "inference_mb": 16.58642578125,
+      "memory_per_param": 932.9525381368097
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "model": "KAN",
+      "batch_size": 128,
+      "params": 17987,
+      "param_mb": 0.06861495971679688,
+      "forward_mb": 17.712890625,
+      "backward_mb": 17.9267578125,
+      "total_mb": 17.995372772216797,
+      "inference_mb": 17.17236328125,
+      "memory_per_param": 1000.4654901994104
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "model": "KAN",
+      "batch_size": 512,
+      "params": 17987,
+      "param_mb": 0.06861495971679688,
+      "forward_mb": 22.38134765625,
+      "backward_mb": 23.21484375,
+      "total_mb": 23.283458709716797,
+      "inference_mb": 20.21923828125,
+      "memory_per_param": 1294.4603719195418
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "model": "MLP",
+      "batch_size": 32,
+      "params": 5635,
+      "param_mb": 0.021495819091796875,
+      "forward_mb": 17.29296875,
+      "backward_mb": 16.3271484375,
+      "total_mb": 16.348644256591797,
+      "inference_mb": 17.31494140625,
+      "memory_per_param": 2901.2678361298663
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "model": "MLP",
+      "batch_size": 128,
+      "params": 5635,
+      "param_mb": 0.021495819091796875,
+      "forward_mb": 17.37744140625,
+      "backward_mb": 16.50341796875,
+      "total_mb": 16.524913787841797,
+      "inference_mb": 17.37744140625,
+      "memory_per_param": 2932.5490306729007
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "model": "MLP",
+      "batch_size": 512,
+      "params": 5635,
+      "param_mb": 0.021495819091796875,
+      "forward_mb": 17.6279296875,
+      "backward_mb": 17.12890625,
+      "total_mb": 17.150402069091797,
+      "inference_mb": 17.6279296875,
+      "memory_per_param": 3043.5496129710377
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "model": "CFNet",
+      "batch_size": 32,
+      "params": 50054,
+      "param_mb": 0.19094085693359375,
+      "forward_mb": 18.07666015625,
+      "backward_mb": 17.26171875,
+      "total_mb": 17.452659606933594,
+      "inference_mb": 18.26123046875,
+      "memory_per_param": 348.67662138757333
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "model": "CFNet",
+      "batch_size": 64,
+      "params": 50054,
+      "param_mb": 0.19094085693359375,
+      "forward_mb": 18.890625,
+      "backward_mb": 17.93115234375,
+      "total_mb": 18.122093200683594,
+      "inference_mb": 18.87158203125,
+      "memory_per_param": 362.0508490966475
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "model": "CFNet",
+      "batch_size": 128,
+      "params": 50054,
+      "param_mb": 0.19094085693359375,
+      "forward_mb": 20.1298828125,
+      "backward_mb": 19.1708984375,
+      "total_mb": 19.361839294433594,
+      "inference_mb": 20.09326171875,
+      "memory_per_param": 386.81902134561864
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "model": "Hybrid",
+      "batch_size": 32,
+      "params": 210482,
+      "param_mb": 0.8029251098632812,
+      "forward_mb": 18.86328125,
+      "backward_mb": 18.52197265625,
+      "total_mb": 19.32489776611328,
+      "inference_mb": 19.52197265625,
+      "memory_per_param": 91.81259093943083
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "model": "Hybrid",
+      "batch_size": 64,
+      "params": 210482,
+      "param_mb": 0.8029251098632812,
+      "forward_mb": 20.35009765625,
+      "backward_mb": 19.39013671875,
+      "total_mb": 20.19306182861328,
+      "inference_mb": 20.13232421875,
+      "memory_per_param": 95.93723847461199
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "model": "Hybrid",
+      "batch_size": 128,
+      "params": 210482,
+      "param_mb": 0.8029251098632812,
+      "forward_mb": 21.7900390625,
+      "backward_mb": 20.83447265625,
+      "total_mb": 21.63739776611328,
+      "inference_mb": 21.3544921875,
+      "memory_per_param": 102.79927863719122
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "model": "KAN",
+      "batch_size": 32,
+      "params": 2080930,
+      "param_mb": 7.938117980957031,
+      "forward_mb": 48.6044921875,
+      "backward_mb": 56.54931640625,
+      "total_mb": 64.48743438720703,
+      "inference_mb": 56.54443359375,
+      "memory_per_param": 30.98971824482661
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "model": "KAN",
+      "batch_size": 64,
+      "params": 2080930,
+      "param_mb": 7.938117980957031,
+      "forward_mb": 81.35107421875,
+      "backward_mb": 73.54296875,
+      "total_mb": 81.48108673095703,
+      "inference_mb": 81.35107421875,
+      "memory_per_param": 39.15609209870444
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "model": "KAN",
+      "batch_size": 128,
+      "params": 2080930,
+      "param_mb": 7.938117980957031,
+      "forward_mb": 130.57177734375,
+      "backward_mb": 106.77197265625,
+      "total_mb": 114.71009063720703,
+      "inference_mb": 130.57177734375,
+      "memory_per_param": 55.12443505413783
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "model": "MLP",
+      "batch_size": 32,
+      "params": 640386,
+      "param_mb": 2.4428787231445312,
+      "forward_mb": 20.31982421875,
+      "backward_mb": 21.76416015625,
+      "total_mb": 24.20703887939453,
+      "inference_mb": 22.76318359375,
+      "memory_per_param": 37.80069970204616
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "model": "MLP",
+      "batch_size": 64,
+      "params": 640386,
+      "param_mb": 2.4428787231445312,
+      "forward_mb": 23.47705078125,
+      "backward_mb": 24.919921875,
+      "total_mb": 27.36280059814453,
+      "inference_mb": 23.47705078125,
+      "memory_per_param": 42.7286052445627
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "model": "MLP",
+      "batch_size": 128,
+      "params": 640386,
+      "param_mb": 2.4428787231445312,
+      "forward_mb": 24.6416015625,
+      "backward_mb": 26.08447265625,
+      "total_mb": 28.52735137939453,
+      "inference_mb": 24.6416015625,
+      "memory_per_param": 44.547119049127446
+    }
+  ]
+}

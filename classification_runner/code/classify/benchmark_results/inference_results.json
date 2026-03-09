@@ -1,0 +1,1522 @@
+{
+  "experiment": "inference_speed",
+  "device": "cuda",
+  "detailed_results": [
+    {
+      "model_type": "CFNet",
+      "model_config": {
+        "depth": 5,
+        "poly_degree": 3
+      },
+      "model_info": {
+        "type": "CFNet",
+        "depth": 5,
+        "poly_degree": 3,
+        "params": 154
+      },
+      "param_count": 154,
+      "gpu_results": {
+        "1": {
+          "samples_per_sec": 1675.2288594571278,
+          "ms_per_batch": 0.5969333648681641,
+          "ms_per_sample": 0.5969333648681641
+        },
+        "16": {
+          "samples_per_sec": 25226.62015457252,
+          "ms_per_batch": 0.6342506408691406,
+          "ms_per_sample": 0.03964066505432129
+        },
+        "32": {
+          "samples_per_sec": 56195.90100444233,
+          "ms_per_batch": 0.5694365501403809,
+          "ms_per_sample": 0.017794892191886902
+        },
+        "64": {
+          "samples_per_sec": 112629.94620994067,
+          "ms_per_batch": 0.568232536315918,
+          "ms_per_sample": 0.008878633379936218
+        },
+        "128": {
+          "samples_per_sec": 218578.73861549798,
+          "ms_per_batch": 0.5856013298034668,
+          "ms_per_sample": 0.004575010389089584
+        },
+        "256": {
+          "samples_per_sec": 390624.8677595151,
+          "ms_per_batch": 0.655360221862793,
+          "ms_per_sample": 0.002560000866651535
+        }
+      },
+      "cpu_results": {
+        "1": {
+          "samples_per_sec": 4075.8595222824715,
+          "ms_per_batch": 0.2453470230102539,
+          "ms_per_sample": 0.2453470230102539
+        },
+        "32": {
+          "samples_per_sec": 111857.42811900991,
+          "ms_per_batch": 0.28607845306396484,
+          "ms_per_sample": 0.008939951658248901
+        }
+      },
+      "dataset_config": {
+        "name": "Small (MAGIC-like)",
+        "input_dim": 10,
+        "output_dim": 2,
+        "batch_sizes": [
+          1,
+          16,
+          32,
+          64,
+          128,
+          256
+        ]
+      }
+    },
+    {
+      "model_type": "Hybrid",
+      "model_config": {
+        "num_units": 10,
+        "unit_degree": 10
+      },
+      "model_info": {
+        "type": "Hybrid",
+        "num_units": 10,
+        "unit_degree": 10,
+        "params": 902
+      },
+      "param_count": 902,
+      "gpu_results": {
+        "1": {
+          "samples_per_sec": 331.075332728695,
+          "ms_per_batch": 3.020460605621338,
+          "ms_per_sample": 3.020460605621338
+        },
+        "16": {
+          "samples_per_sec": 5735.687589047395,
+          "ms_per_batch": 2.7895522117614746,
+          "ms_per_sample": 0.17434701323509216
+        },
+        "32": {
+          "samples_per_sec": 11423.514522203544,
+          "ms_per_batch": 2.801239490509033,
+          "ms_per_sample": 0.08753873407840729
+        },
+        "64": {
+          "samples_per_sec": 23142.384109385912,
+          "ms_per_batch": 2.765488624572754,
+          "ms_per_sample": 0.04321075975894928
+        },
+        "128": {
+          "samples_per_sec": 45307.01507727674,
+          "ms_per_batch": 2.825169563293457,
+          "ms_per_sample": 0.022071637213230133
+        },
+        "256": {
+          "samples_per_sec": 90771.67918952003,
+          "ms_per_batch": 2.820262908935547,
+          "ms_per_sample": 0.01101665198802948
+        }
+      },
+      "cpu_results": {
+        "1": {
+          "samples_per_sec": 1147.8475996562727,
+          "ms_per_batch": 0.8711957931518555,
+          "ms_per_sample": 0.8711957931518555
+        },
+        "32": {
+          "samples_per_sec": 24323.530541752294,
+          "ms_per_batch": 1.315598487854004,
+          "ms_per_sample": 0.04111245274543762
+        }
+      },
+      "dataset_config": {
+        "name": "Small (MAGIC-like)",
+        "input_dim": 10,
+        "output_dim": 2,
+        "batch_sizes": [
+          1,
+          16,
+          32,
+          64,
+          128,
+          256
+        ]
+      }
+    },
+    {
+      "model_type": "KAN",
+      "model_config": {
+        "hidden_dim": 32,
+        "grid_size": 10,
+        "spline_order": 3
+      },
+      "model_info": {
+        "type": "KAN",
+        "hidden_dim": 32,
+        "grid_size": 10,
+        "spline_order": 3,
+        "params": 5090
+      },
+      "param_count": 5090,
+      "gpu_results": {
+        "1": {
+          "samples_per_sec": 725.7862114075494,
+          "ms_per_batch": 1.3778162002563477,
+          "ms_per_sample": 1.3778162002563477
+        },
+        "16": {
+          "samples_per_sec": 11581.616138256912,
+          "ms_per_batch": 1.3814997673034668,
+          "ms_per_sample": 0.08634373545646667
+        },
+        "32": {
+          "samples_per_sec": 22234.546463567163,
+          "ms_per_batch": 1.439201831817627,
+          "ms_per_sample": 0.04497505724430084
+        },
+        "64": {
+          "samples_per_sec": 42613.26678667924,
+          "ms_per_batch": 1.5018796920776367,
+          "ms_per_sample": 0.023466870188713074
+        },
+        "128": {
+          "samples_per_sec": 92764.99447941488,
+          "ms_per_batch": 1.3798308372497559,
+          "ms_per_sample": 0.010779928416013718
+        },
+        "256": {
+          "samples_per_sec": 191226.7140633515,
+          "ms_per_batch": 1.3387250900268555,
+          "ms_per_sample": 0.005229394882917404
+        }
+      },
+      "cpu_results": {
+        "1": {
+          "samples_per_sec": 1838.0913983206829,
+          "ms_per_batch": 0.5440425872802734,
+          "ms_per_sample": 0.5440425872802734
+        },
+        "32": {
+          "samples_per_sec": 35805.90746115759,
+          "ms_per_batch": 0.893707275390625,
+          "ms_per_sample": 0.02792835235595703
+        }
+      },
+      "dataset_config": {
+        "name": "Small (MAGIC-like)",
+        "input_dim": 10,
+        "output_dim": 2,
+        "batch_sizes": [
+          1,
+          16,
+          32,
+          64,
+          128,
+          256
+        ]
+      }
+    },
+    {
+      "model_type": "MLP",
+      "model_config": {
+        "hidden_dim": 128,
+        "num_layers": 2
+      },
+      "model_info": {
+        "type": "MLP",
+        "hidden_dim": 128,
+        "num_layers": 2,
+        "params": 1666
+      },
+      "param_count": 1666,
+      "gpu_results": {
+        "1": {
+          "samples_per_sec": 21198.3422622056,
+          "ms_per_batch": 0.047173500061035156,
+          "ms_per_sample": 0.047173500061035156
+        },
+        "16": {
+          "samples_per_sec": 399576.445370646,
+          "ms_per_batch": 0.04004240036010742,
+          "ms_per_sample": 0.002502650022506714
+        },
+        "32": {
+          "samples_per_sec": 781198.5798265525,
+          "ms_per_batch": 0.04096269607543945,
+          "ms_per_sample": 0.001280084252357483
+        },
+        "64": {
+          "samples_per_sec": 1568055.7041883287,
+          "ms_per_batch": 0.040814876556396484,
+          "ms_per_sample": 0.0006377324461936951
+        },
+        "128": {
+          "samples_per_sec": 3136111.4083766574,
+          "ms_per_batch": 0.040814876556396484,
+          "ms_per_sample": 0.00031886622309684753
+        },
+        "256": {
+          "samples_per_sec": 6282498.531390791,
+          "ms_per_batch": 0.04074811935424805,
+          "ms_per_sample": 0.00015917234122753143
+        }
+      },
+      "cpu_results": {
+        "1": {
+          "samples_per_sec": 62452.41215008934,
+          "ms_per_batch": 0.016012191772460938,
+          "ms_per_sample": 0.016012191772460938
+        },
+        "32": {
+          "samples_per_sec": 810199.9758541591,
+          "ms_per_batch": 0.039496421813964844,
+          "ms_per_sample": 0.0012342631816864014
+        }
+      },
+      "dataset_config": {
+        "name": "Small (MAGIC-like)",
+        "input_dim": 10,
+        "output_dim": 2,
+        "batch_sizes": [
+          1,
+          16,
+          32,
+          64,
+          128,
+          256
+        ]
+      }
+    },
+    {
+      "model_type": "CFNet",
+      "model_config": {
+        "depth": 5,
+        "poly_degree": 3
+      },
+      "model_info": {
+        "type": "CFNet",
+        "depth": 5,
+        "poly_degree": 3,
+        "params": 679
+      },
+      "param_count": 679,
+      "gpu_results": {
+        "1": {
+          "samples_per_sec": 1795.5914019923882,
+          "ms_per_batch": 0.5569195747375488,
+          "ms_per_sample": 0.5569195747375488
+        },
+        "16": {
+          "samples_per_sec": 28479.885925749884,
+          "ms_per_batch": 0.5618000030517578,
+          "ms_per_sample": 0.03511250019073486
+        },
+        "32": {
+          "samples_per_sec": 54250.86620156668,
+          "ms_per_batch": 0.5898523330688477,
+          "ms_per_sample": 0.01843288540840149
+        },
+        "64": {
+          "samples_per_sec": 105915.93185028527,
+          "ms_per_batch": 0.604252815246582,
+          "ms_per_sample": 0.009441450238227844
+        },
+        "128": {
+          "samples_per_sec": 212332.8661150749,
+          "ms_per_batch": 0.6028270721435547,
+          "ms_per_sample": 0.004709586501121521
+        },
+        "256": {
+          "samples_per_sec": 426296.0984925182,
+          "ms_per_batch": 0.6005215644836426,
+          "ms_per_sample": 0.002345787361264229
+        }
+      },
+      "cpu_results": {
+        "1": {
+          "samples_per_sec": 4900.803888577304,
+          "ms_per_batch": 0.20404815673828125,
+          "ms_per_sample": 0.20404815673828125
+        },
+        "32": {
+          "samples_per_sec": 108128.48672338232,
+          "ms_per_batch": 0.2959442138671875,
+          "ms_per_sample": 0.00924825668334961
+        }
+      },
+      "dataset_config": {
+        "name": "Medium (Waveform-like)",
+        "input_dim": 40,
+        "output_dim": 3,
+        "batch_sizes": [
+          1,
+          16,
+          32,
+          64,
+          128,
+          256
+        ]
+      }
+    },
+    {
+      "model_type": "Hybrid",
+      "model_config": {
+        "num_units": 10,
+        "unit_degree": 10
+      },
+      "model_info": {
+        "type": "Hybrid",
+        "num_units": 10,
+        "unit_degree": 10,
+        "params": 3243
+      },
+      "param_count": 3243,
+      "gpu_results": {
+        "1": {
+          "samples_per_sec": 369.3059769697973,
+          "ms_per_batch": 2.7077817916870117,
+          "ms_per_sample": 2.7077817916870117
+        },
+        "16": {
+          "samples_per_sec": 5991.119316441977,
+          "ms_per_batch": 2.670619487762451,
+          "ms_per_sample": 0.1669137179851532
+        },
+        "32": {
+          "samples_per_sec": 11829.342236190714,
+          "ms_per_batch": 2.7051377296447754,
+          "ms_per_sample": 0.08453555405139923
+        },
+        "64": {
+          "samples_per_sec": 23877.48447812706,
+          "ms_per_batch": 2.680349349975586,
+          "ms_per_sample": 0.04188045859336853
+        },
+        "128": {
+          "samples_per_sec": 47756.07341793321,
+          "ms_per_batch": 2.6802873611450195,
+          "ms_per_sample": 0.020939745008945465
+        },
+        "256": {
+          "samples_per_sec": 92904.89529246555,
+          "ms_per_batch": 2.7555060386657715,
+          "ms_per_sample": 0.01076369546353817
+        }
+      },
+      "cpu_results": {
+        "1": {
+          "samples_per_sec": 1141.3320562080262,
+          "ms_per_batch": 0.8761692047119141,
+          "ms_per_sample": 0.8761692047119141
+        },
+        "32": {
+          "samples_per_sec": 23706.008025772906,
+          "ms_per_batch": 1.3498687744140625,
+          "ms_per_sample": 0.04218339920043945
+        }
+      },
+      "dataset_config": {
+        "name": "Medium (Waveform-like)",
+        "input_dim": 40,
+        "output_dim": 3,
+        "batch_sizes": [
+          1,
+          16,
+          32,
+          64,
+          128,
+          256
+        ]
+      }
+    },
+    {
+      "model_type": "KAN",
+      "model_config": {
+        "hidden_dim": 32,
+        "grid_size": 10,
+        "spline_order": 3
+      },
+      "model_info": {
+        "type": "KAN",
+        "hidden_dim": 32,
+        "grid_size": 10,
+        "spline_order": 3,
+        "params": 17987
+      },
+      "param_count": 17987,
+      "gpu_results": {
+        "1": {
+          "samples_per_sec": 719.9298316680942,
+          "ms_per_batch": 1.389024257659912,
+          "ms_per_sample": 1.389024257659912
+        },
+        "16": {
+          "samples_per_sec": 12122.441075738088,
+          "ms_per_batch": 1.3198661804199219,
+          "ms_per_sample": 0.08249163627624512
+        },
+        "32": {
+          "samples_per_sec": 22019.511106736227,
+          "ms_per_batch": 1.453256607055664,
+          "ms_per_sample": 0.0454142689704895
+        },
+        "64": {
+          "samples_per_sec": 47844.25508099832,
+          "ms_per_batch": 1.3376736640930176,
+          "ms_per_sample": 0.0209011510014534
+        },
+        "128": {
+          "samples_per_sec": 96141.23301678488,
+          "ms_per_batch": 1.3313746452331543,
+          "ms_per_sample": 0.010401364415884018
+        },
+        "256": {
+          "samples_per_sec": 192044.1385625778,
+          "ms_per_batch": 1.3330268859863281,
+          "ms_per_sample": 0.005207136273384094
+        }
+      },
+      "cpu_results": {
+        "1": {
+          "samples_per_sec": 1768.8529014844805,
+          "ms_per_batch": 0.565338134765625,
+          "ms_per_sample": 0.565338134765625
+        },
+        "32": {
+          "samples_per_sec": 29004.99805506332,
+          "ms_per_batch": 1.1032581329345703,
+          "ms_per_sample": 0.03447681665420532
+        }
+      },
+      "dataset_config": {
+        "name": "Medium (Waveform-like)",
+        "input_dim": 40,
+        "output_dim": 3,
+        "batch_sizes": [
+          1,
+          16,
+          32,
+          64,
+          128,
+          256
+        ]
+      }
+    },
+    {
+      "model_type": "MLP",
+      "model_config": {
+        "hidden_dim": 128,
+        "num_layers": 2
+      },
+      "model_info": {
+        "type": "MLP",
+        "hidden_dim": 128,
+        "num_layers": 2,
+        "params": 5635
+      },
+      "param_count": 5635,
+      "gpu_results": {
+        "1": {
+          "samples_per_sec": 20839.191136284593,
+          "ms_per_batch": 0.047986507415771484,
+          "ms_per_sample": 0.047986507415771484
+        },
+        "16": {
+          "samples_per_sec": 347228.5610803539,
+          "ms_per_batch": 0.046079158782958984,
+          "ms_per_sample": 0.0028799474239349365
+        },
+        "32": {
+          "samples_per_sec": 637886.6403688038,
+          "ms_per_batch": 0.050165653228759766,
+          "ms_per_sample": 0.0015676766633987427
+        },
+        "64": {
+          "samples_per_sec": 1265130.8134602695,
+          "ms_per_batch": 0.05058765411376953,
+          "ms_per_sample": 0.0007904320955276489
+        },
+        "128": {
+          "samples_per_sec": 2546825.9582542693,
+          "ms_per_batch": 0.050258636474609375,
+          "ms_per_sample": 0.00039264559745788574
+        },
+        "256": {
+          "samples_per_sec": 5118174.479241146,
+          "ms_per_batch": 0.0500178337097168,
+          "ms_per_sample": 0.00019538216292858124
+        }
+      },
+      "cpu_results": {
+        "1": {
+          "samples_per_sec": 62396.66765843499,
+          "ms_per_batch": 0.01602649688720703,
+          "ms_per_sample": 0.01602649688720703
+        },
+        "32": {
+          "samples_per_sec": 788125.2378156194,
+          "ms_per_batch": 0.040602684020996094,
+          "ms_per_sample": 0.001268833875656128
+        }
+      },
+      "dataset_config": {
+        "name": "Medium (Waveform-like)",
+        "input_dim": 40,
+        "output_dim": 3,
+        "batch_sizes": [
+          1,
+          16,
+          32,
+          64,
+          128,
+          256
+        ]
+      }
+    },
+    {
+      "model_type": "CFNet",
+      "model_config": {
+        "depth": 5,
+        "poly_degree": 3
+      },
+      "model_info": {
+        "type": "CFNet",
+        "depth": 5,
+        "poly_degree": 3,
+        "params": 50054
+      },
+      "param_count": 50054,
+      "gpu_results": {
+        "1": {
+          "samples_per_sec": 1592.207328785584,
+          "ms_per_batch": 0.628058910369873,
+          "ms_per_sample": 0.628058910369873
+        },
+        "16": {
+          "samples_per_sec": 27677.867229774318,
+          "ms_per_batch": 0.5780792236328125,
+          "ms_per_sample": 0.03612995147705078
+        },
+        "32": {
+          "samples_per_sec": 50169.22513362987,
+          "ms_per_batch": 0.6378412246704102,
+          "ms_per_sample": 0.019932538270950317
+        },
+        "64": {
+          "samples_per_sec": 107817.09502636832,
+          "ms_per_batch": 0.5935978889465332,
+          "ms_per_sample": 0.009274967014789581
+        },
+        "128": {
+          "samples_per_sec": 221203.07039409984,
+          "ms_per_batch": 0.5786538124084473,
+          "ms_per_sample": 0.004520732909440994
+        }
+      },
+      "cpu_results": {
+        "1": {
+          "samples_per_sec": 4653.615888161545,
+          "ms_per_batch": 0.21488666534423828,
+          "ms_per_sample": 0.21488666534423828
+        },
+        "32": {
+          "samples_per_sec": 90322.7015168441,
+          "ms_per_batch": 0.35428524017333984,
+          "ms_per_sample": 0.01107141375541687
+        }
+      },
+      "dataset_config": {
+        "name": "Large (IMDB-like)",
+        "input_dim": 5000,
+        "output_dim": 2,
+        "batch_sizes": [
+          1,
+          16,
+          32,
+          64,
+          128
+        ]
+      }
+    },
+    {
+      "model_type": "Hybrid",
+      "model_config": {
+        "num_units": 10,
+        "unit_degree": 10
+      },
+      "model_info": {
+        "type": "Hybrid",
+        "num_units": 10,
+        "unit_degree": 10,
+        "params": 210482
+      },
+      "param_count": 210482,
+      "gpu_results": {
+        "1": {
+          "samples_per_sec": 378.38371317814773,
+          "ms_per_batch": 2.642819881439209,
+          "ms_per_sample": 2.642819881439209
+        },
+        "16": {
+          "samples_per_sec": 5717.0172527184195,
+          "ms_per_batch": 2.7986621856689453,
+          "ms_per_sample": 0.17491638660430908
+        },
+        "32": {
+          "samples_per_sec": 11280.222549060805,
+          "ms_per_batch": 2.8368234634399414,
+          "ms_per_sample": 0.08865073323249817
+        },
+        "64": {
+          "samples_per_sec": 23155.419800444586,
+          "ms_per_batch": 2.7639317512512207,
+          "ms_per_sample": 0.043186433613300323
+        },
+        "128": {
+          "samples_per_sec": 44094.21775132766,
+          "ms_per_batch": 2.9028749465942383,
+          "ms_per_sample": 0.022678710520267487
+        }
+      },
+      "cpu_results": {
+        "1": {
+          "samples_per_sec": 950.9772090365761,
+          "ms_per_batch": 1.0515499114990234,
+          "ms_per_sample": 1.0515499114990234
+        },
+        "32": {
+          "samples_per_sec": 20078.347270632938,
+          "ms_per_batch": 1.5937566757202148,
+          "ms_per_sample": 0.049804896116256714
+        }
+      },
+      "dataset_config": {
+        "name": "Large (IMDB-like)",
+        "input_dim": 5000,
+        "output_dim": 2,
+        "batch_sizes": [
+          1,
+          16,
+          32,
+          64,
+          128
+        ]
+      }
+    },
+    {
+      "model_type": "KAN",
+      "model_config": {
+        "hidden_dim": 32,
+        "grid_size": 10,
+        "spline_order": 3
+      },
+      "model_info": {
+        "type": "KAN",
+        "hidden_dim": 32,
+        "grid_size": 10,
+        "spline_order": 3,
+        "params": 2080930
+      },
+      "param_count": 2080930,
+      "gpu_results": {
+        "1": {
+          "samples_per_sec": 658.0879803309657,
+          "ms_per_batch": 1.5195536613464355,
+          "ms_per_sample": 1.5195536613464355
+        },
+        "16": {
+          "samples_per_sec": 11399.288275571545,
+          "ms_per_batch": 1.4035964012145996,
+          "ms_per_sample": 0.08772477507591248
+        },
+        "32": {
+          "samples_per_sec": 18466.55999119446,
+          "ms_per_batch": 1.7328619956970215,
+          "ms_per_sample": 0.05415193736553192
+        },
+        "64": {
+          "samples_per_sec": 21650.936537420766,
+          "ms_per_batch": 2.9559922218322754,
+          "ms_per_sample": 0.0461873784661293
+        },
+        "128": {
+          "samples_per_sec": 23163.27225157997,
+          "ms_per_batch": 5.525989532470703,
+          "ms_per_sample": 0.04317179322242737
+        }
+      },
+      "cpu_results": {
+        "1": {
+          "samples_per_sec": 668.3851557221351,
+          "ms_per_batch": 1.4961433410644531,
+          "ms_per_sample": 1.4961433410644531
+        },
+        "32": {
+          "samples_per_sec": 2010.9742137859696,
+          "ms_per_batch": 15.91268539428711,
+          "ms_per_sample": 0.49727141857147217
+        }
+      },
+      "dataset_config": {
+        "name": "Large (IMDB-like)",
+        "input_dim": 5000,
+        "output_dim": 2,
+        "batch_sizes": [
+          1,
+          16,
+          32,
+          64,
+          128
+        ]
+      }
+    },
+    {
+      "model_type": "MLP",
+      "model_config": {
+        "hidden_dim": 128,
+        "num_layers": 2
+      },
+      "model_info": {
+        "type": "MLP",
+        "hidden_dim": 128,
+        "num_layers": 2,
+        "params": 640386
+      },
+      "param_count": 640386,
+      "gpu_results": {
+        "1": {
+          "samples_per_sec": 20943.24661706696,
+          "ms_per_batch": 0.04774808883666992,
+          "ms_per_sample": 0.04774808883666992
+        },
+        "16": {
+          "samples_per_sec": 266484.78735655005,
+          "ms_per_batch": 0.060040950775146484,
+          "ms_per_sample": 0.0037525594234466553
+        },
+        "32": {
+          "samples_per_sec": 516182.3244365818,
+          "ms_per_batch": 0.061993598937988274,
+          "ms_per_sample": 0.0019372999668121336
+        },
+        "64": {
+          "samples_per_sec": 1140870.6532364315,
+          "ms_per_batch": 0.05609750747680664,
+          "ms_per_sample": 0.0008765235543251038
+        },
+        "128": {
+          "samples_per_sec": 2345438.6719091306,
+          "ms_per_batch": 0.054574012756347656,
+          "ms_per_sample": 0.00042635947465896606
+        }
+      },
+      "cpu_results": {
+        "1": {
+          "samples_per_sec": 18706.199268575507,
+          "ms_per_batch": 0.053458213806152344,
+          "ms_per_sample": 0.053458213806152344
+        },
+        "32": {
+          "samples_per_sec": 174821.8511475239,
+          "ms_per_batch": 0.1830434799194336,
+          "ms_per_sample": 0.0057201087474823
+        }
+      },
+      "dataset_config": {
+        "name": "Large (IMDB-like)",
+        "input_dim": 5000,
+        "output_dim": 2,
+        "batch_sizes": [
+          1,
+          16,
+          32,
+          64,
+          128
+        ]
+      }
+    }
+  ],
+  "analysis": [
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "CFNet",
+      "batch_size": 1,
+      "params": 154,
+      "samples_per_sec": 1675.2288594571278,
+      "ms_per_batch": 0.5969333648681641,
+      "ms_per_sample": 0.5969333648681641
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "CFNet",
+      "batch_size": 16,
+      "params": 154,
+      "samples_per_sec": 25226.62015457252,
+      "ms_per_batch": 0.6342506408691406,
+      "ms_per_sample": 0.03964066505432129
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "CFNet",
+      "batch_size": 32,
+      "params": 154,
+      "samples_per_sec": 56195.90100444233,
+      "ms_per_batch": 0.5694365501403809,
+      "ms_per_sample": 0.017794892191886902
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "CFNet",
+      "batch_size": 64,
+      "params": 154,
+      "samples_per_sec": 112629.94620994067,
+      "ms_per_batch": 0.568232536315918,
+      "ms_per_sample": 0.008878633379936218
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "CFNet",
+      "batch_size": 128,
+      "params": 154,
+      "samples_per_sec": 218578.73861549798,
+      "ms_per_batch": 0.5856013298034668,
+      "ms_per_sample": 0.004575010389089584
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "CFNet",
+      "batch_size": 256,
+      "params": 154,
+      "samples_per_sec": 390624.8677595151,
+      "ms_per_batch": 0.655360221862793,
+      "ms_per_sample": 0.002560000866651535
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "Hybrid",
+      "batch_size": 1,
+      "params": 902,
+      "samples_per_sec": 331.075332728695,
+      "ms_per_batch": 3.020460605621338,
+      "ms_per_sample": 3.020460605621338
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "Hybrid",
+      "batch_size": 16,
+      "params": 902,
+      "samples_per_sec": 5735.687589047395,
+      "ms_per_batch": 2.7895522117614746,
+      "ms_per_sample": 0.17434701323509216
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "Hybrid",
+      "batch_size": 32,
+      "params": 902,
+      "samples_per_sec": 11423.514522203544,
+      "ms_per_batch": 2.801239490509033,
+      "ms_per_sample": 0.08753873407840729
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "Hybrid",
+      "batch_size": 64,
+      "params": 902,
+      "samples_per_sec": 23142.384109385912,
+      "ms_per_batch": 2.765488624572754,
+      "ms_per_sample": 0.04321075975894928
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "Hybrid",
+      "batch_size": 128,
+      "params": 902,
+      "samples_per_sec": 45307.01507727674,
+      "ms_per_batch": 2.825169563293457,
+      "ms_per_sample": 0.022071637213230133
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "Hybrid",
+      "batch_size": 256,
+      "params": 902,
+      "samples_per_sec": 90771.67918952003,
+      "ms_per_batch": 2.820262908935547,
+      "ms_per_sample": 0.01101665198802948
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "KAN",
+      "batch_size": 1,
+      "params": 5090,
+      "samples_per_sec": 725.7862114075494,
+      "ms_per_batch": 1.3778162002563477,
+      "ms_per_sample": 1.3778162002563477
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "KAN",
+      "batch_size": 16,
+      "params": 5090,
+      "samples_per_sec": 11581.616138256912,
+      "ms_per_batch": 1.3814997673034668,
+      "ms_per_sample": 0.08634373545646667
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "KAN",
+      "batch_size": 32,
+      "params": 5090,
+      "samples_per_sec": 22234.546463567163,
+      "ms_per_batch": 1.439201831817627,
+      "ms_per_sample": 0.04497505724430084
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "KAN",
+      "batch_size": 64,
+      "params": 5090,
+      "samples_per_sec": 42613.26678667924,
+      "ms_per_batch": 1.5018796920776367,
+      "ms_per_sample": 0.023466870188713074
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "KAN",
+      "batch_size": 128,
+      "params": 5090,
+      "samples_per_sec": 92764.99447941488,
+      "ms_per_batch": 1.3798308372497559,
+      "ms_per_sample": 0.010779928416013718
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "KAN",
+      "batch_size": 256,
+      "params": 5090,
+      "samples_per_sec": 191226.7140633515,
+      "ms_per_batch": 1.3387250900268555,
+      "ms_per_sample": 0.005229394882917404
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "MLP",
+      "batch_size": 1,
+      "params": 1666,
+      "samples_per_sec": 21198.3422622056,
+      "ms_per_batch": 0.047173500061035156,
+      "ms_per_sample": 0.047173500061035156
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "MLP",
+      "batch_size": 16,
+      "params": 1666,
+      "samples_per_sec": 399576.445370646,
+      "ms_per_batch": 0.04004240036010742,
+      "ms_per_sample": 0.002502650022506714
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "MLP",
+      "batch_size": 32,
+      "params": 1666,
+      "samples_per_sec": 781198.5798265525,
+      "ms_per_batch": 0.04096269607543945,
+      "ms_per_sample": 0.001280084252357483
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "MLP",
+      "batch_size": 64,
+      "params": 1666,
+      "samples_per_sec": 1568055.7041883287,
+      "ms_per_batch": 0.040814876556396484,
+      "ms_per_sample": 0.0006377324461936951
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "MLP",
+      "batch_size": 128,
+      "params": 1666,
+      "samples_per_sec": 3136111.4083766574,
+      "ms_per_batch": 0.040814876556396484,
+      "ms_per_sample": 0.00031886622309684753
+    },
+    {
+      "dataset": "Small (MAGIC-like)",
+      "input_dim": 10,
+      "model": "MLP",
+      "batch_size": 256,
+      "params": 1666,
+      "samples_per_sec": 6282498.531390791,
+      "ms_per_batch": 0.04074811935424805,
+      "ms_per_sample": 0.00015917234122753143
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "CFNet",
+      "batch_size": 1,
+      "params": 679,
+      "samples_per_sec": 1795.5914019923882,
+      "ms_per_batch": 0.5569195747375488,
+      "ms_per_sample": 0.5569195747375488
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "CFNet",
+      "batch_size": 16,
+      "params": 679,
+      "samples_per_sec": 28479.885925749884,
+      "ms_per_batch": 0.5618000030517578,
+      "ms_per_sample": 0.03511250019073486
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "CFNet",
+      "batch_size": 32,
+      "params": 679,
+      "samples_per_sec": 54250.86620156668,
+      "ms_per_batch": 0.5898523330688477,
+      "ms_per_sample": 0.01843288540840149
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "CFNet",
+      "batch_size": 64,
+      "params": 679,
+      "samples_per_sec": 105915.93185028527,
+      "ms_per_batch": 0.604252815246582,
+      "ms_per_sample": 0.009441450238227844
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "CFNet",
+      "batch_size": 128,
+      "params": 679,
+      "samples_per_sec": 212332.8661150749,
+      "ms_per_batch": 0.6028270721435547,
+      "ms_per_sample": 0.004709586501121521
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "CFNet",
+      "batch_size": 256,
+      "params": 679,
+      "samples_per_sec": 426296.0984925182,
+      "ms_per_batch": 0.6005215644836426,
+      "ms_per_sample": 0.002345787361264229
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "Hybrid",
+      "batch_size": 1,
+      "params": 3243,
+      "samples_per_sec": 369.3059769697973,
+      "ms_per_batch": 2.7077817916870117,
+      "ms_per_sample": 2.7077817916870117
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "Hybrid",
+      "batch_size": 16,
+      "params": 3243,
+      "samples_per_sec": 5991.119316441977,
+      "ms_per_batch": 2.670619487762451,
+      "ms_per_sample": 0.1669137179851532
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "Hybrid",
+      "batch_size": 32,
+      "params": 3243,
+      "samples_per_sec": 11829.342236190714,
+      "ms_per_batch": 2.7051377296447754,
+      "ms_per_sample": 0.08453555405139923
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "Hybrid",
+      "batch_size": 64,
+      "params": 3243,
+      "samples_per_sec": 23877.48447812706,
+      "ms_per_batch": 2.680349349975586,
+      "ms_per_sample": 0.04188045859336853
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "Hybrid",
+      "batch_size": 128,
+      "params": 3243,
+      "samples_per_sec": 47756.07341793321,
+      "ms_per_batch": 2.6802873611450195,
+      "ms_per_sample": 0.020939745008945465
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "Hybrid",
+      "batch_size": 256,
+      "params": 3243,
+      "samples_per_sec": 92904.89529246555,
+      "ms_per_batch": 2.7555060386657715,
+      "ms_per_sample": 0.01076369546353817
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "KAN",
+      "batch_size": 1,
+      "params": 17987,
+      "samples_per_sec": 719.9298316680942,
+      "ms_per_batch": 1.389024257659912,
+      "ms_per_sample": 1.389024257659912
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "KAN",
+      "batch_size": 16,
+      "params": 17987,
+      "samples_per_sec": 12122.441075738088,
+      "ms_per_batch": 1.3198661804199219,
+      "ms_per_sample": 0.08249163627624512
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "KAN",
+      "batch_size": 32,
+      "params": 17987,
+      "samples_per_sec": 22019.511106736227,
+      "ms_per_batch": 1.453256607055664,
+      "ms_per_sample": 0.0454142689704895
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "KAN",
+      "batch_size": 64,
+      "params": 17987,
+      "samples_per_sec": 47844.25508099832,
+      "ms_per_batch": 1.3376736640930176,
+      "ms_per_sample": 0.0209011510014534
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "KAN",
+      "batch_size": 128,
+      "params": 17987,
+      "samples_per_sec": 96141.23301678488,
+      "ms_per_batch": 1.3313746452331543,
+      "ms_per_sample": 0.010401364415884018
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "KAN",
+      "batch_size": 256,
+      "params": 17987,
+      "samples_per_sec": 192044.1385625778,
+      "ms_per_batch": 1.3330268859863281,
+      "ms_per_sample": 0.005207136273384094
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "MLP",
+      "batch_size": 1,
+      "params": 5635,
+      "samples_per_sec": 20839.191136284593,
+      "ms_per_batch": 0.047986507415771484,
+      "ms_per_sample": 0.047986507415771484
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "MLP",
+      "batch_size": 16,
+      "params": 5635,
+      "samples_per_sec": 347228.5610803539,
+      "ms_per_batch": 0.046079158782958984,
+      "ms_per_sample": 0.0028799474239349365
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "MLP",
+      "batch_size": 32,
+      "params": 5635,
+      "samples_per_sec": 637886.6403688038,
+      "ms_per_batch": 0.050165653228759766,
+      "ms_per_sample": 0.0015676766633987427
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "MLP",
+      "batch_size": 64,
+      "params": 5635,
+      "samples_per_sec": 1265130.8134602695,
+      "ms_per_batch": 0.05058765411376953,
+      "ms_per_sample": 0.0007904320955276489
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "MLP",
+      "batch_size": 128,
+      "params": 5635,
+      "samples_per_sec": 2546825.9582542693,
+      "ms_per_batch": 0.050258636474609375,
+      "ms_per_sample": 0.00039264559745788574
+    },
+    {
+      "dataset": "Medium (Waveform-like)",
+      "input_dim": 40,
+      "model": "MLP",
+      "batch_size": 256,
+      "params": 5635,
+      "samples_per_sec": 5118174.479241146,
+      "ms_per_batch": 0.0500178337097168,
+      "ms_per_sample": 0.00019538216292858124
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "CFNet",
+      "batch_size": 1,
+      "params": 50054,
+      "samples_per_sec": 1592.207328785584,
+      "ms_per_batch": 0.628058910369873,
+      "ms_per_sample": 0.628058910369873
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "CFNet",
+      "batch_size": 16,
+      "params": 50054,
+      "samples_per_sec": 27677.867229774318,
+      "ms_per_batch": 0.5780792236328125,
+      "ms_per_sample": 0.03612995147705078
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "CFNet",
+      "batch_size": 32,
+      "params": 50054,
+      "samples_per_sec": 50169.22513362987,
+      "ms_per_batch": 0.6378412246704102,
+      "ms_per_sample": 0.019932538270950317
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "CFNet",
+      "batch_size": 64,
+      "params": 50054,
+      "samples_per_sec": 107817.09502636832,
+      "ms_per_batch": 0.5935978889465332,
+      "ms_per_sample": 0.009274967014789581
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "CFNet",
+      "batch_size": 128,
+      "params": 50054,
+      "samples_per_sec": 221203.07039409984,
+      "ms_per_batch": 0.5786538124084473,
+      "ms_per_sample": 0.004520732909440994
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "Hybrid",
+      "batch_size": 1,
+      "params": 210482,
+      "samples_per_sec": 378.38371317814773,
+      "ms_per_batch": 2.642819881439209,
+      "ms_per_sample": 2.642819881439209
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "Hybrid",
+      "batch_size": 16,
+      "params": 210482,
+      "samples_per_sec": 5717.0172527184195,
+      "ms_per_batch": 2.7986621856689453,
+      "ms_per_sample": 0.17491638660430908
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "Hybrid",
+      "batch_size": 32,
+      "params": 210482,
+      "samples_per_sec": 11280.222549060805,
+      "ms_per_batch": 2.8368234634399414,
+      "ms_per_sample": 0.08865073323249817
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "Hybrid",
+      "batch_size": 64,
+      "params": 210482,
+      "samples_per_sec": 23155.419800444586,
+      "ms_per_batch": 2.7639317512512207,
+      "ms_per_sample": 0.043186433613300323
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "Hybrid",
+      "batch_size": 128,
+      "params": 210482,
+      "samples_per_sec": 44094.21775132766,
+      "ms_per_batch": 2.9028749465942383,
+      "ms_per_sample": 0.022678710520267487
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "KAN",
+      "batch_size": 1,
+      "params": 2080930,
+      "samples_per_sec": 658.0879803309657,
+      "ms_per_batch": 1.5195536613464355,
+      "ms_per_sample": 1.5195536613464355
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "KAN",
+      "batch_size": 16,
+      "params": 2080930,
+      "samples_per_sec": 11399.288275571545,
+      "ms_per_batch": 1.4035964012145996,
+      "ms_per_sample": 0.08772477507591248
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "KAN",
+      "batch_size": 32,
+      "params": 2080930,
+      "samples_per_sec": 18466.55999119446,
+      "ms_per_batch": 1.7328619956970215,
+      "ms_per_sample": 0.05415193736553192
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "KAN",
+      "batch_size": 64,
+      "params": 2080930,
+      "samples_per_sec": 21650.936537420766,
+      "ms_per_batch": 2.9559922218322754,
+      "ms_per_sample": 0.0461873784661293
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "KAN",
+      "batch_size": 128,
+      "params": 2080930,
+      "samples_per_sec": 23163.27225157997,
+      "ms_per_batch": 5.525989532470703,
+      "ms_per_sample": 0.04317179322242737
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "MLP",
+      "batch_size": 1,
+      "params": 640386,
+      "samples_per_sec": 20943.24661706696,
+      "ms_per_batch": 0.04774808883666992,
+      "ms_per_sample": 0.04774808883666992
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "MLP",
+      "batch_size": 16,
+      "params": 640386,
+      "samples_per_sec": 266484.78735655005,
+      "ms_per_batch": 0.060040950775146484,
+      "ms_per_sample": 0.0037525594234466553
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "MLP",
+      "batch_size": 32,
+      "params": 640386,
+      "samples_per_sec": 516182.3244365818,
+      "ms_per_batch": 0.061993598937988274,
+      "ms_per_sample": 0.0019372999668121336
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "MLP",
+      "batch_size": 64,
+      "params": 640386,
+      "samples_per_sec": 1140870.6532364315,
+      "ms_per_batch": 0.05609750747680664,
+      "ms_per_sample": 0.0008765235543251038
+    },
+    {
+      "dataset": "Large (IMDB-like)",
+      "input_dim": 5000,
+      "model": "MLP",
+      "batch_size": 128,
+      "params": 640386,
+      "samples_per_sec": 2345438.6719091306,
+      "ms_per_batch": 0.054574012756347656,
+      "ms_per_sample": 0.00042635947465896606
+    }
+  ]
+}

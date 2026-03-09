@@ -1,0 +1,29 @@
+{
+    "dataset": "Quora Insincere Questions",
+    "model": "HybridRationalNet",
+    "hyperparameters": {
+        "unit_degree": 3,
+        "num_units": 4,
+        "epochs": 100,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "early_stopping_patience": 15,
+        "subset_size": 50000,
+        "max_features": 5000
+    },
+    "mean_accuracy": 0.9436200000000001,
+    "std_accuracy": 0.0020098756180420767,
+    "all_accuracies": [
+        0.9424,
+        0.9438,
+        0.9447,
+        0.9434,
+        0.9439,
+        0.9483,
+        0.9418,
+        0.9446,
+        0.943,
+        0.9403
+    ]
+}

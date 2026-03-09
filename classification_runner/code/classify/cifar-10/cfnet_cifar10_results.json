@@ -1,0 +1,27 @@
+{
+    "dataset": "CIFAR-10",
+    "model": "CFNet_Complicate",
+    "hyperparameters": {
+        "depth": 3,
+        "poly_degree": 3,
+        "epochs": 200,
+        "batch_size": 256,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "early_stopping_patience": 20
+    },
+    "mean_accuracy": 0.43776000000000004,
+    "std_accuracy": 0.003089401236485798,
+    "all_accuracies": [
+        0.4407,
+        0.4413,
+        0.4375,
+        0.4348,
+        0.4364,
+        0.4318,
+        0.4389,
+        0.4348,
+        0.4413,
+        0.4401
+    ]
+}

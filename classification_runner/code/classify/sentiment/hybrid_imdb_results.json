@@ -1,0 +1,28 @@
+{
+    "dataset": "IMDb",
+    "model": "HybridRationalNet",
+    "hyperparameters": {
+        "unit_degree": 3,
+        "num_units": 4,
+        "epochs": 100,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "early_stopping_patience": 15,
+        "max_features": 5000
+    },
+    "mean_accuracy": 0.8825066666666667,
+    "std_accuracy": 0.003695426602948264,
+    "all_accuracies": [
+        0.8776,
+        0.8777333333333334,
+        0.8816,
+        0.8832,
+        0.8801333333333333,
+        0.8862666666666666,
+        0.888,
+        0.8794666666666666,
+        0.8878666666666667,
+        0.8832
+    ]
+}

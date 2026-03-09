@@ -1,0 +1,539 @@
+{
+  "depth_ablation": [
+    {
+      "depth": 2,
+      "mean_test_acc": 0.8525333333333333,
+      "std_test_acc": 0.012353317143360472,
+      "mean_params": 271.0,
+      "all_runs": [
+        {
+          "run_id": 0,
+          "test_acc": 0.8613333333333333,
+          "best_val_acc": 0.8746666666666667,
+          "epochs": 40,
+          "params": 271
+        },
+        {
+          "run_id": 1,
+          "test_acc": 0.8653333333333333,
+          "best_val_acc": 0.8813333333333333,
+          "epochs": 37,
+          "params": 271
+        },
+        {
+          "run_id": 2,
+          "test_acc": 0.8333333333333334,
+          "best_val_acc": 0.8733333333333333,
+          "epochs": 36,
+          "params": 271
+        },
+        {
+          "run_id": 3,
+          "test_acc": 0.86,
+          "best_val_acc": 0.872,
+          "epochs": 37,
+          "params": 271
+        },
+        {
+          "run_id": 4,
+          "test_acc": 0.8426666666666667,
+          "best_val_acc": 0.8693333333333333,
+          "epochs": 51,
+          "params": 271
+        }
+      ]
+    },
+    {
+      "depth": 3,
+      "mean_test_acc": 0.8423999999999999,
+      "std_test_acc": 0.017104125558212883,
+      "mean_params": 407.0,
+      "all_runs": [
+        {
+          "run_id": 0,
+          "test_acc": 0.8586666666666667,
+          "best_val_acc": 0.8813333333333333,
+          "epochs": 33,
+          "params": 407
+        },
+        {
+          "run_id": 1,
+          "test_acc": 0.8506666666666667,
+          "best_val_acc": 0.868,
+          "epochs": 33,
+          "params": 407
+        },
+        {
+          "run_id": 2,
+          "test_acc": 0.8306666666666667,
+          "best_val_acc": 0.8746666666666667,
+          "epochs": 33,
+          "params": 407
+        },
+        {
+          "run_id": 3,
+          "test_acc": 0.8573333333333333,
+          "best_val_acc": 0.8773333333333333,
+          "epochs": 33,
+          "params": 407
+        },
+        {
+          "run_id": 4,
+          "test_acc": 0.8146666666666667,
+          "best_val_acc": 0.8706666666666667,
+          "epochs": 35,
+          "params": 407
+        }
+      ]
+    },
+    {
+      "depth": 4,
+      "mean_test_acc": 0.8426666666666666,
+      "std_test_acc": 0.014409873158513392,
+      "mean_params": 543.0,
+      "all_runs": [
+        {
+          "run_id": 0,
+          "test_acc": 0.852,
+          "best_val_acc": 0.876,
+          "epochs": 36,
+          "params": 543
+        },
+        {
+          "run_id": 1,
+          "test_acc": 0.8466666666666667,
+          "best_val_acc": 0.8693333333333333,
+          "epochs": 34,
+          "params": 543
+        },
+        {
+          "run_id": 2,
+          "test_acc": 0.8146666666666667,
+          "best_val_acc": 0.8653333333333333,
+          "epochs": 33,
+          "params": 543
+        },
+        {
+          "run_id": 3,
+          "test_acc": 0.8453333333333334,
+          "best_val_acc": 0.8666666666666667,
+          "epochs": 39,
+          "params": 543
+        },
+        {
+          "run_id": 4,
+          "test_acc": 0.8546666666666667,
+          "best_val_acc": 0.8706666666666667,
+          "epochs": 32,
+          "params": 543
+        }
+      ]
+    },
+    {
+      "depth": 5,
+      "mean_test_acc": 0.8365333333333334,
+      "std_test_acc": 0.0122956180089584,
+      "mean_params": 679.0,
+      "all_runs": [
+        {
+          "run_id": 0,
+          "test_acc": 0.8506666666666667,
+          "best_val_acc": 0.876,
+          "epochs": 34,
+          "params": 679
+        },
+        {
+          "run_id": 1,
+          "test_acc": 0.844,
+          "best_val_acc": 0.8706666666666667,
+          "epochs": 34,
+          "params": 679
+        },
+        {
+          "run_id": 2,
+          "test_acc": 0.8186666666666667,
+          "best_val_acc": 0.868,
+          "epochs": 39,
+          "params": 679
+        },
+        {
+          "run_id": 3,
+          "test_acc": 0.8253333333333334,
+          "best_val_acc": 0.876,
+          "epochs": 52,
+          "params": 679
+        },
+        {
+          "run_id": 4,
+          "test_acc": 0.844,
+          "best_val_acc": 0.864,
+          "epochs": 44,
+          "params": 679
+        }
+      ]
+    },
+    {
+      "depth": 6,
+      "mean_test_acc": 0.7469333333333334,
+      "std_test_acc": 0.18028599501902526,
+      "mean_params": 815.0,
+      "all_runs": [
+        {
+          "run_id": 0,
+          "test_acc": 0.8413333333333334,
+          "best_val_acc": 0.876,
+          "epochs": 33,
+          "params": 815
+        },
+        {
+          "run_id": 1,
+          "test_acc": 0.8413333333333334,
+          "best_val_acc": 0.864,
+          "epochs": 34,
+          "params": 815
+        },
+        {
+          "run_id": 2,
+          "test_acc": 0.8226666666666667,
+          "best_val_acc": 0.8733333333333333,
+          "epochs": 32,
+          "params": 815
+        },
+        {
+          "run_id": 3,
+          "test_acc": 0.38666666666666666,
+          "best_val_acc": 0.868,
+          "epochs": 36,
+          "params": 815
+        },
+        {
+          "run_id": 4,
+          "test_acc": 0.8426666666666667,
+          "best_val_acc": 0.8626666666666667,
+          "epochs": 33,
+          "params": 815
+        }
+      ]
+    },
+    {
+      "depth": 7,
+      "mean_test_acc": 0.7949333333333335,
+      "std_test_acc": 0.09464750979878504,
+      "mean_params": 951.0,
+      "all_runs": [
+        {
+          "run_id": 0,
+          "test_acc": 0.6066666666666667,
+          "best_val_acc": 0.8733333333333333,
+          "epochs": 42,
+          "params": 951
+        },
+        {
+          "run_id": 1,
+          "test_acc": 0.856,
+          "best_val_acc": 0.8706666666666667,
+          "epochs": 32,
+          "params": 951
+        },
+        {
+          "run_id": 2,
+          "test_acc": 0.8253333333333334,
+          "best_val_acc": 0.868,
+          "epochs": 33,
+          "params": 951
+        },
+        {
+          "run_id": 3,
+          "test_acc": 0.8413333333333334,
+          "best_val_acc": 0.872,
+          "epochs": 33,
+          "params": 951
+        },
+        {
+          "run_id": 4,
+          "test_acc": 0.8453333333333334,
+          "best_val_acc": 0.868,
+          "epochs": 32,
+          "params": 951
+        }
+      ]
+    },
+    {
+      "depth": 8,
+      "mean_test_acc": 0.6032,
+      "std_test_acc": 0.1879207397932555,
+      "mean_params": 1087.0,
+      "all_runs": [
+        {
+          "run_id": 0,
+          "test_acc": 0.6093333333333333,
+          "best_val_acc": 0.876,
+          "epochs": 35,
+          "params": 1087
+        },
+        {
+          "run_id": 1,
+          "test_acc": 0.7653333333333333,
+          "best_val_acc": 0.864,
+          "epochs": 39,
+          "params": 1087
+        },
+        {
+          "run_id": 2,
+          "test_acc": 0.49866666666666665,
+          "best_val_acc": 0.8706666666666667,
+          "epochs": 34,
+          "params": 1087
+        },
+        {
+          "run_id": 3,
+          "test_acc": 0.30933333333333335,
+          "best_val_acc": 0.8706666666666667,
+          "epochs": 34,
+          "params": 1087
+        },
+        {
+          "run_id": 4,
+          "test_acc": 0.8333333333333334,
+          "best_val_acc": 0.8733333333333333,
+          "epochs": 33,
+          "params": 1087
+        }
+      ]
+    }
+  ],
+  "degree_ablation": [
+    {
+      "degree": 2,
+      "mean_test_acc": 0.8410666666666666,
+      "std_test_acc": 0.008940295794261434,
+      "mean_params": 664.0,
+      "all_runs": [
+        {
+          "run_id": 0,
+          "test_acc": 0.852,
+          "best_val_acc": 0.872,
+          "epochs": 35,
+          "params": 664
+        },
+        {
+          "run_id": 1,
+          "test_acc": 0.8386666666666667,
+          "best_val_acc": 0.8653333333333333,
+          "epochs": 34,
+          "params": 664
+        },
+        {
+          "run_id": 2,
+          "test_acc": 0.8253333333333334,
+          "best_val_acc": 0.86,
+          "epochs": 32,
+          "params": 664
+        },
+        {
+          "run_id": 3,
+          "test_acc": 0.844,
+          "best_val_acc": 0.8733333333333333,
+          "epochs": 32,
+          "params": 664
+        },
+        {
+          "run_id": 4,
+          "test_acc": 0.8453333333333334,
+          "best_val_acc": 0.8666666666666667,
+          "epochs": 33,
+          "params": 664
+        }
+      ]
+    },
+    {
+      "degree": 3,
+      "mean_test_acc": 0.8365333333333334,
+      "std_test_acc": 0.0122956180089584,
+      "mean_params": 679.0,
+      "all_runs": [
+        {
+          "run_id": 0,
+          "test_acc": 0.8506666666666667,
+          "best_val_acc": 0.876,
+          "epochs": 34,
+          "params": 679
+        },
+        {
+          "run_id": 1,
+          "test_acc": 0.844,
+          "best_val_acc": 0.8706666666666667,
+          "epochs": 34,
+          "params": 679
+        },
+        {
+          "run_id": 2,
+          "test_acc": 0.8186666666666667,
+          "best_val_acc": 0.868,
+          "epochs": 39,
+          "params": 679
+        },
+        {
+          "run_id": 3,
+          "test_acc": 0.8253333333333334,
+          "best_val_acc": 0.876,
+          "epochs": 52,
+          "params": 679
+        },
+        {
+          "run_id": 4,
+          "test_acc": 0.844,
+          "best_val_acc": 0.864,
+          "epochs": 44,
+          "params": 679
+        }
+      ]
+    },
+    {
+      "degree": 4,
+      "mean_test_acc": 0.8416,
+      "std_test_acc": 0.02050734285837907,
+      "mean_params": 694.0,
+      "all_runs": [
+        {
+          "run_id": 0,
+          "test_acc": 0.86,
+          "best_val_acc": 0.876,
+          "epochs": 33,
+          "params": 694
+        },
+        {
+          "run_id": 1,
+          "test_acc": 0.8106666666666666,
+          "best_val_acc": 0.8106666666666666,
+          "epochs": 59,
+          "params": 694
+        },
+        {
+          "run_id": 2,
+          "test_acc": 0.824,
+          "best_val_acc": 0.86,
+          "epochs": 33,
+          "params": 694
+        },
+        {
+          "run_id": 3,
+          "test_acc": 0.8613333333333333,
+          "best_val_acc": 0.864,
+          "epochs": 37,
+          "params": 694
+        },
+        {
+          "run_id": 4,
+          "test_acc": 0.852,
+          "best_val_acc": 0.8666666666666667,
+          "epochs": 33,
+          "params": 694
+        }
+      ]
+    },
+    {
+      "degree": 5,
+      "mean_test_acc": 0.8197333333333333,
+      "std_test_acc": 0.007224649164876831,
+      "mean_params": 709.0,
+      "all_runs": [
+        {
+          "run_id": 0,
+          "test_acc": 0.816,
+          "best_val_acc": 0.86,
+          "epochs": 36,
+          "params": 709
+        },
+        {
+          "run_id": 1,
+          "test_acc": 0.8306666666666667,
+          "best_val_acc": 0.8413333333333334,
+          "epochs": 109,
+          "params": 709
+        },
+        {
+          "run_id": 2,
+          "test_acc": 0.824,
+          "best_val_acc": 0.868,
+          "epochs": 32,
+          "params": 709
+        },
+        {
+          "run_id": 3,
+          "test_acc": 0.8186666666666667,
+          "best_val_acc": 0.8666666666666667,
+          "epochs": 42,
+          "params": 709
+        },
+        {
+          "run_id": 4,
+          "test_acc": 0.8093333333333333,
+          "best_val_acc": 0.8186666666666667,
+          "epochs": 77,
+          "params": 709
+        }
+      ]
+    }
+  ],
+  "scaler_comparison": {
+    "summary": {
+      "CFNet": {
+        "with_scaler": {
+          "mean": 0.8365333333333334,
+          "std": 0.0122956180089584
+        },
+        "without_scaler": {
+          "mean": 0.8370666666666666,
+          "std": 0.01616360795807119
+        },
+        "robustness": "High"
+      },
+      "KAN": {
+        "with_scaler": {
+          "mean": 0.8317333333333334,
+          "std": 0.012231834603925034
+        },
+        "without_scaler": {
+          "mean": 0.8122666666666666,
+          "std": 0.005926962872238071
+        },
+        "robustness": "High"
+      }
+    },
+    "raw": {
+      "CFNet": {
+        "with_scaler": [
+          0.8506666666666667,
+          0.844,
+          0.8186666666666667,
+          0.8253333333333334,
+          0.844
+        ],
+        "without_scaler": [
+          0.8533333333333334,
+          0.852,
+          0.8093333333333333,
+          0.8306666666666667,
+          0.84
+        ]
+      },
+      "KAN": {
+        "with_scaler": [
+          0.8506666666666667,
+          0.828,
+          0.8133333333333334,
+          0.8373333333333334,
+          0.8293333333333334
+        ],
+        "without_scaler": [
+          0.82,
+          0.8186666666666667,
+          0.808,
+          0.8093333333333333,
+          0.8053333333333333
+        ]
+      }
+    }
+  }
+}

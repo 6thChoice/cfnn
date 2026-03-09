@@ -1,0 +1,28 @@
+{
+    "dataset": "IMDb",
+    "model": "CFNet_Complicate",
+    "hyperparameters": {
+        "depth": 4,
+        "poly_degree": 3,
+        "epochs": 100,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "early_stopping_patience": 15,
+        "max_features": 5000
+    },
+    "mean_accuracy": 0.7979466666666667,
+    "std_accuracy": 0.20643153247505575,
+    "all_accuracies": [
+        0.8812,
+        0.20066666666666666,
+        0.8776,
+        0.7022666666666667,
+        0.8813333333333333,
+        0.8878666666666667,
+        0.8909333333333334,
+        0.8790666666666667,
+        0.8925333333333333,
+        0.886
+    ]
+}

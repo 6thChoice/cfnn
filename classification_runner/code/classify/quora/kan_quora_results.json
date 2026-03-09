@@ -1,0 +1,33 @@
+{
+    "model": "KAN",
+    "dataset": "Quora",
+    "hyperparameters": {
+        "epochs": 100,
+        "batch_size": 256,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "early_stopping_patience": 15
+    },
+    "model_config": {
+        "hidden_dim": 4,
+        "num_layers": 2,
+        "grid_size": 10,
+        "spline_order": 3,
+        "target_params": 40043,
+        "actual_params": 260118.0
+    },
+    "mean_accuracy": 0.9370100000000001,
+    "std_accuracy": 0.0018206866836443902,
+    "all_accuracies": [
+        0.9365,
+        0.9369,
+        0.938,
+        0.9344,
+        0.9371,
+        0.9401,
+        0.9371,
+        0.938,
+        0.9385,
+        0.9335
+    ]
+}

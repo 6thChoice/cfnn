@@ -1,0 +1,27 @@
+{
+    "dataset": "MAGIC Gamma Telescope",
+    "model": "CFNet_Complicate",
+    "hyperparameters": {
+        "depth": 3,
+        "poly_degree": 3,
+        "epochs": 200,
+        "batch_size": 256,
+        "learning_rate": 0.1,
+        "weight_decay": 0.0001,
+        "early_stopping_patience": 20
+    },
+    "mean_accuracy": 0.8453908166841921,
+    "std_accuracy": 0.012828266282283144,
+    "all_accuracies": [
+        0.8548895899053628,
+        0.8356116368734665,
+        0.8398177357167893,
+        0.8475289169295478,
+        0.868559411146162,
+        0.8615492464072906,
+        0.8478794251664914,
+        0.8321065545040308,
+        0.8412197686645636,
+        0.8247458815282159
+    ]
+}

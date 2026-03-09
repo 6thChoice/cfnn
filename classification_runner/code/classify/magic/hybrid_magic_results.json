@@ -1,0 +1,27 @@
+{
+    "dataset": "MAGIC Gamma Telescope",
+    "model": "HybridRationalNet",
+    "hyperparameters": {
+        "unit_degree": 3,
+        "num_units": 4,
+        "epochs": 200,
+        "batch_size": 256,
+        "learning_rate": 0.002,
+        "weight_decay": 0.0001,
+        "early_stopping_patience": 20
+    },
+    "mean_accuracy": 0.8711531720995443,
+    "std_accuracy": 0.005341543133977903,
+    "all_accuracies": [
+        0.8776726253066947,
+        0.8706624605678234,
+        0.8668068699614441,
+        0.8731160182264284,
+        0.8626007711181213,
+        0.863652295828952,
+        0.8780231335436383,
+        0.8703119523308798,
+        0.8710129688047669,
+        0.8776726253066947
+    ]
+}

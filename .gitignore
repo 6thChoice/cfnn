@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Data caches and large files
+classification_runner/code/classify/cifar-10/data/
+pareto_runner/results/comparison_results.json
+
+# Local datasets cache
+/data/openml/
+/data/hf/
+/data/torchvision/

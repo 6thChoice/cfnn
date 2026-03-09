@@ -1,0 +1,28 @@
+{
+    "dataset": "CIFAR-10",
+    "model": "HybridRationalNet",
+    "input_type": "Flattened (3072)",
+    "hyperparameters": {
+        "unit_degree": 3,
+        "num_units": 8,
+        "epochs": 200,
+        "batch_size": 256,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "early_stopping_patience": 25
+    },
+    "mean_accuracy": 0.47267000000000003,
+    "std_accuracy": 0.004140784949740805,
+    "all_accuracies": [
+        0.4706,
+        0.4679,
+        0.4735,
+        0.4652,
+        0.4758,
+        0.4764,
+        0.4712,
+        0.4722,
+        0.4805,
+        0.4734
+    ]
+}
