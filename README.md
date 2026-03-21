@@ -1,72 +1,82 @@
-# Submit Codebase (Self-Contained)
+# CFNN Paper Reproduction Codebase
 
-This directory is a self-contained, runnable snapshot of the paper experiments. It includes experiment code, selected result artifacts, and dataset download scripts.
+This directory is a GitHub-ready reproduction package for the experiments in `sn-article.pdf` ("CFNN: Continued Fraction Neural Network").
 
-## Experiments Overview
+The repository is organized by experiment runner rather than by model file. This keeps each paper experiment self-contained and makes it easier for other teams to reproduce a specific table or figure without first understanding the full research workspace.
 
-The paper’s experiments are organized into seven runners:
+## Included Experiment Groups
 
-1. Training stability & depth scalability (`stability_and_scaling_runner`)
-2. Synthetic function fitting & lead metric (`synthetic_function_fit_runner`)
-3. Spectral bias mitigation (`spectral_bias_runner`)
-4. Parameter efficiency & training dynamics (`pareto_runner`)
-5. High-dimensional noise robustness & attribution (`noise_robustness_runner`)
-6. Cross-domain real-world classification (`classification_runner`)
-7. Energy Efficiency performance & interpretability (`energy_interpretability_runner`)
+1. `stability_and_scaling_runner/`
+   Training stability, gradient variance, and depth scalability of the CFNN family.
+2. `synthetic_function_fit_runner/`
+   Synthetic function fitting, RMSE comparison, and lead-metric plots.
+3. `spectral_bias_runner/`
+   Spectral bias evaluation against MLP, SIREN, RFF-MLP, and Chebyshev-KAN.
+4. `pareto_runner/`
+   Parameter efficiency, Pareto frontier analysis, and Hybrid-vs-MLP training dynamics.
+5. `noise_robustness_runner/`
+   High-dimensional noisy-feature robustness, SHAP attribution, and parameter-threshold analysis.
+6. `classification_runner/`
+   Cross-domain classification benchmarks on six datasets.
+7. `energy_interpretability_runner/`
+   UCI Energy Efficiency regression and domain-aligned interpretability analysis.
 
-## Installation
+## Repository Layout
 
-Dependencies were exported from the `cfnn` conda environment:
+```text
+git_codebase/
+├── data/                          Dataset download helpers and cache locations
+├── docs/                          Experiment mapping and reproduction notes
+├── requirements.txt               Python dependencies
+├── stability_and_scaling_runner/  Fig. 1-3 style experiments
+├── synthetic_function_fit_runner/ Synthetic fitting and lead metric
+├── spectral_bias_runner/          Fig. 4-5 style experiments
+├── pareto_runner/                 Parameter-efficiency experiments
+├── noise_robustness_runner/       Table 5-7 style experiments
+├── classification_runner/         Table 3 style experiments
+└── energy_interpretability_runner/ Table 8-9 style experiments
+```
 
-- `requirements.txt`
+## Quick Start
 
-Install:
+### 1. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage
-
-### 1) Dataset download
+### 2. Download datasets
 
 ```bash
-cd submit_codebase/data
+cd data
 python download_datasets.py
 ```
 
-Cache directories:
+Downloaded caches are expected under:
 
-- `submit_codebase/data/openml/`
-- `submit_codebase/data/hf/`
-- `submit_codebase/data/torchvision/`
+- `data/openml/`
+- `data/hf/`
+- `data/torchvision/`
 
-### 2) Run each experiment
+Repository note:
 
-#### 2.1 stability_and_scaling_runner
+- CIFAR-10 is already bundled under `data/torchvision/cifar10/cifar-10-batches-py/`
+- OpenML and HuggingFace caches are not bundled, so those datasets may download on first use
 
-**Goal**: training stability, gradient variance, and depth scalability for the CFNN family.
+### 3. Run a target experiment
 
-**Run**:
+Training stability and scalability:
 
 ```bash
-cd submit_codebase/stability_and_scaling_runner/code
+cd stability_and_scaling_runner/code
 python run_gradient_stability.py
 python run_scalability.py
 ```
 
-**Outputs**:
-
-- `submit_codebase/stability_and_scaling_runner/results/`
-
-#### 2.2 synthetic_function_fit_runner
-
-**Goal**: fit four synthetic functions and produce lead metric plots.
-
-**Run**:
+Synthetic function fitting:
 
 ```bash
-cd submit_codebase/synthetic_function_fit_runner/code
+cd synthetic_function_fit_runner/code
 python nn_hard_1/main.py
 python nn_hard_2/main.py
 python cfnn_prefer_1/main.py
@@ -74,98 +84,76 @@ python cfnn_prefer_2/main.py
 python plot_lead.py
 ```
 
-**Outputs**:
-
-- `submit_codebase/synthetic_function_fit_runner/results/unified_plots/`
-
-#### 2.3 spectral_bias_runner
-
-**Goal**: compare low/high-frequency errors (spectral bias).
-
-**Run**:
+Spectral bias:
 
 ```bash
-cd submit_codebase/spectral_bias_runner/code
+cd spectral_bias_runner/code
 python spectral_bias_experiment.py
 python generate_spectral_visualization.py
 python plot_paper_figure.py
 ```
 
-**Outputs**:
-
-- `submit_codebase/spectral_bias_runner/results/`
-
-#### 2.4 pareto_runner
-
-**Goal**: parameter efficiency and training dynamics; Pareto frontier and Hybrid vs MLP.
-
-**Run**:
+Pareto and training dynamics:
 
 ```bash
-cd submit_codebase/pareto_runner/code
+cd pareto_runner/code
 python run_comparison_func_fit.py
 python plot_pareto_comparison.py
 python plot_hybrid_mlp_comparison.py
 ```
 
-**Outputs**:
-
-- `submit_codebase/pareto_runner/results/`
-
-#### 2.5 noise_robustness_runner
-
-**Goal**: predictive performance, parameter efficiency, and attribution under noisy features.
-
-**Run**:
+Noise robustness and attribution:
 
 ```bash
-cd submit_codebase/noise_robustness_runner/code/interpretable_experiment
+cd noise_robustness_runner/code/interpretable_experiment
 python scripts/run/run_exp1.py
 python scripts/run/run_exp1_pareto.py
 python scripts/analysis/generate_final_report.py
 ```
 
-**Outputs**:
-
-- `submit_codebase/noise_robustness_runner/results/`
-
-#### 2.6 classification_runner
-
-**Goal**: accuracy across six real-world classification datasets.
-
-**Run**:
+Classification:
 
 ```bash
-cd submit_codebase/classification_runner/code/classify
+cd classification_runner/code/classify
 python run_all_benchmarks.py
 ```
 
-**Outputs**:
-
-- `submit_codebase/classification_runner/code/classify/benchmark_results/`
-
-#### 2.7 energy_interpretability_runner
-
-**Goal**: Energy Efficiency regression performance and interpretability.
-
-**Run**:
+Energy Efficiency interpretability:
 
 ```bash
-cd submit_codebase/energy_interpretability_runner/code
+cd energy_interpretability_runner/code
 python run_exp5_real.py
 python plot_from_saved_data.py
 ```
 
-**Outputs**:
+## Core Model Implementations
 
-- `submit_codebase/energy_interpretability_runner/results/`
+The most important shared implementation files are:
 
-## Directory Layout
+- `stability_and_scaling_runner/code/cfnet.py`
+- `synthetic_function_fit_runner/code/cfnet.py`
+- `spectral_bias_runner/code/cfnet.py`
+- `pareto_runner/code/cfnet.py`
+- `noise_robustness_runner/code/cfnet.py`
+- `energy_interpretability_runner/code/cfnet.py`
 
-- `stability_and_scaling_runner/`
-- `synthetic_function_fit_runner/`
-- `spectral_bias_runner/`
-- `pareto_runner/`
-- `noise_robustness_runner/`
-- `classification_runner/`
-- `energy_interpretability_runner/`
+These define the paper variants:
+
+- `CFNet_Standard`: foundational CFNN
+- `HybridRationalNet`: CFNN-Hybrid
+- `EnsembleResCoFrNet`: CFNN-Boost
+- `MoE_Ensemble`: CFNN-MoE
+
+## Recommended Reading Order
+
+If you are reproducing the paper from scratch, read these files first:
+
+1. `docs/EXPERIMENT_TO_CODE_MAP.md`
+2. `docs/REPRODUCTION_NOTES.md`
+3. The runner README-equivalent scripts in the experiment you want to execute
+
+## Notes
+
+- This package is intentionally separated from the original research workspace. Early exploratory scripts from the larger workspace were not used as the primary public entry points here.
+- Some runners include selected result artifacts to document expected outputs and make sanity-checking easier.
+- Large caches and regenerated outputs are ignored by `.gitignore`.

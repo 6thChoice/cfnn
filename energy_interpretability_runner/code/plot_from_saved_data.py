@@ -18,7 +18,7 @@ from interpretable_experiment.analysis.domain_analyzer import DomainAnalyzer
 
 
 def find_latest_experiment():
-    """找到最新的exp5实验目录"""
+    """找到最新且包含分析数据的exp5实验目录"""
     runner_base = Path(__file__).resolve().parents[1]
     base_dir = runner_base / 'results' / 'exp5_real_data'
     if not os.path.exists(base_dir):
@@ -27,6 +27,12 @@ def find_latest_experiment():
     exp_dirs = sorted([d for d in os.listdir(base_dir) if d.startswith('20')])
     if not exp_dirs:
         return None
+
+    # 优先返回包含 .pkl 分析结果的最新目录，避免选中中途停止的半成品运行
+    for exp_dir in reversed(exp_dirs):
+        full_dir = os.path.join(base_dir, exp_dir)
+        if glob.glob(os.path.join(full_dir, '*.pkl')):
+            return full_dir
 
     return os.path.join(base_dir, exp_dirs[-1])
 

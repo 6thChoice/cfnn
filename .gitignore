@@ -3,6 +3,12 @@ __pycache__/
 *.pyo
 *.pyd
 *.log
+.DS_Store
+
+# Virtual environments
+.venv/
+venv/
+env/
 
 # Data caches and large files
 classification_runner/code/classify/cifar-10/data/
@@ -11,4 +17,11 @@ pareto_runner/results/comparison_results.json
 # Local datasets cache
 /data/openml/
 /data/hf/
-/data/torchvision/
+/data/torchvision/*
+!/data/torchvision/cifar10/
+!/data/torchvision/cifar10/cifar-10-batches-py/
+!/data/torchvision/cifar10/cifar-10-batches-py/**
+
+# Common generated outputs
+*/results/tmp/
+*/results/cache/

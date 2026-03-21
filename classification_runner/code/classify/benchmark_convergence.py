@@ -13,6 +13,7 @@ import json
 import logging
 import sys
 from pathlib import Path
+
 CODE_DIR = Path(__file__).resolve().parents[1]
 CLASSIFY_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(CODE_DIR))
@@ -32,8 +33,8 @@ from hybrid import HybridRationalNet
 
 from kan_classification_base import KAN
 
-from benchmark_utils import (
 from data_paths import OPENML_CACHE, HF_CACHE, TORCHVISION_DIR
+from benchmark_utils import (
     create_model, ConvergenceTracker, save_benchmark_results,
     count_parameters
 )

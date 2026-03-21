@@ -1,0 +1,45 @@
+{
+  "device": "cuda",
+  "lr": 0.001,
+  "epochs": 100,
+  "patience": 15,
+  "batch_size": 64,
+  "n_samples": 5000,
+  "noise_std": 0.05,
+  "test_split": 0.3,
+  "val_split": 0.05,
+  "random_seed": 42,
+  "base_result_dir": "interpretable/results",
+  "models": {
+    "standard": {
+      "depth": 4,
+      "poly_degree": 4
+    },
+    "hybrid": {
+      "unit_degree": 4,
+      "num_units": 20
+    },
+    "boost": {
+      "shallow_depth": 4,
+      "poly_degree": 4,
+      "num_stages": 20,
+      "epochs_per_stage": 50
+    },
+    "moe": {
+      "shallow_depth_per_cofrnet": 2,
+      "polynomial_degree": 2,
+      "num_experts": 5
+    }
+  },
+  "data": {
+    "dataset_name": "energy_efficiency",
+    "target_column": "Y1",
+    "n_samples": 5000,
+    "noise_std": 0.05,
+    "test_split": 0.2,
+    "val_split": 0.05,
+    "random_seed": 42,
+    "batch_size": 64,
+    "normalize": true
+  }
+}

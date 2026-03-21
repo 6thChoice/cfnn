@@ -16,10 +16,13 @@ import matplotlib.pyplot as plt
 from typing import Dict, List, Tuple, Any
 from datetime import datetime
 from collections import defaultdict
+from pathlib import Path
 
 # 添加项目路径
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..'))
 sys.path.insert(0, project_root)
+RUNNER_BASE = Path(__file__).resolve().parents[4]
+BASE_RESULT_DIR = str(RUNNER_BASE / "results")
 
 # 导入CFNet模型
 from cfnet import (
@@ -35,9 +38,6 @@ from func_experiment.engine import BaseTrainer, BoostTrainer
 from interpretable_experiment.data.generate_noisy_features import NoisyFeaturesGenerator
 from interpretable_experiment.models.kan_model import KAN, count_parameters as count_kan_params
 from interpretable_experiment.config.exp1_pareto_config import (
-from pathlib import Path
-RUNNER_BASE = Path(__file__).resolve().parents[4]
-BASE_RESULT_DIR = str(RUNNER_BASE / "results")
     get_pareto_model_config,
     get_pareto_experiment_config,
     get_all_pareto_configs,
