@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "protocol_name": "cfnn_downstream_seed_and_group_transfer_extension",
+  "base_config_sha256": "d494f7636723457ebaf651e773efc03f12af6a43929b7ed4d7d6887ba9fa73b6",
+  "base_candidate_manifest_sha256": "b4855c84b0b8f63772ac03e01d9200d997a1f7645cc9044dbd972c73c62945e4",
+  "base_conventional_selection_sha256": "7c76a17ac57125b1846e340133688645029d1b1cf6f250a65c4f64c90037d6db",
+  "base_selection_tree_sha256": "15373ddc0f7c33437311ab8613a1e14e206043a50681d0a49c422f0e8b5c16aa",
+  "additional_evaluation_init_seeds": [5099, 6029, 7039, 8081, 9011, 10037],
+  "group_transfer_budget": 256,
+  "group_transfer_tasks": [
+    "microwave_fano_group_transfer",
+    "microstrip_resonator_group_transfer",
+    "aluminium_frf_group_transfer"
+  ]
+}

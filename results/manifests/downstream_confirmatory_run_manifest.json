@@ -1,0 +1,66 @@
+{
+  "code_files": [
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/confirmatory_models.py",
+      "sha256": "0c3f5db2576efc2f3a249a146d8cefd397208e09c8583d9b3d1319411a55c8c2"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_benchmark.py",
+      "sha256": "ff373aebce97b6d58e6d1d7a45d4146274e3d5945cbfb3308a93ad09afa4e71d"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_config.json",
+      "sha256": "d494f7636723457ebaf651e773efc03f12af6a43929b7ed4d7d6887ba9fa73b6"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_metrics.py",
+      "sha256": "6d922a34bf23e43f8266bd6cf7ffea063716caa6ff5938657659cc3e8dd26632"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_protocol.py",
+      "sha256": "4d71df8ee5346c2f9d6f543cc418a49f247f00184aa20525ebdd314cb5374fab"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_training.py",
+      "sha256": "55c2c3676978e55aef2136e09269a7d3de4e2382a4d92e64328dfe12adcce10d"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/fair_baselines.py",
+      "sha256": "0bad17ba867351594c4d7d7128154ad1ec6383d54cd5b75ae2357748093eaf64"
+    }
+  ],
+  "command": [
+    "downstream_benchmark.py",
+    "--config",
+    "downstream_config.json",
+    "--raw-root",
+    "downstream_data/raw",
+    "--output-root",
+    "downstream_confirmatory_results",
+    "--stage",
+    "inventory",
+    "--selection",
+    "downstream_confirmatory_results/conventional_selection.json",
+    "--tasks",
+    "controlled_fano,microwave_fano,microstrip_resonator,aluminium_frf,energy,credit",
+    "--families",
+    "CFNN,MLP,KAN,SIREN,Fourier-feature MLP,Gaussian RBF,Rational activation NN,Local nested CF control",
+    "--budgets",
+    "128,256,512,1024"
+  ],
+  "config_sha256": "182b76bc5dd31397f09d3a478a2032806aff1c4de377a1100b699f05fed4d35f",
+  "git_commit": null,
+  "hardware": {
+    "cuda_version": "12.8",
+    "device": "cuda",
+    "gpu_memory_bytes": 10331226112,
+    "gpu_name": "NVIDIA GeForce RTX 3080"
+  },
+  "platform": "Linux-6.14.0-29-generic-x86_64-with-glibc2.39",
+  "python_version": "3.13.5",
+  "reproducibility": {
+    "cublas_workspace_config": ":4096:8",
+    "deterministic_algorithms": true
+  },
+  "torch_version": "2.10.0+cu128"
+}

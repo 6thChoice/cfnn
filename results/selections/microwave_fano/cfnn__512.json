@@ -1,0 +1,46 @@
+{
+  "candidate": {
+    "actual_parameters": 532,
+    "budget_relative_error": 0.0390625,
+    "candidate_key": "{\"degree\":8,\"denominator\":\"squared\",\"denominator_init_std\":0.05,\"epsilon\":0.05,\"initialization_mode\":\"numerator_scaled\",\"numerator_init_std\":0.014433756729740645,\"shared_projection\":false,\"skip\":true,\"units\":12}",
+    "config": {
+      "degree": 8,
+      "denominator": "squared",
+      "denominator_init_std": 0.05,
+      "epsilon": 0.05,
+      "initialization_mode": "numerator_scaled",
+      "numerator_init_std": 0.014433756729740645,
+      "shared_projection": false,
+      "skip": true,
+      "units": 12
+    },
+    "target_budget": 512
+  },
+  "candidate_manifest_sha256": "9f596c9c7981d4935fb28f0ad70b04b744d2645c41a85c78e41fe7fb8de3d85e",
+  "config_sha256": "f56cc6c8dc9700e1e862bd52ef209b1d11655e1378a3eb37ecf9fad545357c91",
+  "failure_count": 0,
+  "family": "CFNN",
+  "final_jsonl_sha256": "436e3995769cf487bb726eb037aa4f9f0690462c79239cf232707367b1a9378b",
+  "finalist_count": 3,
+  "frf_density": null,
+  "global_available_count": 3,
+  "median_validation_global_nrmse": 0.07484133541584015,
+  "median_validation_resonance_nrmse": 0.2535088062286377,
+  "no_feature_count": 0,
+  "optimizer": {
+    "key": "lr3e-3_wd0",
+    "lr": 0.003,
+    "weight_decay": 0.0
+  },
+  "optimizer_count": 8,
+  "peak_available_count": 3,
+  "protocol_sha256": "077f7bb2ba5b38ea9eb4bae7096f0a65d202b26198b2ef94358a69fe4f66951f",
+  "record_count": 3,
+  "screen_jsonl_sha256": "e68bbb90a6c8a7844a48efd97da36b2413e019de0f62056261a4b1c00c99ea40",
+  "screened_candidate_count": 12,
+  "selected_step": 760,
+  "status": "selected",
+  "target_budget": 512,
+  "task": "microwave_fano",
+  "tuning_seed_count": 3
+}

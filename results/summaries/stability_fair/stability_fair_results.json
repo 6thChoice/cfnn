@@ -1,0 +1,552 @@
+{
+  "fixed": {
+    "runs": {
+      "CFNN": [
+        {
+          "model": "CFNN",
+          "seed": 42,
+          "cfg": {
+            "lr": 0.001,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.4316391348838806,
+          "test_loss": 0.6992629170417786,
+          "final_train_loss": 0.8024881482124329,
+          "epochs_completed": 240,
+          "grad_median": 0.4156563872060112,
+          "grad_iqr": 1.609369672080093,
+          "grad_std": 1.5343965564992579,
+          "grad_p95": 4.912033096875062,
+          "grad_max": 6.256550413294555
+        },
+        {
+          "model": "CFNN",
+          "seed": 123,
+          "cfg": {
+            "lr": 0.001,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.5812523365020752,
+          "test_loss": 0.727907657623291,
+          "final_train_loss": 0.7831887602806091,
+          "epochs_completed": 240,
+          "grad_median": 0.9129724319312822,
+          "grad_iqr": 2.796937262400422,
+          "grad_std": 2.6271280866115463,
+          "grad_p95": 8.325384040004256,
+          "grad_max": 11.178166916618396
+        },
+        {
+          "model": "CFNN",
+          "seed": 456,
+          "cfg": {
+            "lr": 0.001,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.8113566637039185,
+          "test_loss": 0.9105538725852966,
+          "final_train_loss": 0.9576934576034546,
+          "epochs_completed": 240,
+          "grad_median": 0.39450270270679305,
+          "grad_iqr": 2.8719900503897686,
+          "grad_std": 2.5814317075205437,
+          "grad_p95": 7.835603490529191,
+          "grad_max": 10.323220297919027
+        },
+        {
+          "model": "CFNN",
+          "seed": 789,
+          "cfg": {
+            "lr": 0.001,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 1.133004069328308,
+          "test_loss": 0.8911804556846619,
+          "final_train_loss": 0.8360760807991028,
+          "epochs_completed": 240,
+          "grad_median": 0.33226666234233726,
+          "grad_iqr": 1.3965405898751992,
+          "grad_std": 1.918767598679639,
+          "grad_p95": 5.990222434129227,
+          "grad_max": 8.67920827500102
+        },
+        {
+          "model": "CFNN",
+          "seed": 1024,
+          "cfg": {
+            "lr": 0.001,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.39289990067481995,
+          "test_loss": 0.7689575552940369,
+          "final_train_loss": 0.7223177552223206,
+          "epochs_completed": 240,
+          "grad_median": 0.5308617213497375,
+          "grad_iqr": 1.5586207893174473,
+          "grad_std": 1.6549489976233145,
+          "grad_p95": 5.4241260653136445,
+          "grad_max": 7.139356389261737
+        }
+      ],
+      "CFNN-Hybrid": [
+        {
+          "model": "CFNN-Hybrid",
+          "seed": 42,
+          "cfg": {
+            "lr": 0.001,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.4452863335609436,
+          "test_loss": 0.6936869025230408,
+          "final_train_loss": 0.7973254323005676,
+          "epochs_completed": 240,
+          "grad_median": 0.7280705420239151,
+          "grad_iqr": 1.5892439443750392,
+          "grad_std": 1.3201430005872479,
+          "grad_p95": 4.354363865136497,
+          "grad_max": 5.235307783896777
+        },
+        {
+          "model": "CFNN-Hybrid",
+          "seed": 123,
+          "cfg": {
+            "lr": 0.001,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.46401482820510864,
+          "test_loss": 0.5523659586906433,
+          "final_train_loss": 0.6046671271324158,
+          "epochs_completed": 240,
+          "grad_median": 0.374670672033649,
+          "grad_iqr": 0.16450711770059678,
+          "grad_std": 0.1939769638821586,
+          "grad_p95": 0.958311047618411,
+          "grad_max": 1.099352815407982
+        },
+        {
+          "model": "CFNN-Hybrid",
+          "seed": 456,
+          "cfg": {
+            "lr": 0.001,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.5457470417022705,
+          "test_loss": 0.5796830058097839,
+          "final_train_loss": 0.6084650754928589,
+          "epochs_completed": 240,
+          "grad_median": 0.3938653988357809,
+          "grad_iqr": 1.0655891350905629,
+          "grad_std": 1.3732826336623547,
+          "grad_p95": 4.466631832620074,
+          "grad_max": 5.345163963862384
+        },
+        {
+          "model": "CFNN-Hybrid",
+          "seed": 789,
+          "cfg": {
+            "lr": 0.001,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.9467795491218567,
+          "test_loss": 0.7344847321510315,
+          "final_train_loss": 0.6782568097114563,
+          "epochs_completed": 240,
+          "grad_median": 0.4834122271514053,
+          "grad_iqr": 1.3740480749396846,
+          "grad_std": 1.3622065157179224,
+          "grad_p95": 4.440952874777358,
+          "grad_max": 5.184431862166998
+        },
+        {
+          "model": "CFNN-Hybrid",
+          "seed": 1024,
+          "cfg": {
+            "lr": 0.001,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.3185960352420807,
+          "test_loss": 0.6456871628761292,
+          "final_train_loss": 0.6074498891830444,
+          "epochs_completed": 240,
+          "grad_median": 0.4704312558151116,
+          "grad_iqr": 0.9549921988066334,
+          "grad_std": 0.8591408370157494,
+          "grad_p95": 2.9210598938672008,
+          "grad_max": 3.6236939483182318
+        }
+      ]
+    },
+    "aggregate": {
+      "CFNN": {
+        "n_runs": 5,
+        "n_fail": 0,
+        "fail_rate": 0.0,
+        "test_loss_mean": 0.799572491645813,
+        "test_loss_std": 0.0858417375303169,
+        "best_val_loss_mean": 0.6700304210186004,
+        "best_val_loss_std": 0.27416454358729686,
+        "grad_median_mean": 0.5172519811072323,
+        "grad_median_std": 0.20803293894783967,
+        "grad_iqr_mean": 2.046691672812586,
+        "grad_iqr_std": 0.6474791127152416,
+        "grad_std_mean": 2.06333458938686,
+        "grad_std_std": 0.4590733231910736,
+        "grad_p95_mean": 6.497473825370276,
+        "grad_p95_std": 1.3457227385347663,
+        "grad_max_mean": 8.715300458418946,
+        "grad_max_std": 1.8537244423266757,
+        "epochs_completed_mean": 240.0,
+        "epochs_completed_std": 0.0
+      },
+      "CFNN-Hybrid": {
+        "n_runs": 5,
+        "n_fail": 0,
+        "fail_rate": 0.0,
+        "test_loss_mean": 0.6411815524101258,
+        "test_loss_std": 0.06804833074751135,
+        "best_val_loss_mean": 0.544084757566452,
+        "best_val_loss_std": 0.21409499966313048,
+        "grad_median_mean": 0.4900900191719725,
+        "grad_median_std": 0.12621140391625157,
+        "grad_iqr_mean": 1.0296760941825034,
+        "grad_iqr_std": 0.4872562013360627,
+        "grad_std_mean": 1.0217499901730867,
+        "grad_std_std": 0.4561083541515169,
+        "grad_p95_mean": 3.4282639028039084,
+        "grad_p95_std": 1.3652348563804129,
+        "grad_max_mean": 4.0975900747304745,
+        "grad_max_std": 1.627640713875807,
+        "epochs_completed_mean": 240.0,
+        "epochs_completed_std": 0.0
+      }
+    }
+  },
+  "tuned": {
+    "runs": {
+      "CFNN": [
+        {
+          "model": "CFNN",
+          "seed": 42,
+          "cfg": {
+            "lr": 0.01,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.16554826498031616,
+          "test_loss": 0.14729411900043488,
+          "final_train_loss": 0.14625616371631622,
+          "epochs_completed": 240,
+          "grad_median": 0.11060748100443057,
+          "grad_iqr": 0.4604316508633688,
+          "grad_std": 0.698939841835536,
+          "grad_p95": 0.9500336298403625,
+          "grad_max": 6.256550413294555
+        },
+        {
+          "model": "CFNN",
+          "seed": 123,
+          "cfg": {
+            "lr": 0.01,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.11626806855201721,
+          "test_loss": 0.11918233335018158,
+          "final_train_loss": 0.12000364810228348,
+          "epochs_completed": 240,
+          "grad_median": 0.24251818576721496,
+          "grad_iqr": 0.27277617703616747,
+          "grad_std": 1.1529073020362346,
+          "grad_p95": 1.0087702994493155,
+          "grad_max": 11.178166916618396
+        },
+        {
+          "model": "CFNN",
+          "seed": 456,
+          "cfg": {
+            "lr": 0.01,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.15366004407405853,
+          "test_loss": 0.14346985518932343,
+          "final_train_loss": 0.13800401985645294,
+          "epochs_completed": 240,
+          "grad_median": 0.20668345508652985,
+          "grad_iqr": 0.3530263347454694,
+          "grad_std": 1.0860158401853535,
+          "grad_p95": 0.9239511043727595,
+          "grad_max": 10.323220297919027
+        },
+        {
+          "model": "CFNN",
+          "seed": 789,
+          "cfg": {
+            "lr": 0.01,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.1505075842142105,
+          "test_loss": 0.16721178591251373,
+          "final_train_loss": 0.16835038363933563,
+          "epochs_completed": 240,
+          "grad_median": 0.5677161875753365,
+          "grad_iqr": 0.6164352911977851,
+          "grad_std": 2.802997107249509,
+          "grad_p95": 3.9300647130461828,
+          "grad_max": 32.16238924355877
+        },
+        {
+          "model": "CFNN",
+          "seed": 1024,
+          "cfg": {
+            "lr": 0.01,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.1313134729862213,
+          "test_loss": 0.11874081939458847,
+          "final_train_loss": 0.1221201941370964,
+          "epochs_completed": 240,
+          "grad_median": 0.05607280668566035,
+          "grad_iqr": 0.4415725803554958,
+          "grad_std": 0.7551516083005263,
+          "grad_p95": 0.7055728750009245,
+          "grad_max": 7.139356389261737
+        }
+      ],
+      "CFNN-Hybrid": [
+        {
+          "model": "CFNN-Hybrid",
+          "seed": 42,
+          "cfg": {
+            "lr": 0.01,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.1164817363023758,
+          "test_loss": 0.1309373527765274,
+          "final_train_loss": 0.12798650562763214,
+          "epochs_completed": 240,
+          "grad_median": 0.06462297345542527,
+          "grad_iqr": 0.2499615058430236,
+          "grad_std": 0.633617789699251,
+          "grad_p95": 1.3764570848845017,
+          "grad_max": 5.235307783896777
+        },
+        {
+          "model": "CFNN-Hybrid",
+          "seed": 123,
+          "cfg": {
+            "lr": 0.01,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.09996398538351059,
+          "test_loss": 0.10911981761455536,
+          "final_train_loss": 0.11052908003330231,
+          "epochs_completed": 240,
+          "grad_median": 0.026034036374524096,
+          "grad_iqr": 0.16898240597762448,
+          "grad_std": 0.16941108467961408,
+          "grad_p95": 0.36123619776122495,
+          "grad_max": 1.099352815407982
+        },
+        {
+          "model": "CFNN-Hybrid",
+          "seed": 456,
+          "cfg": {
+            "lr": 0.01,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.14632759988307953,
+          "test_loss": 0.13960878551006317,
+          "final_train_loss": 0.13356131315231323,
+          "epochs_completed": 240,
+          "grad_median": 0.06016139898727879,
+          "grad_iqr": 0.17506797148809916,
+          "grad_std": 0.6098889725052766,
+          "grad_p95": 0.9238091067924534,
+          "grad_max": 5.345163963862384
+        },
+        {
+          "model": "CFNN-Hybrid",
+          "seed": 789,
+          "cfg": {
+            "lr": 0.01,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.13558535277843475,
+          "test_loss": 0.14121033251285553,
+          "final_train_loss": 0.1383715122938156,
+          "epochs_completed": 240,
+          "grad_median": 0.10291078889925301,
+          "grad_iqr": 0.13657517857609391,
+          "grad_std": 0.6174001956726267,
+          "grad_p95": 1.049211262061886,
+          "grad_max": 5.184431862166998
+        },
+        {
+          "model": "CFNN-Hybrid",
+          "seed": 1024,
+          "cfg": {
+            "lr": 0.01,
+            "weight_decay": 0.0,
+            "grad_clip": 1.0
+          },
+          "failed": false,
+          "fail_reason": "",
+          "best_val_loss": 0.0952606275677681,
+          "test_loss": 0.09452550113201141,
+          "final_train_loss": 0.09437453746795654,
+          "epochs_completed": 240,
+          "grad_median": 0.098451573644646,
+          "grad_iqr": 0.15230959982920478,
+          "grad_std": 0.43791444878098423,
+          "grad_p95": 0.7381725035003476,
+          "grad_max": 3.6236939483182318
+        }
+      ]
+    },
+    "aggregate": {
+      "CFNN": {
+        "n_runs": 5,
+        "n_fail": 0,
+        "fail_rate": 0.0,
+        "test_loss_mean": 0.1391797825694084,
+        "test_loss_std": 0.018372204991046106,
+        "best_val_loss_mean": 0.14345948696136473,
+        "best_val_loss_std": 0.017484507686875227,
+        "grad_median_mean": 0.23671962322383444,
+        "grad_median_std": 0.17834352529709838,
+        "grad_iqr_mean": 0.4288484068396573,
+        "grad_iqr_std": 0.11528726955774574,
+        "grad_std_mean": 1.2992023399214319,
+        "grad_std_std": 0.7726002445260317,
+        "grad_p95_mean": 1.5036785243419089,
+        "grad_p95_std": 1.217527270001202,
+        "grad_max_mean": 13.411936652130498,
+        "grad_max_std": 9.556716839087741,
+        "epochs_completed_mean": 240.0,
+        "epochs_completed_std": 0.0
+      },
+      "CFNN-Hybrid": {
+        "n_runs": 5,
+        "n_fail": 0,
+        "fail_rate": 0.0,
+        "test_loss_mean": 0.12308035790920258,
+        "test_loss_std": 0.018296960388630285,
+        "best_val_loss_mean": 0.11872386038303376,
+        "best_val_loss_std": 0.01976744639411329,
+        "grad_median_mean": 0.07043615427222544,
+        "grad_median_std": 0.028108281192371968,
+        "grad_iqr_mean": 0.17657933234280918,
+        "grad_iqr_std": 0.039075038385955975,
+        "grad_std_mean": 0.49364649826755047,
+        "grad_std_std": 0.17700503813615412,
+        "grad_p95_mean": 0.8897772310000827,
+        "grad_p95_std": 0.3363849807066276,
+        "grad_max_mean": 4.0975900747304745,
+        "grad_max_std": 1.627640713875807,
+        "epochs_completed_mean": 240.0,
+        "epochs_completed_std": 0.0
+      }
+    }
+  },
+  "best_cfgs": {
+    "CFNN": {
+      "lr": 0.01,
+      "weight_decay": 0.0,
+      "grad_clip": 1.0
+    },
+    "CFNN-Hybrid": {
+      "lr": 0.01,
+      "weight_decay": 0.0,
+      "grad_clip": 1.0
+    }
+  },
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "fixed_cfg": {
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "grad_clip": 1.0
+  },
+  "hpo_grid": [
+    {
+      "lr": 0.01,
+      "weight_decay": 0.0,
+      "grad_clip": 1.0
+    },
+    {
+      "lr": 0.01,
+      "weight_decay": 0.0001,
+      "grad_clip": 1.0
+    },
+    {
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "grad_clip": 1.0
+    },
+    {
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "grad_clip": 1.0
+    }
+  ]
+}

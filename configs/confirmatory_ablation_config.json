@@ -1,0 +1,83 @@
+{
+  "protocol_version": "1.0.0-ablation",
+  "budgets": [512],
+  "budget_tolerance": 0.05,
+  "maximum_candidates_per_budget": 6,
+  "minimum_candidates_per_budget": 3,
+  "screening_steps": 200,
+  "finalists_per_budget": 3,
+  "primary_tasks": ["pole_sharp", "compact_bump", "manifold_bump"],
+  "supplementary_tasks": [],
+  "families": [
+    "PARN",
+    "PARN-shared-PQ",
+    "PARN-no-skip",
+    "PARN-epsilon-0.1",
+    "PARN-epsilon-0.01",
+    "PARN-epsilon-0.03",
+    "PARN-epsilon-0.3",
+    "PARN-abs-denominator"
+  ],
+  "tuning_seeds": [101, 211, 307],
+  "evaluation_data_seeds": [41, 73, 109, 149, 191],
+  "evaluation_init_seeds": [1009, 2027],
+  "auxiliary_pairs": 10,
+  "training": {
+    "max_steps": 2000,
+    "min_steps": 200,
+    "patience": 100,
+    "checkpoints": [20, 80, 200, 500],
+    "gradient_clip": 5.0
+  },
+  "dataset": {
+    "analytic_train": 256,
+    "analytic_validation": 128,
+    "analytic_test": 2048,
+    "analytic_noise": 0.03,
+    "nmr_observed": 512,
+    "nmr_dense": 4000,
+    "nmr_noise": 0.03
+  },
+  "optimizer_grids": {
+    "PARN": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "PARN-shared-PQ": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "PARN-no-skip": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "PARN-epsilon-0.1": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "PARN-epsilon-0.01": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "PARN-epsilon-0.03": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "PARN-epsilon-0.3": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "PARN-abs-denominator": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ]
+  }
+}

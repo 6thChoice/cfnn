@@ -1,0 +1,31 @@
+{
+  "candidate": {
+    "actual_parameters": 264,
+    "budget_relative_error": 0.03125,
+    "candidate_key": "{\"degree\":3,\"denominator\":\"squared\",\"epsilon\":0.03,\"shared_projection\":false,\"skip\":true,\"units\":8}",
+    "config": {
+      "degree": 3,
+      "denominator": "squared",
+      "epsilon": 0.03,
+      "shared_projection": false,
+      "skip": true,
+      "units": 8
+    }
+  },
+  "family": "CFNN",
+  "finalist_count": 3,
+  "median_validation_score": 0.16886624693870544,
+  "optimizer": {
+    "key": "lr1e-3_wd0",
+    "lr": 0.001,
+    "weight_decay": 0.0
+  },
+  "optimizer_count": 4,
+  "screened_candidate_count": 12,
+  "selected_step": 560,
+  "stage": "confirmatory_tuning",
+  "status": "selected",
+  "target_budget": 256,
+  "task": "microstrip_resonator_group_transfer",
+  "tuning_seed_count": 3
+}

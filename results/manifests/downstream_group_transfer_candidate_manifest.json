@@ -1,0 +1,2665 @@
+{
+  "config_sha256": "054785c740d0d14a8bed86c76f34326bb467483bd199a1dc851075364649dd26",
+  "protocol_version": "1.0.0-group-transfer",
+  "tasks": {
+    "aluminium_frf_group_transfer": {
+      "CFNN": {
+        "256": [
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":1,\"denominator\":\"squared\",\"epsilon\":0.03,\"shared_projection\":false,\"skip\":true,\"units\":10}",
+            "config": {
+              "degree": 1,
+              "denominator": "squared",
+              "epsilon": 0.03,
+              "shared_projection": false,
+              "skip": true,
+              "units": 10
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":2,\"denominator\":\"squared\",\"epsilon\":0.1,\"shared_projection\":false,\"skip\":true,\"units\":9}",
+            "config": {
+              "degree": 2,
+              "denominator": "squared",
+              "epsilon": 0.1,
+              "shared_projection": false,
+              "skip": true,
+              "units": 9
+            }
+          },
+          {
+            "actual_parameters": 264,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":3,\"denominator\":\"squared\",\"epsilon\":0.3,\"shared_projection\":false,\"skip\":true,\"units\":8}",
+            "config": {
+              "degree": 3,
+              "denominator": "squared",
+              "epsilon": 0.3,
+              "shared_projection": false,
+              "skip": true,
+              "units": 8
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":4,\"denominator\":\"squared\",\"epsilon\":0.03,\"shared_projection\":false,\"skip\":true,\"units\":7}",
+            "config": {
+              "degree": 4,
+              "denominator": "squared",
+              "epsilon": 0.03,
+              "shared_projection": false,
+              "skip": true,
+              "units": 7
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":5,\"denominator\":\"squared\",\"epsilon\":0.1,\"shared_projection\":false,\"skip\":true,\"units\":6}",
+            "config": {
+              "degree": 5,
+              "denominator": "squared",
+              "epsilon": 0.1,
+              "shared_projection": false,
+              "skip": true,
+              "units": 6
+            }
+          },
+          {
+            "actual_parameters": 268,
+            "budget_relative_error": 0.046875,
+            "candidate_key": "{\"degree\":8,\"denominator\":\"squared\",\"epsilon\":0.3,\"shared_projection\":false,\"skip\":true,\"units\":5}",
+            "config": {
+              "degree": 8,
+              "denominator": "squared",
+              "epsilon": 0.3,
+              "shared_projection": false,
+              "skip": true,
+              "units": 5
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":1,\"denominator\":\"squared\",\"epsilon\":0.1,\"shared_projection\":false,\"skip\":true,\"units\":10}",
+            "config": {
+              "degree": 1,
+              "denominator": "squared",
+              "epsilon": 0.1,
+              "shared_projection": false,
+              "skip": true,
+              "units": 10
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":2,\"denominator\":\"squared\",\"epsilon\":0.03,\"shared_projection\":false,\"skip\":true,\"units\":9}",
+            "config": {
+              "degree": 2,
+              "denominator": "squared",
+              "epsilon": 0.03,
+              "shared_projection": false,
+              "skip": true,
+              "units": 9
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":4,\"denominator\":\"squared\",\"epsilon\":0.3,\"shared_projection\":false,\"skip\":true,\"units\":7}",
+            "config": {
+              "degree": 4,
+              "denominator": "squared",
+              "epsilon": 0.3,
+              "shared_projection": false,
+              "skip": true,
+              "units": 7
+            }
+          },
+          {
+            "actual_parameters": 264,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":3,\"denominator\":\"squared\",\"epsilon\":0.03,\"shared_projection\":false,\"skip\":true,\"units\":8}",
+            "config": {
+              "degree": 3,
+              "denominator": "squared",
+              "epsilon": 0.03,
+              "shared_projection": false,
+              "skip": true,
+              "units": 8
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":5,\"denominator\":\"squared\",\"epsilon\":0.3,\"shared_projection\":false,\"skip\":true,\"units\":6}",
+            "config": {
+              "degree": 5,
+              "denominator": "squared",
+              "epsilon": 0.3,
+              "shared_projection": false,
+              "skip": true,
+              "units": 6
+            }
+          },
+          {
+            "actual_parameters": 268,
+            "budget_relative_error": 0.046875,
+            "candidate_key": "{\"degree\":8,\"denominator\":\"squared\",\"epsilon\":0.1,\"shared_projection\":false,\"skip\":true,\"units\":5}",
+            "config": {
+              "degree": 8,
+              "denominator": "squared",
+              "epsilon": 0.1,
+              "shared_projection": false,
+              "skip": true,
+              "units": 5
+            }
+          }
+        ]
+      },
+      "Fourier-feature MLP": {
+        "256": [
+          {
+            "actual_parameters": 247,
+            "budget_relative_error": 0.03515625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":16,\"scale\":2.0,\"width\":7}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 16,
+              "scale": 2.0,
+              "width": 7
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":4,\"scale\":4.0,\"width\":11}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 4,
+              "scale": 4.0,
+              "width": 11
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":2,\"scale\":8.0,\"width\":36}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 2,
+              "scale": 8.0,
+              "width": 36
+            }
+          },
+          {
+            "actual_parameters": 263,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":8,\"scale\":2.0,\"width\":9}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 8,
+              "scale": 2.0,
+              "width": 9
+            }
+          },
+          {
+            "actual_parameters": 264,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":64,\"scale\":4.0,\"width\":2}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 64,
+              "scale": 4.0,
+              "width": 2
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":16,\"scale\":8.0,\"width\":6}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 16,
+              "scale": 8.0,
+              "width": 6
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":2,\"scale\":2.0,\"width\":36}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 2,
+              "scale": 2.0,
+              "width": 36
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":4,\"scale\":8.0,\"width\":11}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 4,
+              "scale": 8.0,
+              "width": 11
+            }
+          },
+          {
+            "actual_parameters": 249,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":8,\"scale\":4.0,\"width\":13}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 8,
+              "scale": 4.0,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 264,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":64,\"scale\":2.0,\"width\":2}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 64,
+              "scale": 2.0,
+              "width": 2
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":16,\"scale\":4.0,\"width\":6}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 16,
+              "scale": 4.0,
+              "width": 6
+            }
+          },
+          {
+            "actual_parameters": 263,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":8,\"scale\":8.0,\"width\":9}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 8,
+              "scale": 8.0,
+              "width": 9
+            }
+          }
+        ]
+      },
+      "Gaussian RBF": {
+        "256": [
+          {
+            "actual_parameters": 257,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"basis\":42}",
+            "config": {
+              "basis": 42
+            }
+          },
+          {
+            "actual_parameters": 251,
+            "budget_relative_error": 0.01953125,
+            "candidate_key": "{\"basis\":41}",
+            "config": {
+              "basis": 41
+            }
+          },
+          {
+            "actual_parameters": 263,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"basis\":43}",
+            "config": {
+              "basis": 43
+            }
+          },
+          {
+            "actual_parameters": 245,
+            "budget_relative_error": 0.04296875,
+            "candidate_key": "{\"basis\":40}",
+            "config": {
+              "basis": 40
+            }
+          }
+        ]
+      },
+      "KAN": {
+        "256": [
+          {
+            "actual_parameters": 250,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"grid\":2,\"k\":2,\"width\":5}",
+            "config": {
+              "grid": 2,
+              "k": 2,
+              "width": 5
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"grid\":3,\"k\":4,\"width\":4}",
+            "config": {
+              "grid": 3,
+              "k": 4,
+              "width": 4
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"grid\":4,\"k\":3,\"width\":4}",
+            "config": {
+              "grid": 4,
+              "k": 3,
+              "width": 4
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"grid\":6,\"k\":5,\"width\":3}",
+            "config": {
+              "grid": 6,
+              "k": 5,
+              "width": 3
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"grid\":5,\"k\":2,\"width\":4}",
+            "config": {
+              "grid": 5,
+              "k": 2,
+              "width": 4
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"grid\":7,\"k\":4,\"width\":3}",
+            "config": {
+              "grid": 7,
+              "k": 4,
+              "width": 3
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"grid\":8,\"k\":3,\"width\":3}",
+            "config": {
+              "grid": 8,
+              "k": 3,
+              "width": 3
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"grid\":9,\"k\":2,\"width\":3}",
+            "config": {
+              "grid": 9,
+              "k": 2,
+              "width": 3
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"grid\":2,\"k\":5,\"width\":4}",
+            "config": {
+              "grid": 2,
+              "k": 5,
+              "width": 4
+            }
+          }
+        ]
+      },
+      "Local nested CF control": {
+        "256": [
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":1,\"depth\":19}",
+            "config": {
+              "degree": 1,
+              "depth": 19
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":2,\"depth\":17}",
+            "config": {
+              "degree": 2,
+              "depth": 17
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":3,\"depth\":15}",
+            "config": {
+              "degree": 3,
+              "depth": 15
+            }
+          },
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":4,\"depth\":13}",
+            "config": {
+              "degree": 4,
+              "depth": 13
+            }
+          },
+          {
+            "actual_parameters": 251,
+            "budget_relative_error": 0.01953125,
+            "candidate_key": "{\"degree\":5,\"depth\":12}",
+            "config": {
+              "degree": 5,
+              "depth": 12
+            }
+          },
+          {
+            "actual_parameters": 259,
+            "budget_relative_error": 0.01171875,
+            "candidate_key": "{\"degree\":1,\"depth\":20}",
+            "config": {
+              "degree": 1,
+              "depth": 20
+            }
+          },
+          {
+            "actual_parameters": 265,
+            "budget_relative_error": 0.03515625,
+            "candidate_key": "{\"degree\":4,\"depth\":14}",
+            "config": {
+              "degree": 4,
+              "depth": 14
+            }
+          }
+        ]
+      },
+      "MLP": {
+        "256": [
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"width\":42}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "width": 42
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":2,\"width\":13}",
+            "config": {
+              "activation": "tanh",
+              "depth": 2,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"width\":13}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":1,\"width\":42}",
+            "config": {
+              "activation": "tanh",
+              "depth": 1,
+              "width": 42
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"width\":43}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "width": 43
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":1,\"width\":43}",
+            "config": {
+              "activation": "tanh",
+              "depth": 1,
+              "width": 43
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"width\":41}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":1,\"width\":41}",
+            "config": {
+              "activation": "tanh",
+              "depth": 1,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 266,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"width\":44}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "width": 44
+            }
+          },
+          {
+            "actual_parameters": 266,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":1,\"width\":44}",
+            "config": {
+              "activation": "tanh",
+              "depth": 1,
+              "width": 44
+            }
+          }
+        ]
+      },
+      "Rational activation NN": {
+        "256": [
+          {
+            "actual_parameters": 258,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":1,\"depth\":1,\"width\":42}",
+            "config": {
+              "degree": 1,
+              "depth": 1,
+              "width": 42
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":2,\"depth\":3,\"width\":9}",
+            "config": {
+              "degree": 2,
+              "depth": 3,
+              "width": 9
+            }
+          },
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":3,\"depth\":2,\"width\":12}",
+            "config": {
+              "degree": 3,
+              "depth": 2,
+              "width": 12
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":5,\"depth\":1,\"width\":40}",
+            "config": {
+              "degree": 5,
+              "depth": 1,
+              "width": 40
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":1,\"depth\":3,\"width\":9}",
+            "config": {
+              "degree": 1,
+              "depth": 3,
+              "width": 9
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":5,\"depth\":2,\"width\":12}",
+            "config": {
+              "degree": 5,
+              "depth": 2,
+              "width": 12
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":2,\"depth\":1,\"width\":41}",
+            "config": {
+              "degree": 2,
+              "depth": 1,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":3,\"depth\":3,\"width\":9}",
+            "config": {
+              "degree": 3,
+              "depth": 3,
+              "width": 9
+            }
+          },
+          {
+            "actual_parameters": 256,
+            "budget_relative_error": 0.0,
+            "candidate_key": "{\"degree\":3,\"depth\":1,\"width\":41}",
+            "config": {
+              "degree": 3,
+              "depth": 1,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 252,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":1,\"depth\":1,\"width\":41}",
+            "config": {
+              "degree": 1,
+              "depth": 1,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":5,\"depth\":1,\"width\":41}",
+            "config": {
+              "degree": 5,
+              "depth": 1,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":2,\"depth\":1,\"width\":42}",
+            "config": {
+              "degree": 2,
+              "depth": 1,
+              "width": 42
+            }
+          }
+        ]
+      },
+      "SIREN": {
+        "256": [
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"depth\":1,\"omega\":10.0,\"width\":42}",
+            "config": {
+              "depth": 1,
+              "omega": 10.0,
+              "width": 42
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"depth\":2,\"omega\":30.0,\"width\":13}",
+            "config": {
+              "depth": 2,
+              "omega": 30.0,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"depth\":1,\"omega\":60.0,\"width\":42}",
+            "config": {
+              "depth": 1,
+              "omega": 60.0,
+              "width": 42
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"depth\":2,\"omega\":10.0,\"width\":13}",
+            "config": {
+              "depth": 2,
+              "omega": 10.0,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"depth\":1,\"omega\":30.0,\"width\":42}",
+            "config": {
+              "depth": 1,
+              "omega": 30.0,
+              "width": 42
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"depth\":2,\"omega\":60.0,\"width\":13}",
+            "config": {
+              "depth": 2,
+              "omega": 60.0,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"depth\":1,\"omega\":10.0,\"width\":43}",
+            "config": {
+              "depth": 1,
+              "omega": 10.0,
+              "width": 43
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"depth\":1,\"omega\":60.0,\"width\":43}",
+            "config": {
+              "depth": 1,
+              "omega": 60.0,
+              "width": 43
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"depth\":1,\"omega\":30.0,\"width\":43}",
+            "config": {
+              "depth": 1,
+              "omega": 30.0,
+              "width": 43
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"depth\":1,\"omega\":10.0,\"width\":41}",
+            "config": {
+              "depth": 1,
+              "omega": 10.0,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"depth\":1,\"omega\":60.0,\"width\":41}",
+            "config": {
+              "depth": 1,
+              "omega": 60.0,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"depth\":1,\"omega\":30.0,\"width\":41}",
+            "config": {
+              "depth": 1,
+              "omega": 30.0,
+              "width": 41
+            }
+          }
+        ]
+      }
+    },
+    "microstrip_resonator_group_transfer": {
+      "CFNN": {
+        "256": [
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":1,\"denominator\":\"squared\",\"epsilon\":0.03,\"shared_projection\":false,\"skip\":true,\"units\":10}",
+            "config": {
+              "degree": 1,
+              "denominator": "squared",
+              "epsilon": 0.03,
+              "shared_projection": false,
+              "skip": true,
+              "units": 10
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":2,\"denominator\":\"squared\",\"epsilon\":0.1,\"shared_projection\":false,\"skip\":true,\"units\":9}",
+            "config": {
+              "degree": 2,
+              "denominator": "squared",
+              "epsilon": 0.1,
+              "shared_projection": false,
+              "skip": true,
+              "units": 9
+            }
+          },
+          {
+            "actual_parameters": 264,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":3,\"denominator\":\"squared\",\"epsilon\":0.3,\"shared_projection\":false,\"skip\":true,\"units\":8}",
+            "config": {
+              "degree": 3,
+              "denominator": "squared",
+              "epsilon": 0.3,
+              "shared_projection": false,
+              "skip": true,
+              "units": 8
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":4,\"denominator\":\"squared\",\"epsilon\":0.03,\"shared_projection\":false,\"skip\":true,\"units\":7}",
+            "config": {
+              "degree": 4,
+              "denominator": "squared",
+              "epsilon": 0.03,
+              "shared_projection": false,
+              "skip": true,
+              "units": 7
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":5,\"denominator\":\"squared\",\"epsilon\":0.1,\"shared_projection\":false,\"skip\":true,\"units\":6}",
+            "config": {
+              "degree": 5,
+              "denominator": "squared",
+              "epsilon": 0.1,
+              "shared_projection": false,
+              "skip": true,
+              "units": 6
+            }
+          },
+          {
+            "actual_parameters": 268,
+            "budget_relative_error": 0.046875,
+            "candidate_key": "{\"degree\":8,\"denominator\":\"squared\",\"epsilon\":0.3,\"shared_projection\":false,\"skip\":true,\"units\":5}",
+            "config": {
+              "degree": 8,
+              "denominator": "squared",
+              "epsilon": 0.3,
+              "shared_projection": false,
+              "skip": true,
+              "units": 5
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":1,\"denominator\":\"squared\",\"epsilon\":0.1,\"shared_projection\":false,\"skip\":true,\"units\":10}",
+            "config": {
+              "degree": 1,
+              "denominator": "squared",
+              "epsilon": 0.1,
+              "shared_projection": false,
+              "skip": true,
+              "units": 10
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":2,\"denominator\":\"squared\",\"epsilon\":0.03,\"shared_projection\":false,\"skip\":true,\"units\":9}",
+            "config": {
+              "degree": 2,
+              "denominator": "squared",
+              "epsilon": 0.03,
+              "shared_projection": false,
+              "skip": true,
+              "units": 9
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":4,\"denominator\":\"squared\",\"epsilon\":0.3,\"shared_projection\":false,\"skip\":true,\"units\":7}",
+            "config": {
+              "degree": 4,
+              "denominator": "squared",
+              "epsilon": 0.3,
+              "shared_projection": false,
+              "skip": true,
+              "units": 7
+            }
+          },
+          {
+            "actual_parameters": 264,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":3,\"denominator\":\"squared\",\"epsilon\":0.03,\"shared_projection\":false,\"skip\":true,\"units\":8}",
+            "config": {
+              "degree": 3,
+              "denominator": "squared",
+              "epsilon": 0.03,
+              "shared_projection": false,
+              "skip": true,
+              "units": 8
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":5,\"denominator\":\"squared\",\"epsilon\":0.3,\"shared_projection\":false,\"skip\":true,\"units\":6}",
+            "config": {
+              "degree": 5,
+              "denominator": "squared",
+              "epsilon": 0.3,
+              "shared_projection": false,
+              "skip": true,
+              "units": 6
+            }
+          },
+          {
+            "actual_parameters": 268,
+            "budget_relative_error": 0.046875,
+            "candidate_key": "{\"degree\":8,\"denominator\":\"squared\",\"epsilon\":0.1,\"shared_projection\":false,\"skip\":true,\"units\":5}",
+            "config": {
+              "degree": 8,
+              "denominator": "squared",
+              "epsilon": 0.1,
+              "shared_projection": false,
+              "skip": true,
+              "units": 5
+            }
+          }
+        ]
+      },
+      "Fourier-feature MLP": {
+        "256": [
+          {
+            "actual_parameters": 247,
+            "budget_relative_error": 0.03515625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":16,\"scale\":2.0,\"width\":7}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 16,
+              "scale": 2.0,
+              "width": 7
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":4,\"scale\":4.0,\"width\":11}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 4,
+              "scale": 4.0,
+              "width": 11
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":2,\"scale\":8.0,\"width\":36}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 2,
+              "scale": 8.0,
+              "width": 36
+            }
+          },
+          {
+            "actual_parameters": 263,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":8,\"scale\":2.0,\"width\":9}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 8,
+              "scale": 2.0,
+              "width": 9
+            }
+          },
+          {
+            "actual_parameters": 264,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":64,\"scale\":4.0,\"width\":2}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 64,
+              "scale": 4.0,
+              "width": 2
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":16,\"scale\":8.0,\"width\":6}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 16,
+              "scale": 8.0,
+              "width": 6
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":2,\"scale\":2.0,\"width\":36}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 2,
+              "scale": 2.0,
+              "width": 36
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":4,\"scale\":8.0,\"width\":11}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 4,
+              "scale": 8.0,
+              "width": 11
+            }
+          },
+          {
+            "actual_parameters": 249,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":8,\"scale\":4.0,\"width\":13}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 8,
+              "scale": 4.0,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 264,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":64,\"scale\":2.0,\"width\":2}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 64,
+              "scale": 2.0,
+              "width": 2
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":16,\"scale\":4.0,\"width\":6}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 16,
+              "scale": 4.0,
+              "width": 6
+            }
+          },
+          {
+            "actual_parameters": 263,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":8,\"scale\":8.0,\"width\":9}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 8,
+              "scale": 8.0,
+              "width": 9
+            }
+          }
+        ]
+      },
+      "Gaussian RBF": {
+        "256": [
+          {
+            "actual_parameters": 257,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"basis\":42}",
+            "config": {
+              "basis": 42
+            }
+          },
+          {
+            "actual_parameters": 251,
+            "budget_relative_error": 0.01953125,
+            "candidate_key": "{\"basis\":41}",
+            "config": {
+              "basis": 41
+            }
+          },
+          {
+            "actual_parameters": 263,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"basis\":43}",
+            "config": {
+              "basis": 43
+            }
+          },
+          {
+            "actual_parameters": 245,
+            "budget_relative_error": 0.04296875,
+            "candidate_key": "{\"basis\":40}",
+            "config": {
+              "basis": 40
+            }
+          }
+        ]
+      },
+      "KAN": {
+        "256": [
+          {
+            "actual_parameters": 250,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"grid\":2,\"k\":2,\"width\":5}",
+            "config": {
+              "grid": 2,
+              "k": 2,
+              "width": 5
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"grid\":3,\"k\":4,\"width\":4}",
+            "config": {
+              "grid": 3,
+              "k": 4,
+              "width": 4
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"grid\":4,\"k\":3,\"width\":4}",
+            "config": {
+              "grid": 4,
+              "k": 3,
+              "width": 4
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"grid\":6,\"k\":5,\"width\":3}",
+            "config": {
+              "grid": 6,
+              "k": 5,
+              "width": 3
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"grid\":5,\"k\":2,\"width\":4}",
+            "config": {
+              "grid": 5,
+              "k": 2,
+              "width": 4
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"grid\":7,\"k\":4,\"width\":3}",
+            "config": {
+              "grid": 7,
+              "k": 4,
+              "width": 3
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"grid\":8,\"k\":3,\"width\":3}",
+            "config": {
+              "grid": 8,
+              "k": 3,
+              "width": 3
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"grid\":9,\"k\":2,\"width\":3}",
+            "config": {
+              "grid": 9,
+              "k": 2,
+              "width": 3
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"grid\":2,\"k\":5,\"width\":4}",
+            "config": {
+              "grid": 2,
+              "k": 5,
+              "width": 4
+            }
+          }
+        ]
+      },
+      "Local nested CF control": {
+        "256": [
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":1,\"depth\":19}",
+            "config": {
+              "degree": 1,
+              "depth": 19
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":2,\"depth\":17}",
+            "config": {
+              "degree": 2,
+              "depth": 17
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":3,\"depth\":15}",
+            "config": {
+              "degree": 3,
+              "depth": 15
+            }
+          },
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":4,\"depth\":13}",
+            "config": {
+              "degree": 4,
+              "depth": 13
+            }
+          },
+          {
+            "actual_parameters": 251,
+            "budget_relative_error": 0.01953125,
+            "candidate_key": "{\"degree\":5,\"depth\":12}",
+            "config": {
+              "degree": 5,
+              "depth": 12
+            }
+          },
+          {
+            "actual_parameters": 259,
+            "budget_relative_error": 0.01171875,
+            "candidate_key": "{\"degree\":1,\"depth\":20}",
+            "config": {
+              "degree": 1,
+              "depth": 20
+            }
+          },
+          {
+            "actual_parameters": 265,
+            "budget_relative_error": 0.03515625,
+            "candidate_key": "{\"degree\":4,\"depth\":14}",
+            "config": {
+              "degree": 4,
+              "depth": 14
+            }
+          }
+        ]
+      },
+      "MLP": {
+        "256": [
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"width\":42}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "width": 42
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":2,\"width\":13}",
+            "config": {
+              "activation": "tanh",
+              "depth": 2,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"width\":13}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":1,\"width\":42}",
+            "config": {
+              "activation": "tanh",
+              "depth": 1,
+              "width": 42
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"width\":43}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "width": 43
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":1,\"width\":43}",
+            "config": {
+              "activation": "tanh",
+              "depth": 1,
+              "width": 43
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"width\":41}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":1,\"width\":41}",
+            "config": {
+              "activation": "tanh",
+              "depth": 1,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 266,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"width\":44}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "width": 44
+            }
+          },
+          {
+            "actual_parameters": 266,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":1,\"width\":44}",
+            "config": {
+              "activation": "tanh",
+              "depth": 1,
+              "width": 44
+            }
+          }
+        ]
+      },
+      "Rational activation NN": {
+        "256": [
+          {
+            "actual_parameters": 258,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":1,\"depth\":1,\"width\":42}",
+            "config": {
+              "degree": 1,
+              "depth": 1,
+              "width": 42
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":2,\"depth\":3,\"width\":9}",
+            "config": {
+              "degree": 2,
+              "depth": 3,
+              "width": 9
+            }
+          },
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":3,\"depth\":2,\"width\":12}",
+            "config": {
+              "degree": 3,
+              "depth": 2,
+              "width": 12
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":5,\"depth\":1,\"width\":40}",
+            "config": {
+              "degree": 5,
+              "depth": 1,
+              "width": 40
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"degree\":1,\"depth\":3,\"width\":9}",
+            "config": {
+              "degree": 1,
+              "depth": 3,
+              "width": 9
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":5,\"depth\":2,\"width\":12}",
+            "config": {
+              "degree": 5,
+              "depth": 2,
+              "width": 12
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":2,\"depth\":1,\"width\":41}",
+            "config": {
+              "degree": 2,
+              "depth": 1,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":3,\"depth\":3,\"width\":9}",
+            "config": {
+              "degree": 3,
+              "depth": 3,
+              "width": 9
+            }
+          },
+          {
+            "actual_parameters": 256,
+            "budget_relative_error": 0.0,
+            "candidate_key": "{\"degree\":3,\"depth\":1,\"width\":41}",
+            "config": {
+              "degree": 3,
+              "depth": 1,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 252,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":1,\"depth\":1,\"width\":41}",
+            "config": {
+              "degree": 1,
+              "depth": 1,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":5,\"depth\":1,\"width\":41}",
+            "config": {
+              "degree": 5,
+              "depth": 1,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":2,\"depth\":1,\"width\":42}",
+            "config": {
+              "degree": 2,
+              "depth": 1,
+              "width": 42
+            }
+          }
+        ]
+      },
+      "SIREN": {
+        "256": [
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"depth\":1,\"omega\":10.0,\"width\":42}",
+            "config": {
+              "depth": 1,
+              "omega": 10.0,
+              "width": 42
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"depth\":2,\"omega\":30.0,\"width\":13}",
+            "config": {
+              "depth": 2,
+              "omega": 30.0,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"depth\":1,\"omega\":60.0,\"width\":42}",
+            "config": {
+              "depth": 1,
+              "omega": 60.0,
+              "width": 42
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"depth\":2,\"omega\":10.0,\"width\":13}",
+            "config": {
+              "depth": 2,
+              "omega": 10.0,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"depth\":1,\"omega\":30.0,\"width\":42}",
+            "config": {
+              "depth": 1,
+              "omega": 30.0,
+              "width": 42
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"depth\":2,\"omega\":60.0,\"width\":13}",
+            "config": {
+              "depth": 2,
+              "omega": 60.0,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"depth\":1,\"omega\":10.0,\"width\":43}",
+            "config": {
+              "depth": 1,
+              "omega": 10.0,
+              "width": 43
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"depth\":1,\"omega\":60.0,\"width\":43}",
+            "config": {
+              "depth": 1,
+              "omega": 60.0,
+              "width": 43
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"depth\":1,\"omega\":30.0,\"width\":43}",
+            "config": {
+              "depth": 1,
+              "omega": 30.0,
+              "width": 43
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"depth\":1,\"omega\":10.0,\"width\":41}",
+            "config": {
+              "depth": 1,
+              "omega": 10.0,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"depth\":1,\"omega\":60.0,\"width\":41}",
+            "config": {
+              "depth": 1,
+              "omega": 60.0,
+              "width": 41
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"depth\":1,\"omega\":30.0,\"width\":41}",
+            "config": {
+              "depth": 1,
+              "omega": 30.0,
+              "width": 41
+            }
+          }
+        ]
+      }
+    },
+    "microwave_fano_group_transfer": {
+      "CFNN": {
+        "256": [
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":1,\"denominator\":\"squared\",\"epsilon\":0.03,\"shared_projection\":false,\"skip\":true,\"units\":12}",
+            "config": {
+              "degree": 1,
+              "denominator": "squared",
+              "epsilon": 0.03,
+              "shared_projection": false,
+              "skip": true,
+              "units": 12
+            }
+          },
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":2,\"denominator\":\"squared\",\"epsilon\":0.1,\"shared_projection\":false,\"skip\":true,\"units\":10}",
+            "config": {
+              "degree": 2,
+              "denominator": "squared",
+              "epsilon": 0.1,
+              "shared_projection": false,
+              "skip": true,
+              "units": 10
+            }
+          },
+          {
+            "actual_parameters": 258,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":3,\"denominator\":\"squared\",\"epsilon\":0.3,\"shared_projection\":false,\"skip\":true,\"units\":9}",
+            "config": {
+              "degree": 3,
+              "denominator": "squared",
+              "epsilon": 0.3,
+              "shared_projection": false,
+              "skip": true,
+              "units": 9
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"degree\":4,\"denominator\":\"squared\",\"epsilon\":0.03,\"shared_projection\":false,\"skip\":true,\"units\":8}",
+            "config": {
+              "degree": 4,
+              "denominator": "squared",
+              "epsilon": 0.03,
+              "shared_projection": false,
+              "skip": true,
+              "units": 8
+            }
+          },
+          {
+            "actual_parameters": 258,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":5,\"denominator\":\"squared\",\"epsilon\":0.1,\"shared_projection\":false,\"skip\":true,\"units\":7}",
+            "config": {
+              "degree": 5,
+              "denominator": "squared",
+              "epsilon": 0.1,
+              "shared_projection": false,
+              "skip": true,
+              "units": 7
+            }
+          },
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":8,\"denominator\":\"squared\",\"epsilon\":0.3,\"shared_projection\":false,\"skip\":true,\"units\":5}",
+            "config": {
+              "degree": 8,
+              "denominator": "squared",
+              "epsilon": 0.3,
+              "shared_projection": false,
+              "skip": true,
+              "units": 5
+            }
+          },
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":1,\"denominator\":\"squared\",\"epsilon\":0.1,\"shared_projection\":false,\"skip\":true,\"units\":12}",
+            "config": {
+              "degree": 1,
+              "denominator": "squared",
+              "epsilon": 0.1,
+              "shared_projection": false,
+              "skip": true,
+              "units": 12
+            }
+          },
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":2,\"denominator\":\"squared\",\"epsilon\":0.03,\"shared_projection\":false,\"skip\":true,\"units\":10}",
+            "config": {
+              "degree": 2,
+              "denominator": "squared",
+              "epsilon": 0.03,
+              "shared_projection": false,
+              "skip": true,
+              "units": 10
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"degree\":4,\"denominator\":\"squared\",\"epsilon\":0.3,\"shared_projection\":false,\"skip\":true,\"units\":8}",
+            "config": {
+              "degree": 4,
+              "denominator": "squared",
+              "epsilon": 0.3,
+              "shared_projection": false,
+              "skip": true,
+              "units": 8
+            }
+          },
+          {
+            "actual_parameters": 258,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":3,\"denominator\":\"squared\",\"epsilon\":0.03,\"shared_projection\":false,\"skip\":true,\"units\":9}",
+            "config": {
+              "degree": 3,
+              "denominator": "squared",
+              "epsilon": 0.03,
+              "shared_projection": false,
+              "skip": true,
+              "units": 9
+            }
+          },
+          {
+            "actual_parameters": 258,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":5,\"denominator\":\"squared\",\"epsilon\":0.3,\"shared_projection\":false,\"skip\":true,\"units\":7}",
+            "config": {
+              "degree": 5,
+              "denominator": "squared",
+              "epsilon": 0.3,
+              "shared_projection": false,
+              "skip": true,
+              "units": 7
+            }
+          },
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":8,\"denominator\":\"squared\",\"epsilon\":0.1,\"shared_projection\":false,\"skip\":true,\"units\":5}",
+            "config": {
+              "degree": 8,
+              "denominator": "squared",
+              "epsilon": 0.1,
+              "shared_projection": false,
+              "skip": true,
+              "units": 5
+            }
+          }
+        ]
+      },
+      "Fourier-feature MLP": {
+        "256": [
+          {
+            "actual_parameters": 247,
+            "budget_relative_error": 0.03515625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":16,\"scale\":2.0,\"width\":7}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 16,
+              "scale": 2.0,
+              "width": 7
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":4,\"scale\":4.0,\"width\":11}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 4,
+              "scale": 4.0,
+              "width": 11
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":2,\"scale\":8.0,\"width\":36}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 2,
+              "scale": 8.0,
+              "width": 36
+            }
+          },
+          {
+            "actual_parameters": 263,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":8,\"scale\":2.0,\"width\":9}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 8,
+              "scale": 2.0,
+              "width": 9
+            }
+          },
+          {
+            "actual_parameters": 264,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":64,\"scale\":4.0,\"width\":2}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 64,
+              "scale": 4.0,
+              "width": 2
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":16,\"scale\":8.0,\"width\":6}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 16,
+              "scale": 8.0,
+              "width": 6
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":2,\"scale\":2.0,\"width\":36}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 2,
+              "scale": 2.0,
+              "width": 36
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":4,\"scale\":8.0,\"width\":11}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 4,
+              "scale": 8.0,
+              "width": 11
+            }
+          },
+          {
+            "actual_parameters": 249,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":8,\"scale\":4.0,\"width\":13}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 8,
+              "scale": 4.0,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 264,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"frequencies\":64,\"scale\":2.0,\"width\":2}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "frequencies": 64,
+              "scale": 2.0,
+              "width": 2
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":16,\"scale\":4.0,\"width\":6}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 16,
+              "scale": 4.0,
+              "width": 6
+            }
+          },
+          {
+            "actual_parameters": 263,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"frequencies\":8,\"scale\":8.0,\"width\":9}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "frequencies": 8,
+              "scale": 8.0,
+              "width": 9
+            }
+          }
+        ]
+      },
+      "Gaussian RBF": {
+        "256": [
+          {
+            "actual_parameters": 256,
+            "budget_relative_error": 0.0,
+            "candidate_key": "{\"basis\":63}",
+            "config": {
+              "basis": 63
+            }
+          },
+          {
+            "actual_parameters": 252,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"basis\":62}",
+            "config": {
+              "basis": 62
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"basis\":64}",
+            "config": {
+              "basis": 64
+            }
+          },
+          {
+            "actual_parameters": 248,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"basis\":61}",
+            "config": {
+              "basis": 61
+            }
+          },
+          {
+            "actual_parameters": 264,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"basis\":65}",
+            "config": {
+              "basis": 65
+            }
+          },
+          {
+            "actual_parameters": 244,
+            "budget_relative_error": 0.046875,
+            "candidate_key": "{\"basis\":60}",
+            "config": {
+              "basis": 60
+            }
+          },
+          {
+            "actual_parameters": 268,
+            "budget_relative_error": 0.046875,
+            "candidate_key": "{\"basis\":66}",
+            "config": {
+              "basis": 66
+            }
+          }
+        ]
+      },
+      "KAN": {
+        "256": [
+          {
+            "actual_parameters": 252,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"grid\":10,\"k\":5,\"width\":3}",
+            "config": {
+              "grid": 10,
+              "k": 5,
+              "width": 3
+            }
+          },
+          {
+            "actual_parameters": 264,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"grid\":2,\"k\":3,\"width\":6}",
+            "config": {
+              "grid": 2,
+              "k": 3,
+              "width": 6
+            }
+          },
+          {
+            "actual_parameters": 264,
+            "budget_relative_error": 0.03125,
+            "candidate_key": "{\"grid\":3,\"k\":2,\"width\":6}",
+            "config": {
+              "grid": 3,
+              "k": 2,
+              "width": 6
+            }
+          },
+          {
+            "actual_parameters": 256,
+            "budget_relative_error": 0.0,
+            "candidate_key": "{\"grid\":6,\"k\":4,\"width\":4}",
+            "config": {
+              "grid": 6,
+              "k": 4,
+              "width": 4
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"grid\":4,\"k\":3,\"width\":5}",
+            "config": {
+              "grid": 4,
+              "k": 3,
+              "width": 5
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"grid\":5,\"k\":2,\"width\":5}",
+            "config": {
+              "grid": 5,
+              "k": 2,
+              "width": 5
+            }
+          },
+          {
+            "actual_parameters": 256,
+            "budget_relative_error": 0.0,
+            "candidate_key": "{\"grid\":7,\"k\":3,\"width\":4}",
+            "config": {
+              "grid": 7,
+              "k": 3,
+              "width": 4
+            }
+          },
+          {
+            "actual_parameters": 256,
+            "budget_relative_error": 0.0,
+            "candidate_key": "{\"grid\":8,\"k\":2,\"width\":4}",
+            "config": {
+              "grid": 8,
+              "k": 2,
+              "width": 4
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"grid\":2,\"k\":5,\"width\":5}",
+            "config": {
+              "grid": 2,
+              "k": 5,
+              "width": 5
+            }
+          },
+          {
+            "actual_parameters": 260,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"grid\":3,\"k\":4,\"width\":5}",
+            "config": {
+              "grid": 3,
+              "k": 4,
+              "width": 5
+            }
+          },
+          {
+            "actual_parameters": 256,
+            "budget_relative_error": 0.0,
+            "candidate_key": "{\"grid\":5,\"k\":5,\"width\":4}",
+            "config": {
+              "grid": 5,
+              "k": 5,
+              "width": 4
+            }
+          }
+        ]
+      },
+      "Local nested CF control": {
+        "256": [
+          {
+            "actual_parameters": 252,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"degree\":1,\"depth\":23}",
+            "config": {
+              "degree": 1,
+              "depth": 23
+            }
+          },
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":2,\"depth\":19}",
+            "config": {
+              "degree": 2,
+              "depth": 19
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":3,\"depth\":17}",
+            "config": {
+              "degree": 3,
+              "depth": 17
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":4,\"depth\":15}",
+            "config": {
+              "degree": 4,
+              "depth": 15
+            }
+          },
+          {
+            "actual_parameters": 246,
+            "budget_relative_error": 0.0390625,
+            "candidate_key": "{\"degree\":5,\"depth\":13}",
+            "config": {
+              "degree": 5,
+              "depth": 13
+            }
+          },
+          {
+            "actual_parameters": 249,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"degree\":8,\"depth\":10}",
+            "config": {
+              "degree": 8,
+              "depth": 10
+            }
+          },
+          {
+            "actual_parameters": 263,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"degree\":1,\"depth\":24}",
+            "config": {
+              "degree": 1,
+              "depth": 24
+            }
+          },
+          {
+            "actual_parameters": 259,
+            "budget_relative_error": 0.01171875,
+            "candidate_key": "{\"degree\":2,\"depth\":20}",
+            "config": {
+              "degree": 2,
+              "depth": 20
+            }
+          },
+          {
+            "actual_parameters": 265,
+            "budget_relative_error": 0.03515625,
+            "candidate_key": "{\"degree\":5,\"depth\":14}",
+            "config": {
+              "degree": 5,
+              "depth": 14
+            }
+          }
+        ]
+      },
+      "MLP": {
+        "256": [
+          {
+            "actual_parameters": 257,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"width\":51}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "width": 51
+            }
+          },
+          {
+            "actual_parameters": 249,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":2,\"width\":13}",
+            "config": {
+              "activation": "tanh",
+              "depth": 2,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 249,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"width\":13}",
+            "config": {
+              "activation": "gelu",
+              "depth": 2,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 257,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":1,\"width\":51}",
+            "config": {
+              "activation": "tanh",
+              "depth": 1,
+              "width": 51
+            }
+          },
+          {
+            "actual_parameters": 252,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"width\":50}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "width": 50
+            }
+          },
+          {
+            "actual_parameters": 252,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":1,\"width\":50}",
+            "config": {
+              "activation": "tanh",
+              "depth": 1,
+              "width": 50
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"width\":52}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "width": 52
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":1,\"width\":52}",
+            "config": {
+              "activation": "tanh",
+              "depth": 1,
+              "width": 52
+            }
+          },
+          {
+            "actual_parameters": 247,
+            "budget_relative_error": 0.03515625,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"width\":49}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "width": 49
+            }
+          },
+          {
+            "actual_parameters": 247,
+            "budget_relative_error": 0.03515625,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":1,\"width\":49}",
+            "config": {
+              "activation": "tanh",
+              "depth": 1,
+              "width": 49
+            }
+          },
+          {
+            "actual_parameters": 267,
+            "budget_relative_error": 0.04296875,
+            "candidate_key": "{\"activation\":\"gelu\",\"depth\":1,\"width\":53}",
+            "config": {
+              "activation": "gelu",
+              "depth": 1,
+              "width": 53
+            }
+          },
+          {
+            "actual_parameters": 267,
+            "budget_relative_error": 0.04296875,
+            "candidate_key": "{\"activation\":\"tanh\",\"depth\":1,\"width\":53}",
+            "config": {
+              "activation": "tanh",
+              "depth": 1,
+              "width": 53
+            }
+          }
+        ]
+      },
+      "Rational activation NN": {
+        "256": [
+          {
+            "actual_parameters": 256,
+            "budget_relative_error": 0.0,
+            "candidate_key": "{\"degree\":1,\"depth\":1,\"width\":50}",
+            "config": {
+              "degree": 1,
+              "depth": 1,
+              "width": 50
+            }
+          },
+          {
+            "actual_parameters": 261,
+            "budget_relative_error": 0.01953125,
+            "candidate_key": "{\"degree\":2,\"depth\":2,\"width\":13}",
+            "config": {
+              "degree": 2,
+              "depth": 2,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 251,
+            "budget_relative_error": 0.01953125,
+            "candidate_key": "{\"degree\":3,\"depth\":3,\"width\":9}",
+            "config": {
+              "degree": 3,
+              "depth": 3,
+              "width": 9
+            }
+          },
+          {
+            "actual_parameters": 254,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":5,\"depth\":1,\"width\":48}",
+            "config": {
+              "degree": 5,
+              "depth": 1,
+              "width": 48
+            }
+          },
+          {
+            "actual_parameters": 257,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"degree\":1,\"depth\":2,\"width\":13}",
+            "config": {
+              "degree": 1,
+              "depth": 2,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 245,
+            "budget_relative_error": 0.04296875,
+            "candidate_key": "{\"degree\":2,\"depth\":3,\"width\":9}",
+            "config": {
+              "degree": 2,
+              "depth": 3,
+              "width": 9
+            }
+          },
+          {
+            "actual_parameters": 255,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"degree\":3,\"depth\":1,\"width\":49}",
+            "config": {
+              "degree": 3,
+              "depth": 1,
+              "width": 49
+            }
+          },
+          {
+            "actual_parameters": 263,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"degree\":5,\"depth\":3,\"width\":9}",
+            "config": {
+              "degree": 5,
+              "depth": 3,
+              "width": 9
+            }
+          },
+          {
+            "actual_parameters": 265,
+            "budget_relative_error": 0.03515625,
+            "candidate_key": "{\"degree\":3,\"depth\":2,\"width\":13}",
+            "config": {
+              "degree": 3,
+              "depth": 2,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 258,
+            "budget_relative_error": 0.0078125,
+            "candidate_key": "{\"degree\":2,\"depth\":1,\"width\":50}",
+            "config": {
+              "degree": 2,
+              "depth": 1,
+              "width": 50
+            }
+          },
+          {
+            "actual_parameters": 251,
+            "budget_relative_error": 0.01953125,
+            "candidate_key": "{\"degree\":1,\"depth\":1,\"width\":49}",
+            "config": {
+              "degree": 1,
+              "depth": 1,
+              "width": 49
+            }
+          },
+          {
+            "actual_parameters": 259,
+            "budget_relative_error": 0.01171875,
+            "candidate_key": "{\"degree\":5,\"depth\":1,\"width\":49}",
+            "config": {
+              "degree": 5,
+              "depth": 1,
+              "width": 49
+            }
+          }
+        ]
+      },
+      "SIREN": {
+        "256": [
+          {
+            "actual_parameters": 257,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"depth\":1,\"omega\":10.0,\"width\":51}",
+            "config": {
+              "depth": 1,
+              "omega": 10.0,
+              "width": 51
+            }
+          },
+          {
+            "actual_parameters": 249,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"depth\":2,\"omega\":30.0,\"width\":13}",
+            "config": {
+              "depth": 2,
+              "omega": 30.0,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 257,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"depth\":1,\"omega\":60.0,\"width\":51}",
+            "config": {
+              "depth": 1,
+              "omega": 60.0,
+              "width": 51
+            }
+          },
+          {
+            "actual_parameters": 249,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"depth\":2,\"omega\":10.0,\"width\":13}",
+            "config": {
+              "depth": 2,
+              "omega": 10.0,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 257,
+            "budget_relative_error": 0.00390625,
+            "candidate_key": "{\"depth\":1,\"omega\":30.0,\"width\":51}",
+            "config": {
+              "depth": 1,
+              "omega": 30.0,
+              "width": 51
+            }
+          },
+          {
+            "actual_parameters": 249,
+            "budget_relative_error": 0.02734375,
+            "candidate_key": "{\"depth\":2,\"omega\":60.0,\"width\":13}",
+            "config": {
+              "depth": 2,
+              "omega": 60.0,
+              "width": 13
+            }
+          },
+          {
+            "actual_parameters": 252,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"depth\":1,\"omega\":10.0,\"width\":50}",
+            "config": {
+              "depth": 1,
+              "omega": 10.0,
+              "width": 50
+            }
+          },
+          {
+            "actual_parameters": 252,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"depth\":1,\"omega\":60.0,\"width\":50}",
+            "config": {
+              "depth": 1,
+              "omega": 60.0,
+              "width": 50
+            }
+          },
+          {
+            "actual_parameters": 252,
+            "budget_relative_error": 0.015625,
+            "candidate_key": "{\"depth\":1,\"omega\":30.0,\"width\":50}",
+            "config": {
+              "depth": 1,
+              "omega": 30.0,
+              "width": 50
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"depth\":1,\"omega\":10.0,\"width\":52}",
+            "config": {
+              "depth": 1,
+              "omega": 10.0,
+              "width": 52
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"depth\":1,\"omega\":60.0,\"width\":52}",
+            "config": {
+              "depth": 1,
+              "omega": 60.0,
+              "width": 52
+            }
+          },
+          {
+            "actual_parameters": 262,
+            "budget_relative_error": 0.0234375,
+            "candidate_key": "{\"depth\":1,\"omega\":30.0,\"width\":52}",
+            "config": {
+              "depth": 1,
+              "omega": 30.0,
+              "width": 52
+            }
+          }
+        ]
+      }
+    }
+  }
+}

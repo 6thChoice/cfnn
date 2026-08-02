@@ -1,0 +1,462 @@
+{
+  "files": [
+    {
+      "path": "microwave_fano/Fano Interference Data and Code.zip",
+      "provider_checksum": "md5:4cf7087378cb0424feaa1054269ffd2b",
+      "sha256": "34b9dfa440ca911a6b5cbc9e44fc5f6b35535df2489ca831b1bc4fef71d5e695",
+      "size": 9204518,
+      "source": "microwave_fano",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7767046/files/Fano%20Interference%20Data%20and%20Code.zip/content"
+    },
+    {
+      "path": "microstrip_resonator/Dataset.zip",
+      "provider_checksum": "md5:945305769bac4b49014f6448851b1464",
+      "sha256": "b5180c0293063d49eedfa3aaa91ed2ed94acd9865b20d0834d38570944c70d23",
+      "size": 388348107,
+      "source": "microstrip_resonator",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/14175959/files/Dataset.zip/content"
+    },
+    {
+      "path": "microstrip_resonator/README.txt",
+      "provider_checksum": "md5:9b2d458893bc105c2634c6690a30929e",
+      "sha256": "2ae5257ffeabdc478bb96df5bb2c72fbca67655a20566bbb19637956420f43da",
+      "size": 5485,
+      "source": "microstrip_resonator",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/14175959/files/README.txt/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point21.tdms",
+      "provider_checksum": "md5:c061a9d27d59ee18ae57f9b7f607f1f4",
+      "sha256": "e65dd8e2cc58e406c99a16d494a9f6648c8ac6b31c65495110dc5a4c63b47442",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point21.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point09.tdms",
+      "provider_checksum": "md5:dc9b0700dfd2613c865d89ba6bbf8f80",
+      "sha256": "8e57adef907300718c83cd6f376873726422e66aa4a79cae97b8313dc7be3cf3",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point09.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point06.tdms",
+      "provider_checksum": "md5:0ea2d6777e3ffde0a38f5d8443629812",
+      "sha256": "91626367cbbd5353d2470a656a694464773e37886719a958904f6eb48ef0c24d",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point06.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point12.tdms",
+      "provider_checksum": "md5:b74580140eade01e5d75fff7c4678379",
+      "sha256": "b3d268f0d362584eaa5857454f0d07d9e4584e5b41793d086f21e2ad302fd5de",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point12.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point24.tdms",
+      "provider_checksum": "md5:87636d32ef8a3f8afeffc9a41006aba6",
+      "sha256": "71283edb24b0cde60d29c4392f5f7697e336d9fb9401cf70d55b1fee40c0c231",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point24.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point23.tdms",
+      "provider_checksum": "md5:04508199d31d4a7afc31ea883ea4cf30",
+      "sha256": "de832cf7c84ce9ec587f3bcde9573289f28b40b197eec57ad885b4e29640fd93",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point23.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point22.tdms",
+      "provider_checksum": "md5:71185b3a94534fc87fced8c68577729c",
+      "sha256": "7eb2ee73265641169bc5a5134f733686d0e16c7ee21a0d37ec33c51751a045dc",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point22.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/plate_model.py",
+      "provider_checksum": "md5:01a8aea7a9b8334c285901adfccb8563",
+      "sha256": "eae11ddfdb9feb89f480810b74b010e29786289a79c00957eab099a8d5cf8a60",
+      "size": 3517,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/plate_model.py/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point04.tdms",
+      "provider_checksum": "md5:55d57621ac98ef204a4098d29d6ae079",
+      "sha256": "5aa24e0d4389e8952bafd21886fdb30fc764a13747b3e682e3983317b874660d",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point04.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point05.tdms",
+      "provider_checksum": "md5:33a69d8dcf308374f1f3f891e9b318b3",
+      "sha256": "c9083e3f81ca527ba339b6adeab562e19626558e4a620e930b96bfb250d526e4",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point05.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point01.tdms",
+      "provider_checksum": "md5:2b840186d1b63100c527be63f71d2550",
+      "sha256": "3f68c6b6602908e933016c982ef5023d88f3d3ce13ca6364e3a1fc8625b82b7a",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point01.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point10.tdms",
+      "provider_checksum": "md5:5537bd7df838c0978f292ef0f336825a",
+      "sha256": "8cac77b0260e3e7bcb236dfd3df0b93df9a4cc73371a62b76632509dc956e909",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point10.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point20.tdms",
+      "provider_checksum": "md5:00103b225ae8c094ff30e2a289eaa0a1",
+      "sha256": "09a619d3ee665ab3f9ed6f0c25efcebef97a2b774605574b25040b7732ed5e92",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point20.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point16.tdms",
+      "provider_checksum": "md5:f500e55b84db63401bee66f1043d93ed",
+      "sha256": "b30e5d5b76e0645aaadf337899133a4053410bc0a561343981c78fe2e7fa40ed",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point16.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point03.tdms",
+      "provider_checksum": "md5:0e6ec23c4d81e94f80acc0aa83ac6154",
+      "sha256": "98dfa703a14e89a305c68b0a8c92d77dd35572ac6a3de0954484d57a17c3b813",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point03.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point15.tdms",
+      "provider_checksum": "md5:b923558b325f80064804bddac4e509de",
+      "sha256": "ba7fd269408a794255a56c00c5070226edcaeae6c51db1cda8d7ed3cda7f5029",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point15.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point17.tdms",
+      "provider_checksum": "md5:2921283486e9638f590d7d73c579ac40",
+      "sha256": "f8c51c39c3afa2d481d3c69553f9ee0176cb341f664549f12d27beca50fbf704",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point17.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point19.tdms",
+      "provider_checksum": "md5:004509abcaf32d084bdb4ebd87ed8e21",
+      "sha256": "708017796258e96506577150dbe9dcc021a8a41a562d9ecf44e394bdf2b680b0",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point19.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point07.tdms",
+      "provider_checksum": "md5:a2b420a49227b3f9dce6012da7d177ec",
+      "sha256": "6e0166a35a2777c7af10f47bd2d3f2d25cea3dac6b85664235ff95823c93ec4a",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point07.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point08.tdms",
+      "provider_checksum": "md5:6255c5acaba0d794d1177598aaa4b05c",
+      "sha256": "4669311ea30ea6ce596cbf3fcfae50f349aaae6a9ad96faf22f8a22b60054710",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point08.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point11.tdms",
+      "provider_checksum": "md5:31ee117e43dec5c8c14b25dcbe653bcd",
+      "sha256": "01c5807f4921d40842b400771fcccaabdceee67f252d538bfa5507888ced647c",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point11.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point18.tdms",
+      "provider_checksum": "md5:a6051e84f8486d1b3c5973bc002ac94d",
+      "sha256": "c9f1f59544ae97c4961a60af00584ff3f3cccfbb28336a8be1a8171e8b06d70f",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point18.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point13.tdms",
+      "provider_checksum": "md5:b6d90389a13a6935915a2834f3ee0bc5",
+      "sha256": "929994bbe35217604e40e37333707bac8a539dc60e7b0fe75709636dbf367f58",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point13.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point14.tdms",
+      "provider_checksum": "md5:70e230bbea3727339f409966353f08d6",
+      "sha256": "2ef128d777195c025294dba01e337fd5a5d68b93314feb04338a98f8df544302",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point14.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point25.tdms",
+      "provider_checksum": "md5:6d508f0253732d53e680478e5cd9f731",
+      "sha256": "c96e41e9fa1140e4d7f097371182a3e5beec3e5120b63607be3e0517b7f7f8f7",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point25.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/Waveforms Point02.tdms",
+      "provider_checksum": "md5:cd4ee86eb05d3a745ad80bb1e2aa6aea",
+      "sha256": "16f3bd936ee6657dc013ad513f6ad3ca300e860e2e8c3e67ea3321ee61b7d6ee",
+      "size": 526053,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/Waveforms%20Point02.tdms/content"
+    },
+    {
+      "path": "aluminium_frf/plate_model.jpg",
+      "provider_checksum": "md5:08405919a7baba9cfd29760554626450",
+      "sha256": "4ce4ab49edadc8cf3c589a53a1adf942d0af3eec5eec2754e7ed8624eb73df01",
+      "size": 642928,
+      "source": "aluminium_frf",
+      "status": "verified",
+      "url": "https://zenodo.org/api/records/7758683/files/plate_model.jpg/content"
+    },
+    {
+      "path": "hybrid_supercapacitor_eis/Impedance @20\u00b0C varying SOC.jpg",
+      "provider_checksum": "cd9fd78d850f03646ccb2a3a0e4280cf",
+      "sha256": "790c5b31bfa6d7f04de2ac25148f1e8b526e1b8e7449b34fc53bba08e0c39c7d",
+      "size": 197574,
+      "source": "hybrid_supercapacitor_eis",
+      "status": "verified",
+      "url": "https://ndownloader.figshare.com/files/43065697"
+    },
+    {
+      "path": "hybrid_supercapacitor_eis/Dataset Info & Structure.pdf",
+      "provider_checksum": "2f46801e23211d9bf485f7eb54c9f614",
+      "sha256": "1813fd352a0281c2c29950aaaf5b9776684ff4715daf1ef07b308c62cd145cc0",
+      "size": 398979,
+      "source": "hybrid_supercapacitor_eis",
+      "status": "verified",
+      "url": "https://ndownloader.figshare.com/files/43832454"
+    },
+    {
+      "path": "hybrid_supercapacitor_eis/Supercap_EIS.mat",
+      "provider_checksum": "08f50c641f6c649dc08632e56074dfca",
+      "sha256": "beefce3e48d377a9b95b11522458da843ac6786084106099e85fc13c0fb899ed",
+      "size": 136131,
+      "source": "hybrid_supercapacitor_eis",
+      "status": "verified",
+      "url": "https://ndownloader.figshare.com/files/42715237"
+    },
+    {
+      "path": "hybrid_supercapacitor_eis/2024 TIM - Experimental_Characterization_of_Hybrid_Supercapacitor_Under_Different_Operating_Conditions_Using_EIS_Measurements.pdf",
+      "provider_checksum": "3a402a4952ae542e75b326b182d20470",
+      "sha256": "0055d11b692b0983d51c0fcbb79b7d3e5777c37a00f38147f193c05a4abcb2f8",
+      "size": 3133370,
+      "source": "hybrid_supercapacitor_eis",
+      "status": "verified",
+      "url": "https://ndownloader.figshare.com/files/43832457"
+    },
+    {
+      "path": "energy/energy_efficiency.zip",
+      "provider_checksum": null,
+      "sha256": "499441eee27929a4b00417f58fd8c63c9cc14b8a71520cd0dd27fcb626738351",
+      "size": 76321,
+      "source": "energy",
+      "status": "verified",
+      "url": "https://archive.ics.uci.edu/static/public/242/energy+efficiency.zip"
+    },
+    {
+      "path": "credit/default_of_credit_card_clients.zip",
+      "provider_checksum": null,
+      "sha256": "56c885f84457f6680f8438f02bfcdac9579323d8a94465ee5f26e32baa727602",
+      "size": 5539494,
+      "source": "credit",
+      "status": "verified",
+      "url": "https://archive.ics.uci.edu/static/public/350/default+of+credit+card+clients.zip"
+    },
+    {
+      "path": "airfoil/airfoil_self_noise.zip",
+      "provider_checksum": null,
+      "sha256": "5c7767ba53ad827d3f48ba1eb9434117f4892df8f10bc4c99e118a9e8a7ae07c",
+      "size": 60126,
+      "source": "airfoil",
+      "status": "verified",
+      "url": "https://archive.ics.uci.edu/static/public/291/airfoil+self+noise.zip"
+    },
+    {
+      "path": "appliances/appliances_energy_prediction.zip",
+      "provider_checksum": null,
+      "sha256": "2fccf354445d886e7917620b0195db1f3e3e34d5a067a93b844694a4c561255a",
+      "size": 11979507,
+      "source": "appliances",
+      "status": "verified",
+      "url": "https://archive.ics.uci.edu/static/public/374/appliances+energy+prediction.zip"
+    }
+  ],
+  "generated_at": "2026-07-17T09:27:52.529396+00:00",
+  "metadata_only": false,
+  "schema_version": "1.0.0",
+  "source_config": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_sources.json",
+  "source_config_sha256": "6a768a0cd987d73c39cacdcbbe2dcc1fa1488c39ea850014b4ac9b3cb95ff34c",
+  "sources": [
+    {
+      "creators": [
+        "Dennis Rieger",
+        "Simon G\u00fcnzler",
+        "Martin Spiecker",
+        "Ameya Nambisan",
+        "Wolfgang Wernsdorfer",
+        "Ioan M. Pop"
+      ],
+      "doi": "10.5281/zenodo.7767046",
+      "file_count": 1,
+      "license": "cc-by-4.0",
+      "name": "microwave_fano",
+      "provider": "zenodo",
+      "record_id": 7767046,
+      "role": "fixed_measured",
+      "title": "Fano Interference in Microwave Resonator Measurements",
+      "updated": "2023-03-24T14:26:38.003985+00:00",
+      "url": "https://zenodo.org/api/records/7767046"
+    },
+    {
+      "creators": [
+        "Bourely, James",
+        "Kim, Jeamin",
+        "Beyer, Christian",
+        "Vorobyov, Oleksandr",
+        "Aeby, Xavier",
+        "Nystr\u00f6m, Gustav",
+        "Danick, Briand"
+      ],
+      "doi": "10.5281/zenodo.14175959",
+      "file_count": 2,
+      "license": "cc-by-4.0",
+      "name": "microstrip_resonator",
+      "provider": "zenodo",
+      "record_id": 14175959,
+      "role": "fixed_measured",
+      "title": "Dataset for \"Degradable and Printed Microstrip Line for Chipless Temperature and Humidity Sensing\"",
+      "updated": "2024-11-17T16:38:08.134000+00:00",
+      "url": "https://zenodo.org/api/records/14175959"
+    },
+    {
+      "creators": [
+        "Saullo G. P. Castro"
+      ],
+      "doi": "10.5281/zenodo.7758683",
+      "file_count": 27,
+      "license": "cc-by-4.0",
+      "name": "aluminium_frf",
+      "provider": "zenodo",
+      "record_id": 7758683,
+      "role": "fixed_measured",
+      "title": "Impact hammer test of an Aluminium 6082 T6 plate, 260 x 246 x 1.5 mm, free boundary conditions",
+      "updated": "2024-07-12T11:00:52.863120+00:00",
+      "url": "https://zenodo.org/api/records/7758683"
+    },
+    {
+      "api_url": "https://api.figshare.com/v2/articles/24321496/versions/4",
+      "article_id": 24321496,
+      "authors": [
+        "Gabriele Patrizi"
+      ],
+      "file_count": 4,
+      "license": "CC BY 4.0",
+      "modified_date": "2023-12-27T09:20:16Z",
+      "name": "hybrid_supercapacitor_eis",
+      "provider": "figshare",
+      "role": "independent_eis_extension",
+      "title": "Electrochemical Impedance Spectroscopy (EIS) measurements of Hybrid Supercapacitor",
+      "url": "https://api.figshare.com/v2/articles/24321496/versions/4",
+      "url_public_html": "https://figshare.com/articles/dataset/Electrochemical_Impedance_Spectroscopy_EIS_measurements_of_Hybrid_Supercapacitor/24321496/4",
+      "version": 4
+    },
+    {
+      "dataset_id": 242,
+      "file_count": 1,
+      "license": "CC BY 4.0",
+      "name": "energy",
+      "provider": "uci",
+      "role": "conventional_candidate",
+      "url": "https://archive.ics.uci.edu/static/public/242/energy+efficiency.zip"
+    },
+    {
+      "dataset_id": 350,
+      "file_count": 1,
+      "license": "CC BY 4.0",
+      "name": "credit",
+      "provider": "uci",
+      "role": "conventional_candidate",
+      "url": "https://archive.ics.uci.edu/static/public/350/default+of+credit+card+clients.zip"
+    },
+    {
+      "dataset_id": 291,
+      "file_count": 1,
+      "license": "CC BY 4.0",
+      "name": "airfoil",
+      "provider": "uci",
+      "role": "conventional_candidate",
+      "url": "https://archive.ics.uci.edu/static/public/291/airfoil+self+noise.zip"
+    },
+    {
+      "dataset_id": 374,
+      "file_count": 1,
+      "license": "CC BY 4.0",
+      "name": "appliances",
+      "provider": "uci",
+      "role": "conventional_candidate",
+      "url": "https://archive.ics.uci.edu/static/public/374/appliances+energy+prediction.zip"
+    }
+  ]
+}

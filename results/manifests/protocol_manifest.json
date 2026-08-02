@@ -1,0 +1,446 @@
+{
+  "code_files": [
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/budget_matching.py",
+      "sha256": "7b4b4bc61c9c2de6814a858764c42fb679d72b879234e8f3495dd70ce98a93fb"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/cofrnet_variants.py",
+      "sha256": "0dcddf866b4909234f456435cdf98c030ce0dd6a71042fa76026e721c216c111"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/confirmatory_artifacts.py",
+      "sha256": "ba3087c44c6621bec6d0a007d6248f9c897c76264f826e6a50c3ed2a67a7853d"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/confirmatory_models.py",
+      "sha256": "94928cce0ef8c3c6477860ef2bc812d2c4c29d5c696c75a53cb7712c98bc5dde"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/confirmatory_protocol.py",
+      "sha256": "9ab5062836fef6bd37c0d7358114355bb0d696e2b172de40e7d21b950ba73ae8"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/confirmatory_training.py",
+      "sha256": "bc9b6985343574883de68a51518b2dbe43a8a2af316bc4064175746ac898ed04"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_benchmark.py",
+      "sha256": "a90c0d6fb493f471980e579b2c16bc909f7f792173a3d600256f918e6924aaca"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_metrics.py",
+      "sha256": "6d922a34bf23e43f8266bd6cf7ffea063716caa6ff5938657659cc3e8dd26632"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_protocol.py",
+      "sha256": "d5f40bd5a19b912ecb9cbbf11776bb9e7b5a10139ba30f1dedc8a6f957a845e9"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_training.py",
+      "sha256": "3ef5e447942eca48c94ebdb67dcf5f1d8a5fbfb510dda8f2add35473e2533ebf"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/fair_baselines.py",
+      "sha256": "0bad17ba867351594c4d7d7128154ad1ec6383d54cd5b75ae2357748093eaf64"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/eis.py",
+      "sha256": "129e5a9f201320ad18e37959b70c5608c293ecc1f334ea8802047052b02ed4bc"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/protocol.py",
+      "sha256": "961e83f1b195499bf25285fa35807c9fe5c65b0840cc0632f675b960236bf123"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/peak_sensitive_benchmark.py",
+      "sha256": "3ab3f63f870e71989c66c091a44e6453b41245a281727afd210871ada9abd448"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/peak_sensitive_config.json",
+      "sha256": "774a1d6d3e67f7c80af6464773cc26908ac61c3fac2fc4dbce586e4cedd0baed"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/peak_sensitive_preflight.py",
+      "sha256": "b170150304d246d692c9b30064e63158a0fab01414754b311f685cd292d0a0d1"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/peak_sensitive_protocol.py",
+      "sha256": "de288b0a0d1f2cc51772cad137a5e9a1c64e006f74400eb2a33d993d8b431279"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/peak_sensitive_result_validation.py",
+      "sha256": "f503eceb7085d4d0f7b68af78071e752054301512e4e85a36e2c2fda42d855fe"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/peak_sensitive_results_schema.json",
+      "sha256": "2391b5b54968913894d900c97fb2ac0994f1904888631699bac11161e7ae203f"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/resonance_windows.py",
+      "sha256": "ee901874b78a7adf063781367361d661c0d546a242b7a45c1956ba9fb2be076c"
+    }
+  ],
+  "command": [
+    "peak_sensitive_benchmark.py",
+    "--config",
+    "peak_sensitive_config.json",
+    "--raw-root",
+    "downstream_data/raw",
+    "--output-root",
+    "peak_sensitive_results",
+    "--stage",
+    "inventory",
+    "--tasks",
+    "controlled_fano,microwave_fano,microstrip_resonator,aluminium_frf,figshare_battery_eis,hybrid_supercapacitor_eis",
+    "--families",
+    "CFNN,MLP,Fourier-feature MLP,Gaussian RBF,KAN,Local nested CF control,Rational activation NN,SIREN",
+    "--budgets",
+    "128,256,512,1024",
+    "--densities",
+    "24,48,96,192"
+  ],
+  "config_sha256": "f56cc6c8dc9700e1e862bd52ef209b1d11655e1378a3eb37ecf9fad545357c91",
+  "git_commit": null,
+  "hardware": {
+    "cuda_version": "12.8",
+    "device": "cuda",
+    "gpu_memory_bytes": 10331226112,
+    "gpu_name": "NVIDIA GeForce RTX 3080"
+  },
+  "input_files": [
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/peak_sensitive_results/provenance/microwave_fano_role_manifest.json",
+      "sha256": "8631c290d9bd1130a43738b80c14dc5a222c5be55de0c172465e1fe797bfc541"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/peak_sensitive_results/provenance/microstrip_resonator_role_manifest.json",
+      "sha256": "872dff312476c018169c0bfacfc0c34ba87b83e45b648e4df62cc0878a4cd79a"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/peak_sensitive_results/provenance/frf_density_manifest.json",
+      "sha256": "753fe64377d6e8be91f0753f8dc8008a16d32f6542a272c2bbb822a11c8e0621"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/peak_sensitive_results/provenance/figshare_battery_eis_role_manifest.json",
+      "sha256": "8bf9f4d06e141cfedcfeccec1b7daa81372793fa61e9759a123723100c009c11"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/peak_sensitive_results/provenance/curve_manifest.json",
+      "sha256": "8c16a32b387f823e92b7826fb5b0481df4c31827e6300587ed13090957a23a38"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point01.tdms",
+      "sha256": "3f68c6b6602908e933016c982ef5023d88f3d3ce13ca6364e3a1fc8625b82b7a"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point02.tdms",
+      "sha256": "16f3bd936ee6657dc013ad513f6ad3ca300e860e2e8c3e67ea3321ee61b7d6ee"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point03.tdms",
+      "sha256": "98dfa703a14e89a305c68b0a8c92d77dd35572ac6a3de0954484d57a17c3b813"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point04.tdms",
+      "sha256": "5aa24e0d4389e8952bafd21886fdb30fc764a13747b3e682e3983317b874660d"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point05.tdms",
+      "sha256": "c9083e3f81ca527ba339b6adeab562e19626558e4a620e930b96bfb250d526e4"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point06.tdms",
+      "sha256": "91626367cbbd5353d2470a656a694464773e37886719a958904f6eb48ef0c24d"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point07.tdms",
+      "sha256": "6e0166a35a2777c7af10f47bd2d3f2d25cea3dac6b85664235ff95823c93ec4a"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point08.tdms",
+      "sha256": "4669311ea30ea6ce596cbf3fcfae50f349aaae6a9ad96faf22f8a22b60054710"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point09.tdms",
+      "sha256": "8e57adef907300718c83cd6f376873726422e66aa4a79cae97b8313dc7be3cf3"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point10.tdms",
+      "sha256": "8cac77b0260e3e7bcb236dfd3df0b93df9a4cc73371a62b76632509dc956e909"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point11.tdms",
+      "sha256": "01c5807f4921d40842b400771fcccaabdceee67f252d538bfa5507888ced647c"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point12.tdms",
+      "sha256": "b3d268f0d362584eaa5857454f0d07d9e4584e5b41793d086f21e2ad302fd5de"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point13.tdms",
+      "sha256": "929994bbe35217604e40e37333707bac8a539dc60e7b0fe75709636dbf367f58"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point14.tdms",
+      "sha256": "2ef128d777195c025294dba01e337fd5a5d68b93314feb04338a98f8df544302"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point15.tdms",
+      "sha256": "ba7fd269408a794255a56c00c5070226edcaeae6c51db1cda8d7ed3cda7f5029"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point16.tdms",
+      "sha256": "b30e5d5b76e0645aaadf337899133a4053410bc0a561343981c78fe2e7fa40ed"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point17.tdms",
+      "sha256": "f8c51c39c3afa2d481d3c69553f9ee0176cb341f664549f12d27beca50fbf704"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point18.tdms",
+      "sha256": "c9f1f59544ae97c4961a60af00584ff3f3cccfbb28336a8be1a8171e8b06d70f"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point19.tdms",
+      "sha256": "708017796258e96506577150dbe9dcc021a8a41a562d9ecf44e394bdf2b680b0"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point20.tdms",
+      "sha256": "09a619d3ee665ab3f9ed6f0c25efcebef97a2b774605574b25040b7732ed5e92"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point21.tdms",
+      "sha256": "e65dd8e2cc58e406c99a16d494a9f6648c8ac6b31c65495110dc5a4c63b47442"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point22.tdms",
+      "sha256": "7eb2ee73265641169bc5a5134f733686d0e16c7ee21a0d37ec33c51751a045dc"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point23.tdms",
+      "sha256": "de832cf7c84ce9ec587f3bcde9573289f28b40b197eec57ad885b4e29640fd93"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point24.tdms",
+      "sha256": "71283edb24b0cde60d29c4392f5f7697e336d9fb9401cf70d55b1fee40c0c231"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point25.tdms",
+      "sha256": "c96e41e9fa1140e4d7f097371182a3e5beec3e5120b63607be3e0517b7f7f8f7"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/hybrid_supercapacitor_eis/Supercap_EIS.mat",
+      "sha256": "beefce3e48d377a9b95b11522458da843ac6786084106099e85fc13c0fb899ed"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/microstrip_resonator/Dataset.zip",
+      "sha256": "b5180c0293063d49eedfa3aaa91ed2ed94acd9865b20d0834d38570944c70d23"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/microwave_fano/Fano Interference Data and Code.zip",
+      "sha256": "34b9dfa440ca911a6b5cbc9e44fc5f6b35535df2489ca831b1bc4fef71d5e695"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/source_manifest.json",
+      "sha256": "005f7a7892240211bae516372e63b18f53808230fe1c34eb4b7571f087b34ee2"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B01/EIS measurements/Test_2/Hioki/Hk_IFR14500_SoC_10_08-06-2023_04-18.csv",
+      "sha256": "a3465018065a9e3ceebbdb3d192045e563d6cead7dabd7365f509649a3edd648"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B02/EIS measurements/Test_1/Hioki/Hk_IFR14500_SoC_25_28-04-2023_06-38.csv",
+      "sha256": "b0bc921bb1f3a61c763984d14fced8b79a63584e1e927970a975de166b26147f"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B03/EIS measurements/Test_2/Hioki/Hk_IFR14500_SoC_30_09-06-2023_06-59.csv",
+      "sha256": "9d69d9e8b1543b12d00d057074561b6418332bd94b1fa7874c7f7311d72529bf"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B05/EIS measurements/Test_1/Hioki/Hk_IFR14500_SoC_50_01-03-2023_22-27.csv",
+      "sha256": "a8ab633ef7f4f03d4a27946ec69488e9945bdf0779bf05942a18bf432c408988"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B06/EIS measurements/Test_2/Hioki/Hk_IFR14500_SoC_50_28-03-2023_20-10.csv",
+      "sha256": "42dbe16e5f5fa360202c0989f28511a898433142089039a60f236825059b9069"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B08/EIS measurements/Test_1/Hioki/Hk_IFR14500_SoC_75_23-03-2023_15-32.csv",
+      "sha256": "a0bd51cc1f0cd3d30c3384451338f56dc8bd4f4102cb69338c0f1f560eaa70e3"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B09/EIS measurements/Test_2/Hioki/Hk_IFR14500_SoC_70_31-03-2023_17-37.csv",
+      "sha256": "3a48e8c6b5a9e6f99fb96da052876e3670a78354c6b6272cfeb5acb299528277"
+    },
+    {
+      "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B11/EIS measurements/Test_2/Hioki/Hk_IFR14500_SoC_90_26-04-2023_18-02.csv",
+      "sha256": "f9d7cab3bb461a6e6cd6a79a8905ac3dc4fbd163d1257d08e40827d81738d4fc"
+    }
+  ],
+  "platform": "Linux-6.14.0-29-generic-x86_64-with-glibc2.39",
+  "protocol_key": "cfnn-peak-sensitive-extension-2.0.0",
+  "protocol_mode": "production",
+  "protocol_sha256": "077f7bb2ba5b38ea9eb4bae7096f0a65d202b26198b2ef94358a69fe4f66951f",
+  "python_version": "3.13.5",
+  "raw_root": {
+    "canonical_path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw",
+    "consumed_file_sha256": [
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point01.tdms",
+        "sha256": "3f68c6b6602908e933016c982ef5023d88f3d3ce13ca6364e3a1fc8625b82b7a"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point02.tdms",
+        "sha256": "16f3bd936ee6657dc013ad513f6ad3ca300e860e2e8c3e67ea3321ee61b7d6ee"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point03.tdms",
+        "sha256": "98dfa703a14e89a305c68b0a8c92d77dd35572ac6a3de0954484d57a17c3b813"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point04.tdms",
+        "sha256": "5aa24e0d4389e8952bafd21886fdb30fc764a13747b3e682e3983317b874660d"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point05.tdms",
+        "sha256": "c9083e3f81ca527ba339b6adeab562e19626558e4a620e930b96bfb250d526e4"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point06.tdms",
+        "sha256": "91626367cbbd5353d2470a656a694464773e37886719a958904f6eb48ef0c24d"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point07.tdms",
+        "sha256": "6e0166a35a2777c7af10f47bd2d3f2d25cea3dac6b85664235ff95823c93ec4a"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point08.tdms",
+        "sha256": "4669311ea30ea6ce596cbf3fcfae50f349aaae6a9ad96faf22f8a22b60054710"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point09.tdms",
+        "sha256": "8e57adef907300718c83cd6f376873726422e66aa4a79cae97b8313dc7be3cf3"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point10.tdms",
+        "sha256": "8cac77b0260e3e7bcb236dfd3df0b93df9a4cc73371a62b76632509dc956e909"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point11.tdms",
+        "sha256": "01c5807f4921d40842b400771fcccaabdceee67f252d538bfa5507888ced647c"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point12.tdms",
+        "sha256": "b3d268f0d362584eaa5857454f0d07d9e4584e5b41793d086f21e2ad302fd5de"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point13.tdms",
+        "sha256": "929994bbe35217604e40e37333707bac8a539dc60e7b0fe75709636dbf367f58"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point14.tdms",
+        "sha256": "2ef128d777195c025294dba01e337fd5a5d68b93314feb04338a98f8df544302"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point15.tdms",
+        "sha256": "ba7fd269408a794255a56c00c5070226edcaeae6c51db1cda8d7ed3cda7f5029"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point16.tdms",
+        "sha256": "b30e5d5b76e0645aaadf337899133a4053410bc0a561343981c78fe2e7fa40ed"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point17.tdms",
+        "sha256": "f8c51c39c3afa2d481d3c69553f9ee0176cb341f664549f12d27beca50fbf704"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point18.tdms",
+        "sha256": "c9f1f59544ae97c4961a60af00584ff3f3cccfbb28336a8be1a8171e8b06d70f"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point19.tdms",
+        "sha256": "708017796258e96506577150dbe9dcc021a8a41a562d9ecf44e394bdf2b680b0"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point20.tdms",
+        "sha256": "09a619d3ee665ab3f9ed6f0c25efcebef97a2b774605574b25040b7732ed5e92"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point21.tdms",
+        "sha256": "e65dd8e2cc58e406c99a16d494a9f6648c8ac6b31c65495110dc5a4c63b47442"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point22.tdms",
+        "sha256": "7eb2ee73265641169bc5a5134f733686d0e16c7ee21a0d37ec33c51751a045dc"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point23.tdms",
+        "sha256": "de832cf7c84ce9ec587f3bcde9573289f28b40b197eec57ad885b4e29640fd93"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point24.tdms",
+        "sha256": "71283edb24b0cde60d29c4392f5f7697e336d9fb9401cf70d55b1fee40c0c231"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/aluminium_frf/Waveforms Point25.tdms",
+        "sha256": "c96e41e9fa1140e4d7f097371182a3e5beec3e5120b63607be3e0517b7f7f8f7"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/hybrid_supercapacitor_eis/Supercap_EIS.mat",
+        "sha256": "beefce3e48d377a9b95b11522458da843ac6786084106099e85fc13c0fb899ed"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/microstrip_resonator/Dataset.zip",
+        "sha256": "b5180c0293063d49eedfa3aaa91ed2ed94acd9865b20d0834d38570944c70d23"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/microwave_fano/Fano Interference Data and Code.zip",
+        "sha256": "34b9dfa440ca911a6b5cbc9e44fc5f6b35535df2489ca831b1bc4fef71d5e695"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/downstream_data/raw/source_manifest.json",
+        "sha256": "005f7a7892240211bae516372e63b18f53808230fe1c34eb4b7571f087b34ee2"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B01/EIS measurements/Test_2/Hioki/Hk_IFR14500_SoC_10_08-06-2023_04-18.csv",
+        "sha256": "a3465018065a9e3ceebbdb3d192045e563d6cead7dabd7365f509649a3edd648"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B02/EIS measurements/Test_1/Hioki/Hk_IFR14500_SoC_25_28-04-2023_06-38.csv",
+        "sha256": "b0bc921bb1f3a61c763984d14fced8b79a63584e1e927970a975de166b26147f"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B03/EIS measurements/Test_2/Hioki/Hk_IFR14500_SoC_30_09-06-2023_06-59.csv",
+        "sha256": "9d69d9e8b1543b12d00d057074561b6418332bd94b1fa7874c7f7311d72529bf"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B05/EIS measurements/Test_1/Hioki/Hk_IFR14500_SoC_50_01-03-2023_22-27.csv",
+        "sha256": "a8ab633ef7f4f03d4a27946ec69488e9945bdf0779bf05942a18bf432c408988"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B06/EIS measurements/Test_2/Hioki/Hk_IFR14500_SoC_50_28-03-2023_20-10.csv",
+        "sha256": "42dbe16e5f5fa360202c0989f28511a898433142089039a60f236825059b9069"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B08/EIS measurements/Test_1/Hioki/Hk_IFR14500_SoC_75_23-03-2023_15-32.csv",
+        "sha256": "a0bd51cc1f0cd3d30c3384451338f56dc8bd4f4102cb69338c0f1f560eaa70e3"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B09/EIS measurements/Test_2/Hioki/Hk_IFR14500_SoC_70_31-03-2023_17-37.csv",
+        "sha256": "3a48e8c6b5a9e6f99fb96da052876e3670a78354c6b6272cfeb5acb299528277"
+      },
+      {
+        "path": "/home/zxc/CodeBase/cofrnet/experiment_refine/frontier_science/data/raw/figshare_eis/Measurements/Measurements/B11/EIS measurements/Test_2/Hioki/Hk_IFR14500_SoC_90_26-04-2023_18-02.csv",
+        "sha256": "f9d7cab3bb461a6e6cd6a79a8905ac3dc4fbd163d1257d08e40827d81738d4fc"
+      }
+    ],
+    "source_manifest_sha256": "005f7a7892240211bae516372e63b18f53808230fe1c34eb4b7571f087b34ee2"
+  },
+  "reproducibility": {
+    "cublas_workspace_config": ":4096:8",
+    "deterministic_algorithms": true
+  },
+  "smoke_root_marker": null,
+  "torch_version": "2.10.0+cu128"
+}

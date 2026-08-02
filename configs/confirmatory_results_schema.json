@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PARN confirmatory evaluation record",
+  "type": "object",
+  "required": [
+    "stage", "task", "family", "target_budget", "data_seed", "init_seed",
+    "candidate_key", "config", "actual_parameters", "optimizer", "best_step",
+    "optimizer_steps", "validation_nrmse", "test_metrics", "status", "curve",
+    "training_wall_seconds", "total_wall_seconds", "device", "dataset"
+  ],
+  "properties": {
+    "stage": {"enum": ["tuning", "confirmatory_evaluation"]},
+    "task": {"type": "string"},
+    "family": {"type": "string"},
+    "target_budget": {"type": "integer", "minimum": 1},
+    "data_seed": {"type": "integer"},
+    "init_seed": {"type": "integer"},
+    "candidate_key": {"type": "string"},
+    "config": {"type": "object"},
+    "actual_parameters": {"type": "integer", "minimum": 1},
+    "optimizer": {
+      "type": "object",
+      "required": ["key", "lr", "weight_decay"]
+    },
+    "best_step": {"type": "integer", "minimum": 0},
+    "optimizer_steps": {"type": "integer", "minimum": 0},
+    "validation_nrmse": {"type": ["number", "null"]},
+    "test_metrics": {
+      "type": "object",
+      "required": ["nrmse", "r2", "max_abs_error", "status"],
+      "properties": {
+        "nrmse": {"type": ["number", "null"]},
+        "r2": {"type": ["number", "null"]},
+        "max_abs_error": {"type": ["number", "null"]},
+        "status": {"enum": ["ok", "underfit", "numerical_failure"]}
+      }
+    },
+    "status": {"type": "string"},
+    "curve": {"type": "array"},
+    "training_wall_seconds": {"type": "number", "minimum": 0},
+    "total_wall_seconds": {"type": "number", "minimum": 0},
+    "peak_memory_bytes": {"type": ["integer", "null"]},
+    "device": {"type": "string"},
+    "dataset": {"type": "object"}
+  },
+  "additionalProperties": true
+}

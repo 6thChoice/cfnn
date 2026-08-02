@@ -1,0 +1,120 @@
+{
+  "protocol_version": "1.0.0-group-transfer",
+  "primary_family": "CFNN",
+  "primary_budget": 256,
+  "budgets": [256],
+  "budget_tolerance": 0.05,
+  "minimum_candidates_per_budget": 3,
+  "maximum_candidates_per_budget": 12,
+  "finalists_per_budget": 3,
+  "fixed_scientific_tasks": [
+    "microwave_fano_group_transfer",
+    "microstrip_resonator_group_transfer",
+    "aluminium_frf_group_transfer"
+  ],
+  "conventional_candidates": [],
+  "conventional_task_count": 0,
+  "families": [
+    "CFNN",
+    "MLP",
+    "Fourier-feature MLP",
+    "Gaussian RBF",
+    "KAN",
+    "Local nested CF control",
+    "Rational activation NN",
+    "SIREN"
+  ],
+  "tuning_seeds": [101, 211, 307],
+  "evaluation_data_seeds": [233, 277, 331, 389, 443],
+  "evaluation_init_seeds": [1009, 2027, 3037, 4051, 5099, 6029, 7039, 8081, 9011, 10037],
+  "training": {
+    "screening_steps": 200,
+    "min_steps": 200,
+    "max_steps": 2000,
+    "patience": 100,
+    "validation_interval": 10,
+    "checkpoints": [20, 80, 200, 500],
+    "gradient_clip": 5.0
+  },
+  "tasks": {
+    "microwave_fano_group_transfer": {
+      "base_task": "microwave_fano",
+      "role": "measured_group_transfer",
+      "problem_type": "complex_regression",
+      "input_dim": 2,
+      "output_dim": 2,
+      "split_mode": "group_transfer",
+      "train_curve_count": 12,
+      "validation_curve_count": 4,
+      "train_frequency_count": 64,
+      "validation_frequency_count": 128
+    },
+    "microstrip_resonator_group_transfer": {
+      "base_task": "microstrip_resonator",
+      "role": "measured_group_transfer",
+      "problem_type": "complex_regression",
+      "input_dim": 3,
+      "output_dim": 2,
+      "split_mode": "group_transfer",
+      "train_curve_count": 12,
+      "validation_curve_count": 4,
+      "train_frequency_count": 64,
+      "validation_frequency_count": 128
+    },
+    "aluminium_frf_group_transfer": {
+      "base_task": "aluminium_frf",
+      "role": "measured_group_transfer",
+      "problem_type": "complex_regression",
+      "input_dim": 3,
+      "output_dim": 2,
+      "split_mode": "group_transfer",
+      "train_curve_count": 20,
+      "validation_curve_count": 4,
+      "train_frequency_count": 59,
+      "validation_frequency_count": 59
+    }
+  },
+  "optimizer_grids": {
+    "CFNN": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd1e-6", "lr": 0.001, "weight_decay": 0.000001}
+    ],
+    "MLP": [
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd1e-4", "lr": 0.001, "weight_decay": 0.0001}
+    ],
+    "Fourier-feature MLP": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "Gaussian RBF": [
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0},
+      {"key": "lr1e-2_wd0", "lr": 0.01, "weight_decay": 0.0}
+    ],
+    "KAN": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "Local nested CF control": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "Rational activation NN": [
+      {"key": "lr1e-4_wd0", "lr": 0.0001, "weight_decay": 0.0},
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0}
+    ],
+    "SIREN": [
+      {"key": "lr1e-4_wd0", "lr": 0.0001, "weight_decay": 0.0},
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0}
+    ]
+  }
+}

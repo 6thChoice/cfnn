@@ -1,0 +1,174 @@
+{
+  "claim_level": "advantage_or_efficiency",
+  "config_sha256": "d494f7636723457ebaf651e773efc03f12af6a43929b7ed4d7d6887ba9fa73b6",
+  "generated_at": "2026-07-15T22:19:51.199751+00:00",
+  "schema_version": "1.0.0",
+  "selected_tasks": [
+    "energy",
+    "credit"
+  ],
+  "selection_uses": "validation_records_only",
+  "task_evidence": {
+    "airfoil": {
+      "gates": [
+        {
+          "baseline": "Fourier-feature MLP",
+          "baseline_budget": 256,
+          "cfnn_budget": 128,
+          "gate": "validation_equivalence_with_parameter_reduction",
+          "parameter_reduction": 0.5019762845849802
+        }
+      ],
+      "passed": true,
+      "problem_type": "regression",
+      "sealed_test_row_ids_sha256": [
+        "1342075c9a782a964e7c37b330e2774a3d51308b4a9a14bd2de60c193e9fc374",
+        "72d1a24623b04c9e125ef9aae70bbabe3e8be5f4f8d28a410d303c845b81fa52",
+        "ba257de27ffe6b28fd7310e2dba5af24f6e5fbff56c24b1fdf1c67a3fdea377e"
+      ],
+      "stability": {
+        "failure_rate": 0.0,
+        "median_parameters": 258.0,
+        "median_runtime_seconds": 5.148863663896918,
+        "median_score": 0.28180211782455444,
+        "n": 9,
+        "score_iqr": 0.01981458067893982,
+        "valid_n": 9
+      },
+      "task": "airfoil"
+    },
+    "appliances": {
+      "gates": [
+        {
+          "absolute_score_difference": 0.00925135612487793,
+          "baseline": "SIREN",
+          "budget": 512,
+          "gate": "matched_budget_practical_equivalence",
+          "runtime_ratio": 1.8785958671072998
+        },
+        {
+          "baseline": "Fourier-feature MLP",
+          "baseline_budget": 512,
+          "cfnn_budget": 256,
+          "gate": "validation_equivalence_with_parameter_reduction",
+          "parameter_reduction": 0.4794520547945206
+        }
+      ],
+      "passed": true,
+      "problem_type": "regression",
+      "sealed_test_row_ids_sha256": [
+        "76e6404da1a312b4f11bd758de221c07f159ea477b2bc9a40ce83ed3904ec0f9",
+        "784d0fe7d302928254ad50a045e9a59d4c27e910c25801ee1cd3cc1e74209875",
+        "f10d9b659c55d14ee13cdb6f215898a3dd710cd3c290c2d2bbc6ab8b99bd9f5e"
+      ],
+      "stability": {
+        "failure_rate": 0.0,
+        "median_parameters": 391.0,
+        "median_runtime_seconds": 2.5552088133990765,
+        "median_score": 0.8543051779270172,
+        "n": 6,
+        "score_iqr": 0.018328070640563965,
+        "valid_n": 6
+      },
+      "task": "appliances"
+    },
+    "credit": {
+      "gates": [
+        {
+          "absolute_score_difference": 0.0034980010784713134,
+          "baseline": "SIREN",
+          "budget": 128,
+          "gate": "matched_budget_practical_equivalence",
+          "runtime_ratio": 0.6140520982392211
+        },
+        {
+          "absolute_score_difference": 0.0048069197145979015,
+          "baseline": "SIREN",
+          "budget": 256,
+          "gate": "matched_budget_practical_equivalence",
+          "runtime_ratio": 0.9201251559102104
+        },
+        {
+          "absolute_score_difference": 0.0009253605022390143,
+          "baseline": "KAN",
+          "budget": 512,
+          "gate": "matched_budget_practical_equivalence",
+          "runtime_ratio": 0.8477631623677631
+        },
+        {
+          "baseline": "Fourier-feature MLP",
+          "baseline_budget": 256,
+          "cfnn_budget": 128,
+          "gate": "validation_equivalence_with_parameter_reduction",
+          "parameter_reduction": 0.4900398406374502
+        }
+      ],
+      "passed": true,
+      "problem_type": "classification",
+      "sealed_test_row_ids_sha256": [
+        "1e900004f904d46ed748ea23ac4a2cd58971f9175959b30c16540a3dd79543bd",
+        "3ddc60f18829661eaf297a8877a5fd7cb1bfa873e2047597fa6efed46a7c7d00",
+        "6f7a62907a132bfc1a3e4a97c755a04594afe75b091185ab9a1ce267ae9ea89f"
+      ],
+      "stability": {
+        "failure_rate": 0.0,
+        "median_parameters": 264.0,
+        "median_runtime_seconds": 1.4822685802355409,
+        "median_score": 0.2373489425981874,
+        "n": 9,
+        "score_iqr": 0.009927649575396602,
+        "valid_n": 9
+      },
+      "task": "credit"
+    },
+    "energy": {
+      "gates": [
+        {
+          "absolute_score_difference": 0.005698580294847488,
+          "baseline": "SIREN",
+          "budget": 128,
+          "gate": "matched_budget_practical_equivalence",
+          "runtime_ratio": 1.3880823624417353
+        },
+        {
+          "absolute_score_difference": 0.0010391920804977417,
+          "baseline": "MLP",
+          "budget": 256,
+          "gate": "matched_budget_practical_equivalence",
+          "runtime_ratio": 2.0250381214353204
+        },
+        {
+          "absolute_score_difference": 0.0019382946193218231,
+          "baseline": "Local nested CF control",
+          "budget": 512,
+          "gate": "matched_budget_practical_equivalence",
+          "runtime_ratio": 0.21163686690605385
+        },
+        {
+          "baseline": "Fourier-feature MLP",
+          "baseline_budget": 256,
+          "cfnn_budget": 128,
+          "gate": "validation_equivalence_with_parameter_reduction",
+          "parameter_reduction": 0.4860557768924303
+        }
+      ],
+      "passed": true,
+      "problem_type": "regression",
+      "sealed_test_row_ids_sha256": [
+        "01bb6d2d984d508162c38499a04807755363bb87e13a7a265e84dcaa16a77d3e",
+        "5caba8c1ddb679f87a82bddf14a6da2f85463c70ed8207731088c72a8213ceee",
+        "f45575d6192aa8f019dd28900e6bca4c20855139f3466d9d8cfc3e239df04e38"
+      ],
+      "stability": {
+        "failure_rate": 0.0,
+        "median_parameters": 261.0,
+        "median_runtime_seconds": 18.242296935990453,
+        "median_score": 0.04566081240773201,
+        "n": 9,
+        "score_iqr": 0.006385091692209244,
+        "valid_n": 9
+      },
+      "task": "energy"
+    }
+  }
+}

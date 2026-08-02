@@ -1,0 +1,46 @@
+{
+  "candidate": {
+    "actual_parameters": 1060,
+    "budget_relative_error": 0.03515625,
+    "candidate_key": "{\"degree\":3,\"denominator\":\"squared\",\"denominator_init_std\":0.05,\"epsilon\":0.2,\"initialization_mode\":\"numerator_scaled\",\"numerator_init_std\":0.007537783614444091,\"shared_projection\":false,\"skip\":true,\"units\":44}",
+    "config": {
+      "degree": 3,
+      "denominator": "squared",
+      "denominator_init_std": 0.05,
+      "epsilon": 0.2,
+      "initialization_mode": "numerator_scaled",
+      "numerator_init_std": 0.007537783614444091,
+      "shared_projection": false,
+      "skip": true,
+      "units": 44
+    },
+    "target_budget": 1024
+  },
+  "candidate_manifest_sha256": "9f596c9c7981d4935fb28f0ad70b04b744d2645c41a85c78e41fe7fb8de3d85e",
+  "config_sha256": "f56cc6c8dc9700e1e862bd52ef209b1d11655e1378a3eb37ecf9fad545357c91",
+  "failure_count": 0,
+  "family": "CFNN",
+  "final_jsonl_sha256": "592ebd7fe05f5461c97400d7e0488c2fccba9afb7f3ac2cd4eee3dcc17acbb65",
+  "finalist_count": 3,
+  "frf_density": null,
+  "global_available_count": 3,
+  "median_validation_global_nrmse": 0.0739055946469307,
+  "median_validation_resonance_nrmse": 0.2127329260110855,
+  "no_feature_count": 0,
+  "optimizer": {
+    "key": "lr3e-3_wd0",
+    "lr": 0.003,
+    "weight_decay": 0.0
+  },
+  "optimizer_count": 8,
+  "peak_available_count": 3,
+  "protocol_sha256": "077f7bb2ba5b38ea9eb4bae7096f0a65d202b26198b2ef94358a69fe4f66951f",
+  "record_count": 3,
+  "screen_jsonl_sha256": "c572bb7c179486d6bc56e06af27453abb3936c0c81218a365797ccc6e751dcc0",
+  "screened_candidate_count": 12,
+  "selected_step": 1480,
+  "status": "selected",
+  "target_budget": 1024,
+  "task": "microwave_fano",
+  "tuning_seed_count": 3
+}

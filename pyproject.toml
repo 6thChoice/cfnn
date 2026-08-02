@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cfnn-nmi-reproduction"
+version = "0.1.0"
+description = "Reproduction package for continued fraction neural networks in sharp scientific response modelling."
+requires-python = ">=3.12"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

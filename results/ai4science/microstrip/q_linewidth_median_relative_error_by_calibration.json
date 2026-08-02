@@ -1,0 +1,27 @@
+{
+  "grouped": {
+    "16": {
+      "CFNN": 0.1662063606513549,
+      "Local nested CF control": 0.30509911870741846,
+      "MLP": 0.2069004423460246
+    },
+    "32": {
+      "CFNN": 0.1484010997670515,
+      "Local nested CF control": 0.4219283266413165,
+      "MLP": 0.1893429311361358
+    },
+    "4": {
+      "CFNN": 0.1383027916286976,
+      "Local nested CF control": 0.3808092613602376,
+      "MLP": 0.23827050068617717
+    },
+    "8": {
+      "CFNN": 0.12854953207797545,
+      "Local nested CF control": 0.3827987482577636,
+      "MLP": 0.23465991206278847
+    }
+  },
+  "metric": "median quality_factor_relative_error over ok, identifiable missed-band records",
+  "note": "Reduced cache for microstrip low-calibration Q/linewidth comparison panel.",
+  "source": "experiment_refine/ai4science_results/microstrip_b2_missed_band_negative_control_seed_expansion/raw_records.jsonl"
+}

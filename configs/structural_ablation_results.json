@@ -1,0 +1,352 @@
+[
+  {
+    "seed": 42,
+    "variant": "full",
+    "parameters": 148,
+    "r2": -7492297.020179749,
+    "status": "ok"
+  },
+  {
+    "seed": 123,
+    "variant": "full",
+    "parameters": 148,
+    "r2": -5985038.539451599,
+    "status": "ok"
+  },
+  {
+    "seed": 456,
+    "variant": "full",
+    "parameters": 148,
+    "r2": -10076566.602134705,
+    "status": "ok"
+  },
+  {
+    "seed": 789,
+    "variant": "full",
+    "parameters": 148,
+    "r2": -19921479.869766235,
+    "status": "ok"
+  },
+  {
+    "seed": 1024,
+    "variant": "full",
+    "parameters": 148,
+    "r2": -3530712.452003479,
+    "status": "ok"
+  },
+  {
+    "seed": 2048,
+    "variant": "full",
+    "parameters": 148,
+    "r2": -5449871.160919189,
+    "status": "ok"
+  },
+  {
+    "seed": 4096,
+    "variant": "full",
+    "parameters": 148,
+    "r2": -6067424.366580963,
+    "status": "ok"
+  },
+  {
+    "seed": 8192,
+    "variant": "full",
+    "parameters": 148,
+    "r2": -20158457.717285156,
+    "status": "ok"
+  },
+  {
+    "seed": 16384,
+    "variant": "full",
+    "parameters": 148,
+    "r2": -1832404.0993728638,
+    "status": "ok"
+  },
+  {
+    "seed": 32768,
+    "variant": "full",
+    "parameters": 148,
+    "r2": -544934.060836792,
+    "status": "ok"
+  },
+  {
+    "seed": 42,
+    "variant": "shared_pq",
+    "parameters": 124,
+    "r2": -1999613.6388397217,
+    "status": "ok"
+  },
+  {
+    "seed": 123,
+    "variant": "shared_pq",
+    "parameters": 124,
+    "r2": -3087466.51884079,
+    "status": "ok"
+  },
+  {
+    "seed": 456,
+    "variant": "shared_pq",
+    "parameters": 124,
+    "r2": -15878422.809017181,
+    "status": "ok"
+  },
+  {
+    "seed": 789,
+    "variant": "shared_pq",
+    "parameters": 124,
+    "r2": -8393429.498123169,
+    "status": "ok"
+  },
+  {
+    "seed": 1024,
+    "variant": "shared_pq",
+    "parameters": 124,
+    "r2": -3844181.7372894287,
+    "status": "ok"
+  },
+  {
+    "seed": 2048,
+    "variant": "shared_pq",
+    "parameters": 124,
+    "r2": -9076627.995372772,
+    "status": "ok"
+  },
+  {
+    "seed": 4096,
+    "variant": "shared_pq",
+    "parameters": 124,
+    "r2": -14796248.463523865,
+    "status": "ok"
+  },
+  {
+    "seed": 8192,
+    "variant": "shared_pq",
+    "parameters": 124,
+    "r2": -5630129.7629852295,
+    "status": "ok"
+  },
+  {
+    "seed": 16384,
+    "variant": "shared_pq",
+    "parameters": 124,
+    "r2": -7728080.578842163,
+    "status": "ok"
+  },
+  {
+    "seed": 32768,
+    "variant": "shared_pq",
+    "parameters": 124,
+    "r2": -325624.36781311035,
+    "status": "ok"
+  },
+  {
+    "seed": 42,
+    "variant": "no_skip",
+    "parameters": 144,
+    "r2": -13932564.961086273,
+    "status": "ok"
+  },
+  {
+    "seed": 123,
+    "variant": "no_skip",
+    "parameters": 144,
+    "r2": -17139182.095733643,
+    "status": "ok"
+  },
+  {
+    "seed": 456,
+    "variant": "no_skip",
+    "parameters": 144,
+    "r2": -463909.46990966797,
+    "status": "ok"
+  },
+  {
+    "seed": 789,
+    "variant": "no_skip",
+    "parameters": 144,
+    "r2": -1273997.2708854675,
+    "status": "ok"
+  },
+  {
+    "seed": 1024,
+    "variant": "no_skip",
+    "parameters": 144,
+    "r2": -12712419.503189087,
+    "status": "ok"
+  },
+  {
+    "seed": 2048,
+    "variant": "no_skip",
+    "parameters": 144,
+    "r2": -8560093.756248474,
+    "status": "ok"
+  },
+  {
+    "seed": 4096,
+    "variant": "no_skip",
+    "parameters": 144,
+    "r2": -6330666.0063591,
+    "status": "ok"
+  },
+  {
+    "seed": 8192,
+    "variant": "no_skip",
+    "parameters": 144,
+    "r2": -12084144.15896225,
+    "status": "ok"
+  },
+  {
+    "seed": 16384,
+    "variant": "no_skip",
+    "parameters": 144,
+    "r2": -3246931.179954529,
+    "status": "ok"
+  },
+  {
+    "seed": 32768,
+    "variant": "no_skip",
+    "parameters": 144,
+    "r2": -717542.3733596802,
+    "status": "ok"
+  },
+  {
+    "seed": 42,
+    "variant": "abs_denominator",
+    "parameters": 148,
+    "r2": -8144325.861515045,
+    "status": "ok"
+  },
+  {
+    "seed": 123,
+    "variant": "abs_denominator",
+    "parameters": 148,
+    "r2": -8805711.597988129,
+    "status": "ok"
+  },
+  {
+    "seed": 456,
+    "variant": "abs_denominator",
+    "parameters": 148,
+    "r2": -9968348.176750183,
+    "status": "ok"
+  },
+  {
+    "seed": 789,
+    "variant": "abs_denominator",
+    "parameters": 148,
+    "r2": -16238910.853637695,
+    "status": "ok"
+  },
+  {
+    "seed": 1024,
+    "variant": "abs_denominator",
+    "parameters": 148,
+    "r2": -6203165.270214081,
+    "status": "ok"
+  },
+  {
+    "seed": 2048,
+    "variant": "abs_denominator",
+    "parameters": 148,
+    "r2": -7953545.175251007,
+    "status": "ok"
+  },
+  {
+    "seed": 4096,
+    "variant": "abs_denominator",
+    "parameters": 148,
+    "r2": -7747777.186759949,
+    "status": "ok"
+  },
+  {
+    "seed": 8192,
+    "variant": "abs_denominator",
+    "parameters": 148,
+    "r2": -22383204.170578003,
+    "status": "ok"
+  },
+  {
+    "seed": 16384,
+    "variant": "abs_denominator",
+    "parameters": 148,
+    "r2": -2839038.414932251,
+    "status": "ok"
+  },
+  {
+    "seed": 32768,
+    "variant": "abs_denominator",
+    "parameters": 148,
+    "r2": -5153185.243515015,
+    "status": "ok"
+  },
+  {
+    "seed": 42,
+    "variant": "epsilon_01",
+    "parameters": 148,
+    "r2": -6380560.744325936,
+    "status": "ok"
+  },
+  {
+    "seed": 123,
+    "variant": "epsilon_01",
+    "parameters": 148,
+    "r2": -8788409.047393799,
+    "status": "ok"
+  },
+  {
+    "seed": 456,
+    "variant": "epsilon_01",
+    "parameters": 148,
+    "r2": -18009822.261776924,
+    "status": "ok"
+  },
+  {
+    "seed": 789,
+    "variant": "epsilon_01",
+    "parameters": 148,
+    "r2": -4920051.552581787,
+    "status": "ok"
+  },
+  {
+    "seed": 1024,
+    "variant": "epsilon_01",
+    "parameters": 148,
+    "r2": -2620998.6499214172,
+    "status": "ok"
+  },
+  {
+    "seed": 2048,
+    "variant": "epsilon_01",
+    "parameters": 148,
+    "r2": -20531043.477142334,
+    "status": "ok"
+  },
+  {
+    "seed": 4096,
+    "variant": "epsilon_01",
+    "parameters": 148,
+    "r2": -26133929.322681427,
+    "status": "ok"
+  },
+  {
+    "seed": 8192,
+    "variant": "epsilon_01",
+    "parameters": 148,
+    "r2": -320242537.1241379,
+    "status": "ok"
+  },
+  {
+    "seed": 16384,
+    "variant": "epsilon_01",
+    "parameters": 148,
+    "r2": -14935548.463470459,
+    "status": "ok"
+  },
+  {
+    "seed": 32768,
+    "variant": "epsilon_01",
+    "parameters": 148,
+    "r2": -30700007.717453003,
+    "status": "ok"
+  }
+]

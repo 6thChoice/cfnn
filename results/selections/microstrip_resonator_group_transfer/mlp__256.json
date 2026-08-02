@@ -1,0 +1,28 @@
+{
+  "candidate": {
+    "actual_parameters": 262,
+    "budget_relative_error": 0.0234375,
+    "candidate_key": "{\"activation\":\"gelu\",\"depth\":2,\"width\":13}",
+    "config": {
+      "activation": "gelu",
+      "depth": 2,
+      "width": 13
+    }
+  },
+  "family": "MLP",
+  "finalist_count": 3,
+  "median_validation_score": 0.16123473644256592,
+  "optimizer": {
+    "key": "lr3e-3_wd0",
+    "lr": 0.003,
+    "weight_decay": 0.0
+  },
+  "optimizer_count": 3,
+  "screened_candidate_count": 10,
+  "selected_step": 1480,
+  "stage": "confirmatory_tuning",
+  "status": "selected",
+  "target_budget": 256,
+  "task": "microstrip_resonator_group_transfer",
+  "tuning_seed_count": 3
+}

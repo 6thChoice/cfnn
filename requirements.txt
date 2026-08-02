@@ -1,0 +1,17 @@
+# Lightweight runtime dependencies for the public reproduction package.
+# Install PyTorch first with scripts/install_env.sh so the CUDA wheel index is explicit.
+numpy==2.1.3
+scipy==1.18.0
+scikit-learn==1.9.0
+matplotlib==3.9.2
+pandas==2.3.3
+jsonschema==4.26.0
+pykan==0.2.8
+nptdms==1.11.0
+scikit-rf==2.0.1
+openpyxl==3.1.5
+xlrd==2.0.2
+tqdm==4.67.1
+pillow==11.0.0
+requests==2.32.3
+pytest==8.4.2

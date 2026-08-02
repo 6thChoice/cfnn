@@ -1,0 +1,134 @@
+{
+  "protocol_version": "1.0.0",
+  "primary_family": "CFNN",
+  "primary_budget": 256,
+  "budgets": [128, 256, 512, 1024],
+  "budget_tolerance": 0.05,
+  "minimum_candidates_per_budget": 3,
+  "maximum_candidates_per_budget": 12,
+  "finalists_per_budget": 3,
+  "fixed_scientific_tasks": [
+    "controlled_fano",
+    "microwave_fano",
+    "microstrip_resonator",
+    "aluminium_frf"
+  ],
+  "conventional_candidates": ["energy", "credit", "airfoil", "appliances"],
+  "conventional_task_count": 2,
+  "families": [
+    "CFNN",
+    "MLP",
+    "Fourier-feature MLP",
+    "Gaussian RBF",
+    "KAN",
+    "Local nested CF control",
+    "Rational activation NN",
+    "SIREN"
+  ],
+  "tuning_seeds": [101, 211, 307],
+  "evaluation_data_seeds": [233, 277, 331, 389, 443],
+  "evaluation_init_seeds": [1009, 2027, 3037, 4051],
+  "training": {
+    "screening_steps": 200,
+    "min_steps": 200,
+    "max_steps": 2000,
+    "patience": 100,
+    "validation_interval": 10,
+    "checkpoints": [20, 80, 200, 500],
+    "gradient_clip": 5.0
+  },
+  "equivalence_margins": {
+    "nrmse": 0.01,
+    "auroc": 0.01,
+    "balanced_accuracy": 0.01,
+    "parameter_reduction": 0.25,
+    "maximum_runtime_ratio": 10.0
+  },
+  "tasks": {
+    "controlled_fano": {
+      "role": "controlled_mechanism",
+      "problem_type": "complex_regression",
+      "input_dim": 1,
+      "output_dim": 2,
+      "n_train": 64,
+      "n_validation": 32,
+      "n_test": 2048,
+      "noise": 0.01,
+      "domain": [0.0, 1.0]
+    },
+    "microwave_fano": {
+      "role": "fixed_measured",
+      "problem_type": "complex_regression",
+      "input_dim": 1,
+      "output_dim": 2,
+      "split_mode": "within_curve",
+      "n_train": 128,
+      "n_validation": 128
+    },
+    "microstrip_resonator": {
+      "role": "fixed_measured",
+      "problem_type": "complex_regression",
+      "input_dim": 1,
+      "output_dim": 2,
+      "split_mode": "within_curve",
+      "n_train": 128,
+      "n_validation": 128
+    },
+    "aluminium_frf": {
+      "role": "fixed_measured",
+      "problem_type": "complex_regression",
+      "input_dim": 1,
+      "output_dim": 2,
+      "split_mode": "within_curve",
+      "n_train": 24,
+      "n_validation": 12
+    },
+    "energy": {"role": "conventional_candidate", "problem_type": "regression", "input_dim": 8, "output_dim": 1},
+    "credit": {"role": "conventional_candidate", "problem_type": "classification", "input_dim": 23, "output_dim": 1, "batch_size": 512},
+    "airfoil": {"role": "conventional_candidate", "problem_type": "regression", "input_dim": 5, "output_dim": 1},
+    "appliances": {"role": "conventional_candidate", "problem_type": "regression", "input_dim": 25, "output_dim": 1, "batch_size": 512}
+  },
+  "optimizer_grids": {
+    "CFNN": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd1e-6", "lr": 0.001, "weight_decay": 0.000001}
+    ],
+    "MLP": [
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd1e-4", "lr": 0.001, "weight_decay": 0.0001}
+    ],
+    "Fourier-feature MLP": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "Gaussian RBF": [
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0},
+      {"key": "lr1e-2_wd0", "lr": 0.01, "weight_decay": 0.0}
+    ],
+    "KAN": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "Local nested CF control": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "Rational activation NN": [
+      {"key": "lr1e-4_wd0", "lr": 0.0001, "weight_decay": 0.0},
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0}
+    ],
+    "SIREN": [
+      {"key": "lr1e-4_wd0", "lr": 0.0001, "weight_decay": 0.0},
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0}
+    ]
+  }
+}

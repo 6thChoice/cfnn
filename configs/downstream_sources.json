@@ -1,0 +1,68 @@
+{
+  "microwave_fano": {
+    "provider": "zenodo",
+    "record_id": 7767046,
+    "url": "https://zenodo.org/api/records/7767046",
+    "role": "fixed_measured"
+  },
+  "microstrip_resonator": {
+    "provider": "zenodo",
+    "record_id": 14175959,
+    "url": "https://zenodo.org/api/records/14175959",
+    "role": "fixed_measured"
+  },
+  "aluminium_frf": {
+    "provider": "zenodo",
+    "record_id": 7758683,
+    "url": "https://zenodo.org/api/records/7758683",
+    "role": "fixed_measured"
+  },
+  "hybrid_supercapacitor_eis": {
+    "provider": "figshare",
+    "article_id": 24321496,
+    "version": 4,
+    "api_url": "https://api.figshare.com/v2/articles/24321496/versions/4",
+    "url": "https://api.figshare.com/v2/articles/24321496/versions/4",
+    "license": "CC BY 4.0",
+    "expected_file_role": "frequency_resolved_complex_impedance_matlab_table",
+    "expected_data_filename": "Supercap_EIS.mat",
+    "expected_data_file": {
+      "file_id": 42715237,
+      "size": 136131,
+      "figshare_md5": "08f50c641f6c649dc08632e56074dfca"
+    },
+    "role": "independent_eis_extension"
+  },
+  "energy": {
+    "provider": "uci",
+    "dataset_id": 242,
+    "url": "https://archive.ics.uci.edu/static/public/242/energy+efficiency.zip",
+    "filename": "energy_efficiency.zip",
+    "license": "CC BY 4.0",
+    "role": "conventional_candidate"
+  },
+  "credit": {
+    "provider": "uci",
+    "dataset_id": 350,
+    "url": "https://archive.ics.uci.edu/static/public/350/default+of+credit+card+clients.zip",
+    "filename": "default_of_credit_card_clients.zip",
+    "license": "CC BY 4.0",
+    "role": "conventional_candidate"
+  },
+  "airfoil": {
+    "provider": "uci",
+    "dataset_id": 291,
+    "url": "https://archive.ics.uci.edu/static/public/291/airfoil+self+noise.zip",
+    "filename": "airfoil_self_noise.zip",
+    "license": "CC BY 4.0",
+    "role": "conventional_candidate"
+  },
+  "appliances": {
+    "provider": "uci",
+    "dataset_id": 374,
+    "url": "https://archive.ics.uci.edu/static/public/374/appliances+energy+prediction.zip",
+    "filename": "appliances_energy_prediction.zip",
+    "license": "CC BY 4.0",
+    "role": "conventional_candidate"
+  }
+}

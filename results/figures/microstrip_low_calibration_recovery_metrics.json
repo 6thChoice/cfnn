@@ -1,0 +1,29 @@
+[
+  {
+    "complex_nrmse": 0.38479390736483543,
+    "family": "CFNN",
+    "local_phase_transition_abs_error_hz": 92500000.0,
+    "peak_window_complex_nrmse": 0.39567090960513196,
+    "phase_mae_rad": 0.1376391628425275,
+    "quality_factor_relative_error": 0.012757910743997389,
+    "resonance_frequency_abs_error_hz": 9062500.0
+  },
+  {
+    "complex_nrmse": 0.43467600594004924,
+    "family": "MLP",
+    "local_phase_transition_abs_error_hz": 437187500.0,
+    "peak_window_complex_nrmse": 0.43733771019039913,
+    "phase_mae_rad": 0.11507628516472561,
+    "quality_factor_relative_error": 0.2801490277700645,
+    "resonance_frequency_abs_error_hz": 319687500.0
+  },
+  {
+    "complex_nrmse": 0.40963420149615554,
+    "family": "Local nested CF control",
+    "local_phase_transition_abs_error_hz": 599062500.0,
+    "peak_window_complex_nrmse": 0.4177038576453479,
+    "phase_mae_rad": 0.1247769469263095,
+    "quality_factor_relative_error": 0.41146359685567785,
+    "resonance_frequency_abs_error_hz": 158125000.0
+  }
+]

@@ -1,0 +1,211 @@
+sample_id,calibration_frequency_count,family_a,family_b,metric,matched_curve_count,cfnn_win_count,cfnn_win_rate,median_delta_cfnn_minus_baseline,q25_delta_cfnn_minus_baseline,q75_delta_cfnn_minus_baseline,difference_interpretation
+s31,0,CFNN,MLP,complex_nrmse,150,21,0.14,0.013704871636479415,0.005441493884765277,0.025533893151508277,negative_delta_and_win_favors_CFNN
+s31,0,CFNN,MLP,peak_window_complex_nrmse,150,21,0.14,0.013704871636479415,0.005441493884765277,0.025533893151508277,negative_delta_and_win_favors_CFNN
+s31,0,CFNN,MLP,resonance_frequency_abs_error_hz,150,66,0.44,1093750.0,-3750000.0,5625000.0,negative_delta_and_win_favors_CFNN
+s31,0,CFNN,MLP,quality_factor_relative_error,150,94,0.6266666666666667,-0.007068964127346975,-0.022209875903738407,0.005875605579478628,negative_delta_and_win_favors_CFNN
+s31,0,CFNN,MLP,phase_transition_abs_error_hz,150,55,0.36666666666666664,0.0,-281484375.0,703125.0,negative_delta_and_win_favors_CFNN
+s31,0,CFNN,MLP,notch_magnitude_abs_error,150,44,0.29333333333333333,0.0016523398828744429,-0.00042527215803837837,0.00418301274676746,negative_delta_and_win_favors_CFNN
+s31,0,CFNN,MLP,phase_mae_rad,150,62,0.41333333333333333,0.00209284739374045,-0.003972911576286639,0.008746860423329977,negative_delta_and_win_favors_CFNN
+s31,0,CFNN,Local nested CF control,complex_nrmse,150,102,0.68,-0.007961572342588569,-0.016814544726420327,0.0025360166336222158,negative_delta_and_win_favors_CFNN
+s31,0,CFNN,Local nested CF control,peak_window_complex_nrmse,150,102,0.68,-0.007961572342588569,-0.016814544726420327,0.0025360166336222158,negative_delta_and_win_favors_CFNN
+s31,0,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,93,0.62,-3750000.0,-9296875.0,6250000.0,negative_delta_and_win_favors_CFNN
+s31,0,CFNN,Local nested CF control,quality_factor_relative_error,150,108,0.72,-0.011753572819145883,-0.03699609823009401,0.001494747920107652,negative_delta_and_win_favors_CFNN
+s31,0,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,62,0.41333333333333333,0.0,-36562500.0,26562500.0,negative_delta_and_win_favors_CFNN
+s31,0,CFNN,Local nested CF control,notch_magnitude_abs_error,150,74,0.49333333333333335,0.00020643104046291771,-0.0043510208232441575,0.0031356451549130124,negative_delta_and_win_favors_CFNN
+s31,0,CFNN,Local nested CF control,phase_mae_rad,150,112,0.7466666666666667,-0.005317476581433894,-0.010677491777791495,0.0004996132868514925,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,MLP,complex_nrmse,150,23,0.15333333333333332,0.013664377943108381,0.0047132995789210715,0.022699397158651848,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,MLP,peak_window_complex_nrmse,150,23,0.15333333333333332,0.013664377943108381,0.0047132995789210715,0.022699397158651848,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,MLP,resonance_frequency_abs_error_hz,150,63,0.42,937500.0,-3437500.0,5859375.0,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,MLP,quality_factor_relative_error,150,89,0.5933333333333334,-0.006648157744076641,-0.01892717011711035,0.006084576843292889,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,MLP,phase_transition_abs_error_hz,150,56,0.37333333333333335,0.0,-281484375.0,0.0,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,MLP,notch_magnitude_abs_error,150,49,0.32666666666666666,0.0010233067804487211,-0.0002758261078284682,0.004168656824270478,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,MLP,phase_mae_rad,150,62,0.41333333333333333,0.001841152784972256,-0.0036499898845158384,0.009336492282948406,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,Local nested CF control,complex_nrmse,150,101,0.6733333333333333,-0.007055002938528978,-0.01657958005431329,0.002997983998164387,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,Local nested CF control,peak_window_complex_nrmse,150,101,0.6733333333333333,-0.007055002938528978,-0.01657958005431329,0.002997983998164387,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,87,0.58,-4062500.0,-8984375.0,5312500.0,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,Local nested CF control,quality_factor_relative_error,150,113,0.7533333333333333,-0.014196149323189498,-0.03766219913308865,-0.0006248802071759266,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,63,0.42,0.0,-40625000.0,25234375.0,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,Local nested CF control,notch_magnitude_abs_error,150,77,0.5133333333333333,-0.00030750833309535486,-0.003866041789092993,0.002730476129645526,negative_delta_and_win_favors_CFNN
+s31,4,CFNN,Local nested CF control,phase_mae_rad,150,114,0.76,-0.005056460681081959,-0.010531358544466024,-0.0003458125320860315,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,MLP,complex_nrmse,150,23,0.15333333333333332,0.014237044711867989,0.004567667196694901,0.022284130227406,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,MLP,peak_window_complex_nrmse,150,23,0.15333333333333332,0.014237044711867989,0.004567667196694901,0.022284130227406,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,MLP,resonance_frequency_abs_error_hz,150,66,0.44,937500.0,-3437500.0,6093750.0,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,MLP,quality_factor_relative_error,150,87,0.58,-0.004825845935985112,-0.018894931127079,0.0077284920571634025,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,MLP,phase_transition_abs_error_hz,150,57,0.38,0.0,-281093750.0,312500.0,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,MLP,notch_magnitude_abs_error,150,46,0.30666666666666664,0.001768164786682,-0.00037357730528944644,0.003876263943249761,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,MLP,phase_mae_rad,150,65,0.43333333333333335,0.0014573717276716962,-0.003451738777512986,0.008483714378640171,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,Local nested CF control,complex_nrmse,150,106,0.7066666666666667,-0.008418743331192989,-0.017463527125173652,0.0009811955251862459,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,Local nested CF control,peak_window_complex_nrmse,150,106,0.7066666666666667,-0.008418743331192989,-0.017463527125173652,0.0009811955251862459,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,84,0.56,-2500000.0,-8515625.0,5000000.0,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,Local nested CF control,quality_factor_relative_error,150,101,0.6733333333333333,-0.015373651636908464,-0.03410743342575025,0.0038041282873804397,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,64,0.4266666666666667,0.0,-174218750.0,31875000.0,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,Local nested CF control,notch_magnitude_abs_error,150,73,0.4866666666666667,2.6018127447915984e-05,-0.0038590562780155963,0.0028061119512764188,negative_delta_and_win_favors_CFNN
+s31,8,CFNN,Local nested CF control,phase_mae_rad,150,116,0.7733333333333333,-0.0056580655513833785,-0.010373468866552226,-0.0011948547539259073,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,MLP,complex_nrmse,150,27,0.18,0.012428686017645307,0.004353593683539457,0.021998692712521,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,MLP,peak_window_complex_nrmse,150,27,0.18,0.012428686017645307,0.004353593683539457,0.021998692712521,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,MLP,resonance_frequency_abs_error_hz,150,66,0.44,625000.0,-3437500.0,6171875.0,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,MLP,quality_factor_relative_error,150,90,0.6,-0.0051878461842402405,-0.02061551517931156,0.011357890743732639,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,MLP,phase_transition_abs_error_hz,150,56,0.37333333333333335,0.0,-281406250.0,1562500.0,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,MLP,notch_magnitude_abs_error,150,56,0.37333333333333335,0.0012474859251530163,-0.0005965428095533465,0.003501229202100567,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,MLP,phase_mae_rad,150,66,0.44,0.0017539159090132466,-0.004191032139364132,0.008211668089310266,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,Local nested CF control,complex_nrmse,150,107,0.7133333333333334,-0.007501769287965823,-0.017656956747411322,0.0002789791461544795,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,Local nested CF control,peak_window_complex_nrmse,150,107,0.7133333333333334,-0.007501769287965823,-0.017656956747411322,0.0002789791461544795,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,89,0.5933333333333334,-2500000.0,-9218750.0,4375000.0,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,Local nested CF control,quality_factor_relative_error,150,104,0.6933333333333334,-0.010025858404375025,-0.0326059634705778,0.0017620224201088108,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,60,0.4,0.0,-41484375.0,42578125.0,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,Local nested CF control,notch_magnitude_abs_error,150,83,0.5533333333333333,-0.000461053103620504,-0.004541168872025825,0.0021503423633808874,negative_delta_and_win_favors_CFNN
+s31,16,CFNN,Local nested CF control,phase_mae_rad,150,115,0.7666666666666667,-0.005154455946003514,-0.010209100049070118,-0.0008699325876111311,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,MLP,complex_nrmse,150,26,0.17333333333333334,0.011983319385622394,0.0027743640536057965,0.019882801706777,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,MLP,peak_window_complex_nrmse,150,26,0.17333333333333334,0.011983319385622394,0.0027743640536057965,0.019882801706777,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,MLP,resonance_frequency_abs_error_hz,150,66,0.44,1093750.0,-2812500.0,5937500.0,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,MLP,quality_factor_relative_error,150,85,0.5666666666666667,-0.003969804547171538,-0.019538534675313208,0.010692950208165096,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,MLP,phase_transition_abs_error_hz,150,52,0.3466666666666667,0.0,-280781250.0,2187500.0,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,MLP,notch_magnitude_abs_error,150,58,0.38666666666666666,0.0010200514748711365,-0.0008539356792409275,0.0037376464093041226,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,MLP,phase_mae_rad,150,67,0.44666666666666666,0.001043790597325853,-0.003077275185259726,0.008017638176809568,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,Local nested CF control,complex_nrmse,150,107,0.7133333333333334,-0.006921468360809015,-0.016315525444032843,0.0014797396190936209,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,Local nested CF control,peak_window_complex_nrmse,150,107,0.7133333333333334,-0.006921468360809015,-0.016315525444032843,0.0014797396190936209,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,86,0.5733333333333334,-2031250.0,-9062500.0,4687500.0,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,Local nested CF control,quality_factor_relative_error,150,107,0.7133333333333334,-0.008504488454446258,-0.030238733826544684,0.0016739246713148442,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,60,0.4,0.0,-33046875.0,37812500.0,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,Local nested CF control,notch_magnitude_abs_error,150,83,0.5533333333333333,-0.0006017930670578348,-0.004385852783130036,0.00234297439773698,negative_delta_and_win_favors_CFNN
+s31,32,CFNN,Local nested CF control,phase_mae_rad,150,111,0.74,-0.005438490349286313,-0.010038206289155577,0.0002732156718640187,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,MLP,complex_nrmse,150,70,0.4666666666666667,0.005488434130675235,-0.028770177198215507,0.04367449240046946,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,MLP,peak_window_complex_nrmse,150,70,0.4666666666666667,0.005349537916368746,-0.028770177198215507,0.043434600426139836,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,MLP,resonance_frequency_abs_error_hz,150,54,0.36,8437500.0,-10937500.0,30312500.0,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,MLP,quality_factor_relative_error,63,35,0.5555555555555556,-0.02761745634619442,-0.06575839754119384,0.0991296161235943,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,MLP,phase_transition_abs_error_hz,150,58,0.38666666666666666,0.0,-27968750.0,35078125.0,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,MLP,notch_magnitude_abs_error,150,60,0.4,0.005780908633276405,-0.011187862738064241,0.019342557978601266,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,MLP,phase_mae_rad,150,69,0.46,0.003767328058841224,-0.02793457049813934,0.025188163924849218,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,Local nested CF control,complex_nrmse,150,101,0.6733333333333333,-0.02125568611389897,-0.05986450246992435,0.011018124744416227,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,Local nested CF control,peak_window_complex_nrmse,150,101,0.6733333333333333,-0.01864326521859669,-0.057126445676101006,0.011111263468089883,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,99,0.66,-165312500.0,-215234375.0,13437500.0,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,Local nested CF control,quality_factor_relative_error,18,14,0.7777777777777778,-0.038876274240675815,-0.10747580538348525,-0.008092854596248887,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,65,0.43333333333333335,0.0,-55937500.0,6875000.0,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,Local nested CF control,notch_magnitude_abs_error,150,87,0.58,-0.006291170623790962,-0.017610897652677315,0.006460167534020428,negative_delta_and_win_favors_CFNN
+s33,0,CFNN,Local nested CF control,phase_mae_rad,150,72,0.48,0.0022727440606754024,-0.028483810621145023,0.02815778521203375,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,MLP,complex_nrmse,150,71,0.47333333333333333,0.004649183980303728,-0.031229315767035082,0.03961101485718674,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,MLP,peak_window_complex_nrmse,150,70,0.4666666666666667,0.004649183980303728,-0.03112379217758801,0.040740953817551925,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,MLP,resonance_frequency_abs_error_hz,150,60,0.4,6562500.0,-12421875.0,27890625.0,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,MLP,quality_factor_relative_error,72,34,0.4722222222222222,0.016176588661001093,-0.09131624029915628,0.10963701864304298,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,MLP,phase_transition_abs_error_hz,150,61,0.4066666666666667,0.0,-48750000.0,29062500.0,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,MLP,notch_magnitude_abs_error,150,57,0.38,0.004718252845009027,-0.007751812101567668,0.01811753351244491,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,MLP,phase_mae_rad,150,77,0.5133333333333333,-0.0006744684253166405,-0.027521494692762855,0.024858891078914334,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,Local nested CF control,complex_nrmse,150,109,0.7266666666666667,-0.022836117656143073,-0.059679271479446655,0.0036265284236401962,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,Local nested CF control,peak_window_complex_nrmse,150,108,0.72,-0.02165678510173885,-0.05937091953798765,0.0025273915409716047,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,99,0.66,-115000000.0,-212500000.0,12734375.0,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,Local nested CF control,quality_factor_relative_error,18,11,0.6111111111111112,-0.026490415544399768,-0.10586250567533351,0.026382349327795592,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,65,0.43333333333333335,0.0,-57578125.0,8125000.0,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,Local nested CF control,notch_magnitude_abs_error,150,87,0.58,-0.006375704326330625,-0.01565937350929994,0.005223793529559567,negative_delta_and_win_favors_CFNN
+s33,4,CFNN,Local nested CF control,phase_mae_rad,150,82,0.5466666666666666,-0.002742168457313149,-0.028913716223243055,0.02385744594271299,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,MLP,complex_nrmse,150,68,0.4533333333333333,0.0052231731066051945,-0.033921026608511914,0.034809788606999084,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,MLP,peak_window_complex_nrmse,150,68,0.4533333333333333,0.004614656925911537,-0.033684739000223715,0.03427459505275002,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,MLP,resonance_frequency_abs_error_hz,150,57,0.38,6562500.0,-11250000.0,24609375.0,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,MLP,quality_factor_relative_error,72,35,0.4861111111111111,0.004906290733433346,-0.06898444820109774,0.12102035132725758,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,MLP,phase_transition_abs_error_hz,150,59,0.3933333333333333,4062500.0,-37968750.0,38281250.0,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,MLP,notch_magnitude_abs_error,150,57,0.38,0.0060043496416558595,-0.009383696147816145,0.016425983737080707,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,MLP,phase_mae_rad,150,79,0.5266666666666666,-0.004155595948360985,-0.029356345748548174,0.02205723095583123,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,Local nested CF control,complex_nrmse,150,105,0.7,-0.023421751086345977,-0.057719788169122654,0.010703270375519172,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,Local nested CF control,peak_window_complex_nrmse,150,103,0.6866666666666666,-0.02307804342048403,-0.056273722395826065,0.012135813547262314,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,105,0.7,-169375000.0,-213359375.0,8281250.0,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,Local nested CF control,quality_factor_relative_error,18,11,0.6111111111111112,-0.02012118204392182,-0.05853552156690767,0.06282477724418935,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,70,0.4666666666666667,0.0,-65156250.0,3281250.0,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,Local nested CF control,notch_magnitude_abs_error,150,93,0.62,-0.006849474137774633,-0.015864366933875808,0.004516894202880123,negative_delta_and_win_favors_CFNN
+s33,8,CFNN,Local nested CF control,phase_mae_rad,150,84,0.56,-0.004928005281505998,-0.027302183105073347,0.021123781919822462,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,MLP,complex_nrmse,150,73,0.4866666666666667,0.0008559831091649317,-0.025779520759216384,0.03348755291748923,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,MLP,peak_window_complex_nrmse,150,73,0.4866666666666667,0.0008561728555892267,-0.026963031264696555,0.03454682626035582,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,MLP,resonance_frequency_abs_error_hz,150,51,0.34,6875000.0,-9921875.0,23750000.0,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,MLP,quality_factor_relative_error,78,38,0.48717948717948717,0.0114855392502646,-0.09338840564490133,0.10785084715023771,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,MLP,phase_transition_abs_error_hz,150,63,0.42,0.0,-41953125.0,33203125.0,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,MLP,notch_magnitude_abs_error,150,63,0.42,0.0025136550519614664,-0.009559926741544988,0.017771306180343546,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,MLP,phase_mae_rad,150,78,0.52,-0.0025967868838684266,-0.026267083266918824,0.021216448836050145,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,Local nested CF control,complex_nrmse,150,109,0.7266666666666667,-0.02421822248309516,-0.055650417041387776,0.0023032751760435483,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,Local nested CF control,peak_window_complex_nrmse,150,107,0.7133333333333334,-0.023027477850167982,-0.05313771469997852,0.0022128300494721476,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,102,0.68,-174375000.0,-217578125.0,14687500.0,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,Local nested CF control,quality_factor_relative_error,24,14,0.5833333333333334,-0.019122309258843465,-0.11756164682299725,0.027922296094342162,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,71,0.47333333333333333,0.0,-57500000.0,14687500.0,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,Local nested CF control,notch_magnitude_abs_error,150,105,0.7,-0.008112890883162985,-0.019934876207691313,0.0019921725088005715,negative_delta_and_win_favors_CFNN
+s33,16,CFNN,Local nested CF control,phase_mae_rad,150,73,0.4866666666666667,0.0012712943641806085,-0.025563329752193137,0.019823101700936895,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,MLP,complex_nrmse,150,73,0.4866666666666667,0.0014743666602739514,-0.024237182504171922,0.029000236744491842,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,MLP,peak_window_complex_nrmse,150,72,0.48,0.0022186808567781213,-0.023883102870145875,0.02922580193938816,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,MLP,resonance_frequency_abs_error_hz,150,60,0.4,4375000.0,-6875000.0,25000000.0,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,MLP,quality_factor_relative_error,84,39,0.4642857142857143,0.013995605022946098,-0.08902085048156114,0.09700046293225024,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,MLP,phase_transition_abs_error_hz,150,65,0.43333333333333335,2656250.0,-57187500.0,48125000.0,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,MLP,notch_magnitude_abs_error,150,75,0.5,0.0005556676151715068,-0.013579330397271737,0.014065627414384163,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,MLP,phase_mae_rad,150,81,0.54,-0.003186481309791156,-0.02383011308385064,0.018271466054639626,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,Local nested CF control,complex_nrmse,150,109,0.7266666666666667,-0.023995652881370955,-0.06250676527145631,0.004989837555696597,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,Local nested CF control,peak_window_complex_nrmse,150,108,0.72,-0.023995652881370955,-0.0605909463781719,0.004752474931246031,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,104,0.6933333333333334,-180937500.0,-218750000.0,5703125.0,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,Local nested CF control,quality_factor_relative_error,30,14,0.4666666666666667,0.00929282471096517,-0.061716563266883295,0.043268437022430814,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,70,0.4666666666666667,0.0,-58593750.0,14843750.0,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,Local nested CF control,notch_magnitude_abs_error,150,114,0.76,-0.008937590626660732,-0.019157179682167173,-0.00027412917196451003,negative_delta_and_win_favors_CFNN
+s33,32,CFNN,Local nested CF control,phase_mae_rad,150,89,0.5933333333333334,-0.00422334741296769,-0.024216485333956116,0.012092466207321198,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,MLP,complex_nrmse,150,88,0.5866666666666667,-0.006935845678460999,-0.017541434109816817,0.015255066299203639,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,MLP,peak_window_complex_nrmse,150,87,0.58,-0.007592923359489009,-0.01719540234117365,0.01599944833247679,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,MLP,resonance_frequency_abs_error_hz,150,19,0.12666666666666668,8750000.0,3281250.0,13437500.0,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,MLP,quality_factor_relative_error,150,113,0.7533333333333333,-0.04198992078632231,-0.07288498987832463,-5.064237300238077e-05,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,MLP,phase_transition_abs_error_hz,150,78,0.52,-6875000.0,-38125000.0,35312500.0,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,MLP,notch_magnitude_abs_error,150,99,0.66,-0.002724968489727392,-0.006246236112354149,0.0005416400516837852,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,MLP,phase_mae_rad,150,67,0.44666666666666666,0.0012297453620426953,-0.006589768594268745,0.00593953180194611,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,Local nested CF control,complex_nrmse,150,97,0.6466666666666666,-0.009843833184985606,-0.02478165423807188,0.008147322224369813,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,Local nested CF control,peak_window_complex_nrmse,150,96,0.64,-0.00950981257882668,-0.02400778732353158,0.008293053790362975,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,48,0.32,4687500.0,-2187500.0,13125000.0,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,Local nested CF control,quality_factor_relative_error,150,125,0.8333333333333334,-0.04740080520005842,-0.07822283644172824,-0.006961239319109899,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,81,0.54,-11875000.0,-76562500.0,29687500.0,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,Local nested CF control,notch_magnitude_abs_error,150,112,0.7466666666666667,-0.005811040213031138,-0.011356452153120263,0.00018268946086671956,negative_delta_and_win_favors_CFNN
+s34,0,CFNN,Local nested CF control,phase_mae_rad,150,79,0.5266666666666666,-0.0007813492766764029,-0.008425686053484989,0.006115922766055664,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,MLP,complex_nrmse,150,87,0.58,-0.006785924055515494,-0.01881685899715943,0.01475880820374104,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,MLP,peak_window_complex_nrmse,150,86,0.5733333333333334,-0.006360469673030597,-0.019746969515765923,0.014969762084075414,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,MLP,resonance_frequency_abs_error_hz,150,17,0.11333333333333333,8437500.0,2812500.0,13750000.0,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,MLP,quality_factor_relative_error,150,112,0.7466666666666667,-0.044733491683459234,-0.07606872077016898,0.00021692289295564132,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,MLP,phase_transition_abs_error_hz,150,81,0.54,-7812500.0,-38750000.0,34062500.0,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,MLP,notch_magnitude_abs_error,150,103,0.6866666666666666,-0.0027915373949216338,-0.006027644178550978,0.0008905984809111298,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,MLP,phase_mae_rad,150,72,0.48,0.0006012700231231259,-0.007520421573296637,0.0071360380193735045,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,Local nested CF control,complex_nrmse,150,96,0.64,-0.011154866169595996,-0.024489063264199473,0.006059015132090211,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,Local nested CF control,peak_window_complex_nrmse,150,97,0.6466666666666666,-0.009206214649078219,-0.024038205810300594,0.0066260181632896535,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,51,0.34,4687500.0,-2500000.0,12500000.0,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,Local nested CF control,quality_factor_relative_error,150,125,0.8333333333333334,-0.04708493005982105,-0.0834169346736634,-0.013043982656280366,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,81,0.54,-12812500.0,-75937500.0,31562500.0,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,Local nested CF control,notch_magnitude_abs_error,150,115,0.7666666666666667,-0.005547582933211517,-0.011548991211775113,-0.0004052139080710296,negative_delta_and_win_favors_CFNN
+s34,4,CFNN,Local nested CF control,phase_mae_rad,150,85,0.5666666666666667,-0.0008983407098475255,-0.008159550283679678,0.005617097504586265,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,MLP,complex_nrmse,150,92,0.6133333333333333,-0.006384400297541837,-0.017312564357612116,0.015391974676007478,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,MLP,peak_window_complex_nrmse,150,89,0.5933333333333334,-0.00605662033933501,-0.019102683789100017,0.01460469548169905,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,MLP,resonance_frequency_abs_error_hz,150,22,0.14666666666666667,8125000.0,2890625.0,13750000.0,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,MLP,quality_factor_relative_error,150,115,0.7666666666666667,-0.04439724485180426,-0.07834561190540101,-0.004170459374676151,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,MLP,phase_transition_abs_error_hz,150,84,0.56,-11250000.0,-40312500.0,34687500.0,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,MLP,notch_magnitude_abs_error,150,112,0.7466666666666667,-0.0029355677670625246,-0.00578008416485775,0.0006714927571425874,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,MLP,phase_mae_rad,150,77,0.5133333333333333,-0.0003883698678366163,-0.008092012373616453,0.006504973433366597,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,Local nested CF control,complex_nrmse,150,100,0.6666666666666666,-0.008715425380136428,-0.024724258129957224,0.005458585466059072,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,Local nested CF control,peak_window_complex_nrmse,150,99,0.66,-0.008229169339174343,-0.023197388496325425,0.0056093047100119475,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,54,0.36,4531250.0,-3125000.0,11875000.0,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,Local nested CF control,quality_factor_relative_error,150,123,0.82,-0.05371536506839032,-0.08865618828400698,-0.014084572967615623,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,84,0.56,-18750000.0,-81562500.0,29687500.0,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,Local nested CF control,notch_magnitude_abs_error,150,118,0.7866666666666666,-0.005218040132696555,-0.011050003770382372,-0.0008447932126927626,negative_delta_and_win_favors_CFNN
+s34,8,CFNN,Local nested CF control,phase_mae_rad,150,84,0.56,-0.0011711573442366625,-0.008160477331033707,0.0050768143290608,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,MLP,complex_nrmse,150,91,0.6066666666666667,-0.0057693848840656425,-0.017990121499971028,0.013023560857098163,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,MLP,peak_window_complex_nrmse,150,92,0.6133333333333333,-0.0057363559839216025,-0.0187326916889103,0.01361598885392316,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,MLP,resonance_frequency_abs_error_hz,150,21,0.14,8281250.0,2812500.0,12187500.0,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,MLP,quality_factor_relative_error,150,118,0.7866666666666666,-0.050142123043514245,-0.08212774107599388,-0.006875485471186533,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,MLP,phase_transition_abs_error_hz,150,87,0.58,-12343750.0,-40312500.0,31875000.0,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,MLP,notch_magnitude_abs_error,150,105,0.7,-0.0026669472912683734,-0.005737716054675941,0.0005690330898636062,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,MLP,phase_mae_rad,150,76,0.5066666666666667,-8.497150786561727e-05,-0.007034576289740621,0.005515489374691464,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,Local nested CF control,complex_nrmse,150,101,0.6733333333333333,-0.00887385080208964,-0.023236263960239728,0.004351492088599324,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,Local nested CF control,peak_window_complex_nrmse,150,100,0.6666666666666666,-0.00756080530826924,-0.022935180606018478,0.0037607003491929546,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,57,0.38,4218750.0,-2812500.0,12187500.0,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,Local nested CF control,quality_factor_relative_error,150,127,0.8466666666666667,-0.04405926219910199,-0.08527553266447344,-0.00972504928812306,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,81,0.54,-16406250.0,-82187500.0,30312500.0,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,Local nested CF control,notch_magnitude_abs_error,150,117,0.78,-0.005051433050015791,-0.010748873185497623,-0.001405254891200608,negative_delta_and_win_favors_CFNN
+s34,16,CFNN,Local nested CF control,phase_mae_rad,150,87,0.58,-0.0014341223318088715,-0.008053783722130062,0.0043626945577741535,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,MLP,complex_nrmse,150,90,0.6,-0.0054185086425071055,-0.018369900897848193,0.011002639831237108,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,MLP,peak_window_complex_nrmse,150,92,0.6133333333333333,-0.005262562488119592,-0.019221218558634456,0.012105133867604808,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,MLP,resonance_frequency_abs_error_hz,150,21,0.14,8437500.0,1953125.0,13671875.0,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,MLP,quality_factor_relative_error,150,117,0.78,-0.05320292229334116,-0.08528490179325734,-0.008864549333535827,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,MLP,phase_transition_abs_error_hz,150,87,0.58,-15000000.0,-39062500.0,28750000.0,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,MLP,notch_magnitude_abs_error,150,98,0.6533333333333333,-0.0022310492430019646,-0.005089978561694311,0.001310193340647435,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,MLP,phase_mae_rad,150,79,0.5266666666666666,-0.0009950103667573616,-0.007157449999546286,0.006183977383508253,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,Local nested CF control,complex_nrmse,150,102,0.68,-0.005995472165181495,-0.02303039010677437,0.0034279936475238096,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,Local nested CF control,peak_window_complex_nrmse,150,100,0.6666666666666666,-0.005587898487064855,-0.02145126034507849,0.004511965756863388,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,Local nested CF control,resonance_frequency_abs_error_hz,150,54,0.36,3906250.0,-3437500.0,11250000.0,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,Local nested CF control,quality_factor_relative_error,150,128,0.8533333333333334,-0.05061484015609759,-0.09854668802186589,-0.01629641930845983,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,Local nested CF control,phase_transition_abs_error_hz,150,84,0.56,-21562500.0,-79687500.0,30000000.0,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,Local nested CF control,notch_magnitude_abs_error,150,118,0.7866666666666666,-0.004429160262310328,-0.010166412218573444,-0.0009962453183856232,negative_delta_and_win_favors_CFNN
+s34,32,CFNN,Local nested CF control,phase_mae_rad,150,82,0.5466666666666666,-0.000768103603666118,-0.0076540113487518335,0.004450316074444913,negative_delta_and_win_favors_CFNN

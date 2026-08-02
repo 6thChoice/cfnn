@@ -1,0 +1,40 @@
+{
+  "candidate": {
+    "actual_parameters": 1010,
+    "budget_relative_error": 0.013671875,
+    "candidate_key": "{\"activation\":\"gelu\",\"depth\":3,\"width\":21}",
+    "config": {
+      "activation": "gelu",
+      "depth": 3,
+      "width": 21
+    },
+    "target_budget": 1024
+  },
+  "candidate_manifest_sha256": "9f596c9c7981d4935fb28f0ad70b04b744d2645c41a85c78e41fe7fb8de3d85e",
+  "config_sha256": "f56cc6c8dc9700e1e862bd52ef209b1d11655e1378a3eb37ecf9fad545357c91",
+  "failure_count": 0,
+  "family": "MLP",
+  "final_jsonl_sha256": "04cae058a40d8d167421d889892fe01f858ef2ef786ca9410551f8a21898d655",
+  "finalist_count": 3,
+  "frf_density": null,
+  "global_available_count": 3,
+  "median_validation_global_nrmse": 0.07859951257705688,
+  "median_validation_resonance_nrmse": 0.1533658802509308,
+  "no_feature_count": 0,
+  "optimizer": {
+    "key": "lr3e-3_wd0",
+    "lr": 0.003,
+    "weight_decay": 0.0
+  },
+  "optimizer_count": 3,
+  "peak_available_count": 3,
+  "protocol_sha256": "077f7bb2ba5b38ea9eb4bae7096f0a65d202b26198b2ef94358a69fe4f66951f",
+  "record_count": 3,
+  "screen_jsonl_sha256": "084a7ab06413d260daae57089eeb318276efcd6ba925dd62e1d60750ac8cd019",
+  "screened_candidate_count": 12,
+  "selected_step": 1280,
+  "status": "selected",
+  "target_budget": 1024,
+  "task": "microwave_fano",
+  "tuning_seed_count": 3
+}

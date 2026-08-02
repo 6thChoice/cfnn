@@ -1,0 +1,173 @@
+{
+  "analysis_type": "microstrip_low_calibration_event_transfer",
+  "claim_gate": {
+    "claim_status": "localized_q_transfer_with_guardrails_not_digital_twin",
+    "digital_twin_status": "blocked_full_digital_twin_language",
+    "guardrail_blocked_q_count": 8,
+    "localized_transfer_pass_count": 7,
+    "reporting_rule": "Report Microstrip as localized Q/linewidth transfer only; f0, local phase, and global response remain guardrails."
+  },
+  "focused_stratum_rows": [
+    {
+      "calibration_frequency_count": 4,
+      "comparison_family": "Local nested CF control",
+      "f0_effect": 0.8692948522175845,
+      "global_complex_nrmse_effect": 0.13357186187969824,
+      "local_phase_effect": 0.17713854364808215,
+      "localized_transfer_status": "passes_localized_q_transfer",
+      "quality_factor_effect": 0.3310012710589097,
+      "stratum_id": "edge_intermediate_missed_band"
+    },
+    {
+      "calibration_frequency_count": 8,
+      "comparison_family": "Local nested CF control",
+      "f0_effect": 0.8396728288336215,
+      "global_complex_nrmse_effect": 0.13226598068545353,
+      "local_phase_effect": 0.1874004446613856,
+      "localized_transfer_status": "passes_localized_q_transfer",
+      "quality_factor_effect": 0.3120994804120913,
+      "stratum_id": "edge_intermediate_missed_band"
+    },
+    {
+      "calibration_frequency_count": 16,
+      "comparison_family": "Local nested CF control",
+      "f0_effect": 0.9336972403716263,
+      "global_complex_nrmse_effect": 0.10770477474567552,
+      "local_phase_effect": 0.1785149798570701,
+      "localized_transfer_status": "passes_localized_q_transfer",
+      "quality_factor_effect": 0.2940785029386648,
+      "stratum_id": "edge_intermediate_missed_band"
+    },
+    {
+      "calibration_frequency_count": 32,
+      "comparison_family": "Local nested CF control",
+      "f0_effect": 0.9160103444222405,
+      "global_complex_nrmse_effect": 0.04290244812621796,
+      "local_phase_effect": 0.1793801614785559,
+      "localized_transfer_status": "passes_localized_q_transfer",
+      "quality_factor_effect": 0.19003981960013105,
+      "stratum_id": "edge_intermediate_missed_band"
+    },
+    {
+      "calibration_frequency_count": 4,
+      "comparison_family": "MLP",
+      "f0_effect": 0.8933747412008282,
+      "global_complex_nrmse_effect": 0.13952147595016068,
+      "local_phase_effect": -0.32649758079790625,
+      "localized_transfer_status": "q_signal_blocked_by_event_guardrail",
+      "quality_factor_effect": 0.1439832465970714,
+      "stratum_id": "edge_intermediate_missed_band"
+    },
+    {
+      "calibration_frequency_count": 8,
+      "comparison_family": "MLP",
+      "f0_effect": 0.8898566238484494,
+      "global_complex_nrmse_effect": 0.13224769350855264,
+      "local_phase_effect": -0.30289824991744896,
+      "localized_transfer_status": "q_signal_blocked_by_event_guardrail",
+      "quality_factor_effect": 0.1210200056827276,
+      "stratum_id": "edge_intermediate_missed_band"
+    },
+    {
+      "calibration_frequency_count": 16,
+      "comparison_family": "MLP",
+      "f0_effect": 0.9358344255133246,
+      "global_complex_nrmse_effect": 0.11553061819453041,
+      "local_phase_effect": -0.3116056068188927,
+      "localized_transfer_status": "q_signal_blocked_by_event_guardrail",
+      "quality_factor_effect": 0.08229611307102022,
+      "stratum_id": "edge_intermediate_missed_band"
+    },
+    {
+      "calibration_frequency_count": 32,
+      "comparison_family": "MLP",
+      "f0_effect": 0.9040383846461415,
+      "global_complex_nrmse_effect": 0.05415718339541797,
+      "local_phase_effect": -0.3334085941874537,
+      "localized_transfer_status": "no_confirmed_q_transfer",
+      "quality_factor_effect": -0.03886821989826421,
+      "stratum_id": "edge_intermediate_missed_band"
+    },
+    {
+      "calibration_frequency_count": 4,
+      "comparison_family": "Local nested CF control",
+      "f0_effect": -0.3720982645931936,
+      "global_complex_nrmse_effect": 0.05499395563672731,
+      "local_phase_effect": 0.4869950002341428,
+      "localized_transfer_status": "q_signal_blocked_by_event_guardrail",
+      "quality_factor_effect": 0.5024701502305843,
+      "stratum_id": "edge_proximal_missed_band"
+    },
+    {
+      "calibration_frequency_count": 8,
+      "comparison_family": "Local nested CF control",
+      "f0_effect": -0.37956626748515643,
+      "global_complex_nrmse_effect": 0.05485327665591343,
+      "local_phase_effect": 0.4872563689568012,
+      "localized_transfer_status": "q_signal_blocked_by_event_guardrail",
+      "quality_factor_effect": 0.5230562057107999,
+      "stratum_id": "edge_proximal_missed_band"
+    },
+    {
+      "calibration_frequency_count": 16,
+      "comparison_family": "Local nested CF control",
+      "f0_effect": -1.2987686916258343,
+      "global_complex_nrmse_effect": 0.050413383820136534,
+      "local_phase_effect": 0.1299239417017064,
+      "localized_transfer_status": "q_signal_blocked_by_event_guardrail",
+      "quality_factor_effect": 0.34951972813830834,
+      "stratum_id": "edge_proximal_missed_band"
+    },
+    {
+      "calibration_frequency_count": 32,
+      "comparison_family": "Local nested CF control",
+      "f0_effect": -0.3427239480770003,
+      "global_complex_nrmse_effect": 0.03341002520729605,
+      "local_phase_effect": 0.4888161412610823,
+      "localized_transfer_status": "q_signal_blocked_by_event_guardrail",
+      "quality_factor_effect": 0.5189363184804336,
+      "stratum_id": "edge_proximal_missed_band"
+    },
+    {
+      "calibration_frequency_count": 4,
+      "comparison_family": "MLP",
+      "f0_effect": 0.33005492669709174,
+      "global_complex_nrmse_effect": 0.10116382320956782,
+      "local_phase_effect": 0.2939993313585085,
+      "localized_transfer_status": "passes_localized_q_transfer",
+      "quality_factor_effect": 0.5813824280050375,
+      "stratum_id": "edge_proximal_missed_band"
+    },
+    {
+      "calibration_frequency_count": 8,
+      "comparison_family": "MLP",
+      "f0_effect": 0.3365440510161899,
+      "global_complex_nrmse_effect": 0.09442980751027519,
+      "local_phase_effect": 0.29451496448119246,
+      "localized_transfer_status": "passes_localized_q_transfer",
+      "quality_factor_effect": 0.585654760976672,
+      "stratum_id": "edge_proximal_missed_band"
+    },
+    {
+      "calibration_frequency_count": 16,
+      "comparison_family": "MLP",
+      "f0_effect": -0.06972325057602195,
+      "global_complex_nrmse_effect": 0.07335128057275292,
+      "local_phase_effect": -0.19811536966597376,
+      "localized_transfer_status": "q_signal_blocked_by_event_guardrail",
+      "quality_factor_effect": 0.5041316318993307,
+      "stratum_id": "edge_proximal_missed_band"
+    },
+    {
+      "calibration_frequency_count": 32,
+      "comparison_family": "MLP",
+      "f0_effect": 0.4328748318370261,
+      "global_complex_nrmse_effect": 0.054208208347107725,
+      "local_phase_effect": 0.29954237226269975,
+      "localized_transfer_status": "passes_localized_q_transfer",
+      "quality_factor_effect": 0.4830599768005428,
+      "stratum_id": "edge_proximal_missed_band"
+    }
+  ],
+  "source_analysis_type": "microstrip_b2_confirmatory_guardrail_stratum_effects"
+}

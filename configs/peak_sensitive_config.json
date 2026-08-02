@@ -1,0 +1,237 @@
+{
+  "protocol_key": "cfnn-peak-sensitive-extension-2.0.0",
+  "protocol_version": "2.0.0",
+  "primary_family": "CFNN",
+  "primary_budget": null,
+  "budgets": [128, 256, 512, 1024],
+  "budget_tolerance": 0.05,
+  "minimum_candidates_per_budget": 3,
+  "maximum_candidates_per_budget": 12,
+  "finalists_per_budget": 3,
+  "fixed_scientific_tasks": [
+    "controlled_fano",
+    "microwave_fano",
+    "microstrip_resonator",
+    "aluminium_frf",
+    "figshare_battery_eis",
+    "hybrid_supercapacitor_eis"
+  ],
+  "conventional_candidates": [],
+  "conventional_task_count": 0,
+  "families": [
+    "CFNN",
+    "MLP",
+    "Fourier-feature MLP",
+    "Gaussian RBF",
+    "KAN",
+    "Local nested CF control",
+    "Rational activation NN",
+    "SIREN"
+  ],
+  "tuning_data_seeds": [547, 601, 659],
+  "evaluation_data_seeds": [719, 773, 829, 887, 947],
+  "evaluation_init_seeds": [11003, 12007, 13001, 14009, 15013, 16001, 17011, 18013, 19001, 20011],
+  "training": {
+    "screening_steps": 500,
+    "min_steps": 500,
+    "max_steps": 4000,
+    "patience": 250,
+    "validation_interval": 20,
+    "checkpoints": [20, 80, 200, 500, 1000, 2000, 4000],
+    "gradient_clip": 5.0
+  },
+  "screening": {
+    "steps": 500,
+    "optimizer_choice_by_family": {
+      "CFNN": {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      "MLP": {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      "Fourier-feature MLP": {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      "Gaussian RBF": {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0},
+      "KAN": {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      "Local nested CF control": {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      "Rational activation NN": {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      "SIREN": {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0}
+    },
+    "selection_rule": "Use the middle learning-rate entry in each inherited grid; choose the lowest weight decay when a grid has a duplicate learning rate. CFNN uses lr1e-3_wd0, a frozen member of its v2 grid."
+  },
+  "common_budget_selection": {
+    "relative_loss_threshold": 0.05,
+    "minimum_family_eligibility": 6,
+    "pooled_aggregation": "median",
+    "relative_loss_definition": "family_budget_loss divided by that family's minimum loss across the four frozen budgets",
+    "selection_rule": "Choose the smallest budget whose pooled median relative loss is within the threshold of the best pooled median."
+  },
+  "cfnn_epsilon_grid": [0.05, 0.1, 0.2, 0.3, 0.5],
+  "cfnn_initialization_modes": ["fixed", "numerator_scaled"],
+  "frf_densities": [24, 48, 96, 192],
+  "frequency_transforms": {
+    "controlled_fano": "linear",
+    "microwave_fano": "linear",
+    "microstrip_resonator": "linear",
+    "aluminium_frf": "linear",
+    "figshare_battery_eis": "log10_frequency",
+    "hybrid_supercapacitor_eis": "log10_frequency"
+  },
+  "peak_detector": {
+    "smoothing": {"method": "savgol", "window_length": 5, "polyorder": 2},
+    "prominence_fraction": 0.05,
+    "minimum_distance_observed_spacings": 2,
+    "max_features": 3,
+    "minimum_half_width_observed_spacings": 2,
+    "include_dips_for_tasks": ["microwave_fano", "microstrip_resonator"],
+    "no_feature_status": "no_identifiable_feature"
+  },
+  "metric_settings": {
+    "primary_metric_names": [
+      "resonance_window_complex_nrmse",
+      "global_complex_nrmse"
+    ],
+    "primary_validation_metric": "resonance_window_complex_nrmse",
+    "global_validation_metric": "global_complex_nrmse",
+    "primary_test_metric": "resonance_window_complex_nrmse",
+    "global_guardrail_relative_tolerance": 0.10,
+    "eis_weighting": "trapezoidal_log_frequency",
+    "window_source_roles": ["train", "validation", "generator_metadata"],
+    "test_response_allowed_for_window": false
+  },
+  "output_root": "peak_sensitive_results",
+  "raw_data_root": "downstream_data/raw",
+  "new_raw_data_subdirectory": "hybrid_supercapacitor_eis",
+  "tasks": {
+    "controlled_fano": {
+      "role": "controlled_mechanism",
+      "problem_type": "complex_regression",
+      "input_dim": 1,
+      "output_dim": 2,
+      "n_train": 64,
+      "n_validation": 32,
+      "n_test": 2048,
+      "noise": 0.01,
+      "domain": [0.0, 1.0],
+      "frequency_transform": "linear",
+      "window_source": "generator_metadata"
+    },
+    "microwave_fano": {
+      "role": "fixed_measured",
+      "problem_type": "complex_regression",
+      "input_dim": 1,
+      "output_dim": 2,
+      "split_mode": "within_curve",
+      "n_train": 128,
+      "n_validation": 128,
+      "frequency_transform": "linear",
+      "window_source": "train_validation_observed_response",
+      "detector_signal": "complex_magnitude_and_inverse_magnitude"
+    },
+    "microstrip_resonator": {
+      "role": "fixed_measured",
+      "problem_type": "complex_regression",
+      "input_dim": 1,
+      "output_dim": 2,
+      "split_mode": "within_curve",
+      "n_train": 128,
+      "n_validation": 128,
+      "frequency_transform": "linear",
+      "window_source": "train_validation_observed_response",
+      "detector_signal": "complex_magnitude_and_inverse_magnitude"
+    },
+    "aluminium_frf": {
+      "role": "fixed_measured",
+      "problem_type": "complex_regression",
+      "input_dim": 1,
+      "output_dim": 2,
+      "split_mode": "within_curve",
+      "n_train": 24,
+      "n_validation": 12,
+      "frequency_transform": "linear",
+      "window_source": "train_validation_observed_response",
+      "detector_signal": "magnitude",
+      "density_axis": [24, 48, 96, 192],
+      "validation_by_density": {"24": 12, "48": 24, "96": 48, "192": 96},
+      "nested_density_masks": true,
+      "minimum_test_points": 1
+    },
+    "figshare_battery_eis": {
+      "role": "fixed_measured",
+      "problem_type": "complex_regression",
+      "input_dim": 1,
+      "output_dim": 2,
+      "split_mode": "within_curve",
+      "n_train": 7,
+      "n_validation": 7,
+      "frequency_transform": "log10_frequency",
+      "window_source": "train_validation_observed_response",
+      "detector_signal": "negative_imaginary_impedance",
+      "log_frequency_weighted_metric": true,
+      "source_key": "figshare_battery_eis"
+    },
+    "hybrid_supercapacitor_eis": {
+      "role": "independent_eis_extension",
+      "problem_type": "complex_regression",
+      "input_dim": 1,
+      "output_dim": 2,
+      "split_mode": "stratified_condition_within_curve",
+      "n_train": 7,
+      "n_validation": 7,
+      "frequency_transform": "log10_frequency",
+      "window_source": "train_validation_observed_response",
+      "detector_signal": "negative_imaginary_impedance",
+      "log_frequency_weighted_metric": true,
+      "source_key": "hybrid_supercapacitor_eis",
+      "source_provider": "figshare",
+      "source_article_id": 24321496,
+      "source_version": 4,
+      "condition_fields": ["temperature_c", "soc_percent"],
+      "tuning_condition_count": 3,
+      "evaluation_condition_count": 5,
+      "repeated_measurement_identity_fields": ["device_id", "repetition_id", "curve_id"]
+    }
+  },
+  "optimizer_grids": {
+    "CFNN": [
+      {"key": "lr1e-4_wd0", "lr": 0.0001, "weight_decay": 0.0},
+      {"key": "lr1e-4_wd1e-6", "lr": 0.0001, "weight_decay": 0.000001},
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr3e-4_wd1e-6", "lr": 0.0003, "weight_decay": 0.000001},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd1e-6", "lr": 0.001, "weight_decay": 0.000001},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd1e-6", "lr": 0.003, "weight_decay": 0.000001}
+    ],
+    "MLP": [
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd1e-4", "lr": 0.001, "weight_decay": 0.0001}
+    ],
+    "Fourier-feature MLP": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "Gaussian RBF": [
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0},
+      {"key": "lr1e-2_wd0", "lr": 0.01, "weight_decay": 0.0}
+    ],
+    "KAN": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "Local nested CF control": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "Rational activation NN": [
+      {"key": "lr1e-4_wd0", "lr": 0.0001, "weight_decay": 0.0},
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0}
+    ],
+    "SIREN": [
+      {"key": "lr1e-4_wd0", "lr": 0.0001, "weight_decay": 0.0},
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0}
+    ]
+  }
+}

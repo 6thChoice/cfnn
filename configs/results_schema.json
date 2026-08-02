@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "required": ["records", "assignments"],
+  "properties": {
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["task", "family", "target_budget", "actual_parameters", "seed", "r2", "valid_match"],
+        "properties": {
+          "task": {"type": "string"},
+          "family": {"type": "string"},
+          "target_budget": {"type": "integer"},
+          "actual_parameters": {"type": "integer"},
+          "budget_relative_error": {"type": "number"},
+          "seed": {"type": "integer"},
+          "r2": {"type": "number"},
+          "wall_seconds": {"type": "number"},
+          "optimizer_steps": {"type": "integer"},
+          "valid_match": {"type": "boolean"}
+        }
+      }
+    },
+    "assignments": {"type": "object"}
+  }
+}

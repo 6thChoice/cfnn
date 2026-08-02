@@ -1,0 +1,102 @@
+{
+  "Rational_Interaction": {
+    "Hybrid": {
+      "aggregate": {
+        "n": 3,
+        "MSE_mean": 0.001196379540488124,
+        "MSE_std": 7.059555240501282e-05,
+        "RMSE_mean": 0.034578698631729535,
+        "RMSE_std": 0.0010196627561233904,
+        "MAE_mean": 0.027180200442671776,
+        "MAE_std": 0.0004554203455679243,
+        "R2_mean": 0.9987689654032389,
+        "R2_std": 9.102605700915044e-05,
+        "epochs_done_mean": 500.0,
+        "epochs_done_std": 0.0,
+        "n_trainable_params_mean": 244.0,
+        "n_trainable_params_std": 0.0
+      },
+      "best_params": {
+        "degree": 5,
+        "size": 12,
+        "lr": 0.01,
+        "weight_decay": 0.0,
+        "grad_clip": 5.0
+      }
+    },
+    "MoE": {
+      "aggregate": {
+        "n": 3,
+        "MSE_mean": 0.0019175459165126085,
+        "MSE_std": 0.00012102060625800711,
+        "RMSE_mean": 0.04377501331678962,
+        "RMSE_std": 0.0013932653879469574,
+        "MAE_mean": 0.0332019105553627,
+        "MAE_std": 0.0010949135727269165,
+        "R2_mean": 0.998025119304657,
+        "R2_std": 0.0001851816074131248,
+        "epochs_done_mean": 500.0,
+        "epochs_done_std": 0.0,
+        "n_trainable_params_mean": 200.0,
+        "n_trainable_params_std": 0.0
+      },
+      "best_params": {
+        "degree": 5,
+        "size": 8,
+        "lr": 0.01,
+        "weight_decay": 0.0,
+        "grad_clip": 5.0
+      }
+    }
+  },
+  "Nested_Rational": {
+    "Hybrid": {
+      "aggregate": {
+        "n": 3,
+        "MSE_mean": 0.0004695169045589864,
+        "MSE_std": 3.882234115150371e-05,
+        "RMSE_mean": 0.02165568065778096,
+        "RMSE_std": 0.0009069728280366382,
+        "MAE_mean": 0.017002052317063015,
+        "MAE_std": 0.0005983539641881998,
+        "R2_mean": 0.9986852407455444,
+        "R2_std": 0.00011224352265839924,
+        "epochs_done_mean": 500.0,
+        "epochs_done_std": 0.0,
+        "n_trainable_params_mean": 196.0,
+        "n_trainable_params_std": 0.0
+      },
+      "best_params": {
+        "degree": 3,
+        "size": 12,
+        "lr": 0.01,
+        "weight_decay": 0.0,
+        "grad_clip": 5.0
+      }
+    },
+    "MoE": {
+      "aggregate": {
+        "n": 3,
+        "MSE_mean": 0.0006151496393916508,
+        "MSE_std": 4.59554330454665e-05,
+        "RMSE_mean": 0.024790583760936666,
+        "RMSE_std": 0.0009299969222804591,
+        "MAE_mean": 0.019473937650521595,
+        "MAE_std": 0.0005956958551438446,
+        "R2_mean": 0.9982786377271017,
+        "R2_std": 0.00010596065301289678,
+        "epochs_done_mean": 500.0,
+        "epochs_done_std": 0.0,
+        "n_trainable_params_mean": 200.0,
+        "n_trainable_params_std": 0.0
+      },
+      "best_params": {
+        "degree": 5,
+        "size": 8,
+        "lr": 0.01,
+        "weight_decay": 0.0,
+        "grad_clip": 5.0
+      }
+    }
+  }
+}

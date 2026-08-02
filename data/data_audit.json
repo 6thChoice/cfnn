@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "source_manifest_sha256": "352778585099f69b9801dfe08d82182d538983e25025d9df5318d58b1fb4c5d2",
+  "tasks": {
+    "aluminium_frf": {
+      "condition_fields": [
+        "point"
+      ],
+      "curve_count": 25,
+      "frequency_max_hz": 127.08333333333334,
+      "frequency_min_hz": 6.25,
+      "point_count_distribution": {
+        "59": 25
+      },
+      "source_records": [
+        7758683
+      ]
+    },
+    "microstrip_resonator": {
+      "condition_fields": [
+        "cycle",
+        "relative_humidity_percent",
+        "sample_id",
+        "temperature_c"
+      ],
+      "curve_count": 270,
+      "frequency_max_hz": 2400000000.0,
+      "frequency_min_hz": 1600000000.0,
+      "point_count_distribution": {
+        "1882": 135,
+        "2561": 135
+      },
+      "source_records": [
+        14175959
+      ]
+    },
+    "microwave_fano": {
+      "condition_fields": [
+        "coupling",
+        "power_dbm",
+        "resonator"
+      ],
+      "curve_count": 432,
+      "frequency_max_hz": 11310070000.0,
+      "frequency_min_hz": 4995000000.0,
+      "point_count_distribution": {
+        "1001": 432
+      },
+      "source_records": [
+        7767046
+      ]
+    }
+  }
+}

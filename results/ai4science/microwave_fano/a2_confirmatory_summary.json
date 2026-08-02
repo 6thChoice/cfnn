@@ -1,0 +1,101 @@
+{
+  "by_family_budget": [
+    {
+      "family": "CFNN",
+      "median_f0_abs_error_hz": 2377.735527038574,
+      "median_global_complex_nrmse": 0.027215786495184233,
+      "median_peak_window_complex_nrmse": 0.03490071197396659,
+      "median_q_abs_error": 0.058088732122653586,
+      "median_quality_factor_relative_error": 0.04248326407570349,
+      "observation_budget": 64,
+      "parameter_recovery_ok_count": 45,
+      "record_count": 45
+    },
+    {
+      "family": "CFNN",
+      "median_f0_abs_error_hz": 1234.0999555587769,
+      "median_global_complex_nrmse": 0.024560833288385108,
+      "median_peak_window_complex_nrmse": 0.03023508997788599,
+      "median_q_abs_error": 0.02109757918933229,
+      "median_quality_factor_relative_error": 0.01927881389887729,
+      "observation_budget": 128,
+      "parameter_recovery_ok_count": 45,
+      "record_count": 45
+    },
+    {
+      "family": "Local nested CF control",
+      "median_f0_abs_error_hz": 3144.3054695129395,
+      "median_global_complex_nrmse": 0.028606492876613605,
+      "median_peak_window_complex_nrmse": 0.04324111160605579,
+      "median_q_abs_error": 1.3752039511565028,
+      "median_quality_factor_relative_error": 0.0560785362664572,
+      "observation_budget": 64,
+      "parameter_recovery_ok_count": 45,
+      "record_count": 45
+    },
+    {
+      "family": "Local nested CF control",
+      "median_f0_abs_error_hz": 1452.8862781524658,
+      "median_global_complex_nrmse": 0.02573234716929582,
+      "median_peak_window_complex_nrmse": 0.03562860715373736,
+      "median_q_abs_error": 0.015172068275154424,
+      "median_quality_factor_relative_error": 0.03860786427531536,
+      "observation_budget": 128,
+      "parameter_recovery_ok_count": 45,
+      "record_count": 45
+    },
+    {
+      "family": "MLP",
+      "median_f0_abs_error_hz": 2348.650510787964,
+      "median_global_complex_nrmse": 0.026457624741680758,
+      "median_peak_window_complex_nrmse": 0.03696959484973799,
+      "median_q_abs_error": 0.04372341275134363,
+      "median_quality_factor_relative_error": 0.046316525654431,
+      "observation_budget": 64,
+      "parameter_recovery_ok_count": 45,
+      "record_count": 45
+    },
+    {
+      "family": "MLP",
+      "median_f0_abs_error_hz": 1283.2960233688354,
+      "median_global_complex_nrmse": 0.024113679057923405,
+      "median_peak_window_complex_nrmse": 0.031212386923017792,
+      "median_q_abs_error": 0.009739475511536743,
+      "median_quality_factor_relative_error": 0.02780136705601597,
+      "observation_budget": 128,
+      "parameter_recovery_ok_count": 45,
+      "record_count": 45
+    }
+  ],
+  "curve_ids": [
+    "overcoupled:r1:p23",
+    "overcoupled:r3:p25",
+    "undercoupled:r2:p07",
+    "undercoupled:r5:p04",
+    "undercoupled:r8:p03"
+  ],
+  "families": [
+    "CFNN",
+    "Local nested CF control",
+    "MLP"
+  ],
+  "init_seeds": [
+    11003,
+    11019,
+    11027
+  ],
+  "observation_budgets": [
+    64,
+    128
+  ],
+  "ok_count": 270,
+  "record_count": 270,
+  "remaining_job_count": 0,
+  "split_seeds": [
+    719,
+    733,
+    751
+  ],
+  "task": "microwave_fano_parameter_recovery_pilot",
+  "total_job_count": 270
+}

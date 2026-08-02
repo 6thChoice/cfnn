@@ -1,0 +1,97 @@
+{
+  "protocol_version": "1.0.0",
+  "budgets": [128, 256, 512, 1024],
+  "budget_tolerance": 0.05,
+  "maximum_candidates_per_budget": 12,
+  "minimum_candidates_per_budget": 3,
+  "screening_steps": 200,
+  "finalists_per_budget": 3,
+  "primary_tasks": [
+    "pole_sharp",
+    "pole_broad",
+    "lorentzian_two",
+    "cusp",
+    "compact_bump",
+    "asymmetric_peak",
+    "manifold_bump"
+  ],
+  "supplementary_tasks": [
+    "nmr_ethanol",
+    "nmr_caffeine",
+    "nmr_strychnine",
+    "energy"
+  ],
+  "families": [
+    "PARN",
+    "MLP",
+    "Fourier-feature MLP",
+    "Gaussian RBF",
+    "KAN",
+    "Local nested CF control",
+    "Rational activation NN",
+    "SIREN"
+  ],
+  "tuning_seeds": [101, 211, 307],
+  "evaluation_data_seeds": [233, 277, 331, 389, 443],
+  "evaluation_init_seeds": [1009, 2027, 3037, 4051],
+  "auxiliary_pairs": 10,
+  "training": {
+    "max_steps": 2000,
+    "min_steps": 200,
+    "patience": 100,
+    "checkpoints": [20, 80, 200, 500],
+    "gradient_clip": 5.0
+  },
+  "dataset": {
+    "analytic_train": 256,
+    "analytic_validation": 128,
+    "analytic_test": 2048,
+    "analytic_noise": 0.03,
+    "nmr_observed": 512,
+    "nmr_dense": 4000,
+    "nmr_noise": 0.03
+  },
+  "optimizer_grids": {
+    "PARN": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd1e-6", "lr": 0.001, "weight_decay": 0.000001}
+    ],
+    "MLP": [
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd1e-4", "lr": 0.001, "weight_decay": 0.0001}
+    ],
+    "Fourier-feature MLP": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "Gaussian RBF": [
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0},
+      {"key": "lr1e-2_wd0", "lr": 0.01, "weight_decay": 0.0}
+    ],
+    "KAN": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "Local nested CF control": [
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0},
+      {"key": "lr3e-3_wd0", "lr": 0.003, "weight_decay": 0.0}
+    ],
+    "Rational activation NN": [
+      {"key": "lr1e-4_wd0", "lr": 0.0001, "weight_decay": 0.0},
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0}
+    ],
+    "SIREN": [
+      {"key": "lr1e-4_wd0", "lr": 0.0001, "weight_decay": 0.0},
+      {"key": "lr3e-4_wd0", "lr": 0.0003, "weight_decay": 0.0},
+      {"key": "lr1e-3_wd0", "lr": 0.001, "weight_decay": 0.0}
+    ]
+  }
+}
