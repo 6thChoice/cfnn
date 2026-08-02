@@ -1,12 +1,12 @@
-# CFNN NMI Reproduction Package
+# CFNN: Continued Fraction Neural Networks
 
-This repository is the curated code package for the manuscript "Continued fraction neural networks for sharp scientific response modelling".
+This repository contains the code, experiment scripts, and reference artifacts for continued fraction neural networks (CFNNs) and CFNN-Hybrid in sharp scientific response modelling.
 
-It contains the CFNN and CFNN-Hybrid implementations, experiment runners, public-data download metadata, selected result manifests, and cached figure-source arrays needed to reproduce the main NMI figures without committing raw datasets or large training logs.
+The repository includes CFNN and CFNN-Hybrid implementations, experiment runners, public-data download metadata, selected result manifests, and cached figure-source arrays. Raw public datasets and large training logs are intentionally excluded.
 
 ## Layout
 
-- `src/cfnn_nmi/`: CFNN, CFNN-Hybrid, CoFrNet comparison implementations, and lightweight legacy baseline code needed by the spectral figure.
+- `src/`: CFNN, CFNN-Hybrid, CoFrNet comparison implementations, and lightweight legacy baseline code needed by the spectral figure.
 - `experiments/`: training, benchmark, downstream microwave, and analysis scripts extracted from the formal experiment workspace.
 - `figures/`: manuscript figure-generation scripts.
 - `configs/`: frozen experiment configurations and result schemas.
@@ -19,7 +19,6 @@ It contains the CFNN and CFNN-Hybrid implementations, experiment runners, public
 The formal training environment used Python 3.12.3, CUDA 12.4, and PyTorch 2.5.1+cu124. To create a matching local environment:
 
 ```bash
-cd submit_codebase_nmi
 bash scripts/install_env.sh
 source .venv/bin/activate
 ```
@@ -52,9 +51,9 @@ To audit metadata without downloading raw files:
 python data/download_downstream_datasets.py --metadata-only
 ```
 
-## Main Figure Reproduction
+## Figure Reproduction
 
-The four manuscript figure scripts are package-relative and write to `results/figures/`:
+The main figure scripts are package-relative and write to `results/figures/`:
 
 ```bash
 export PYTHONPATH="$PWD/experiments:$PWD/src:${PYTHONPATH:-}"
@@ -86,8 +85,8 @@ Run a lightweight package check:
 bash scripts/check_package.sh
 ```
 
-This compiles the Python files and redraws the four main manuscript figures from bundled caches.
+This compiles the Python files and redraws the main figures from bundled caches.
 
 ## Release Notes
 
-Before public submission, replace manuscript placeholders with the GitHub URL and archive DOI. Do not commit downloaded raw data, remote logs, tarballs, credentials, or local virtual environments.
+For archival releases, add the repository URL and release DOI where needed. Do not commit downloaded raw data, remote logs, tarballs, credentials, or local virtual environments.
