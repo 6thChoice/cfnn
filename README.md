@@ -32,7 +32,7 @@ bash scripts/install_env.sh
 source .venv/bin/activate
 ```
 
-Direct dependencies are pinned in `requirements-lock.txt`; the transitive snapshot is `requirements-server-freeze.txt`.
+`scripts/install_env.sh` installs the public runtime set from `requirements.txt`. Exact direct versions for the core and legacy figure environment are recorded in `requirements-lock.txt`; the transitive snapshot is `requirements-server-freeze.txt`.
 
 ### Downstream confirmatory environment
 

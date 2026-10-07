@@ -33,6 +33,9 @@ class ReleaseReadinessTest(unittest.TestCase):
         data = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
         self.assertEqual(data["project"]["name"], "cfnn-reproduction")
         self.assertEqual(data["project"]["version"], "1.0.0")
+        dependencies = data["project"].get("dependencies", [])
+        for package in ["torch", "torchvision", "numpy", "scipy", "scikit-learn", "matplotlib", "pandas"]:
+            self.assertTrue(any(item.lower().startswith(package.lower()) for item in dependencies), package)
         self.assertTrue((ROOT / "src" / "cfnn" / "__init__.py").is_file())
         self.assertFalse((ROOT / "src" / ("cfnn_" + "nmi")).exists())
 
@@ -56,6 +59,8 @@ class ReleaseReadinessTest(unittest.TestCase):
         self.assertIn("PyTorch 2.10.0+cu128", text)
         self.assertIn("minimal verification data", text.lower())
         self.assertIn("v1.0.0-caic", text)
+        self.assertIn("requirements.txt", text)
+        self.assertIn("requirements-lock.txt", text)
 
     def test_minimal_verification_manifest_matches_files(self):
         path = ROOT / "results" / "figures" / "minimal_verification_manifest.json"

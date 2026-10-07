@@ -9,6 +9,24 @@ description = "Code and reproducibility artifacts for continued fraction neural 
 requires-python = ">=3.12"
 license = {file = "LICENSE"}
 readme = "README.md"
+dependencies = [
+  "torch>=2.5",
+  "torchvision>=0.20",
+  "numpy>=2.1",
+  "scipy>=1.14",
+  "scikit-learn>=1.8",
+  "matplotlib>=3.9",
+  "pandas>=2.3",
+  "jsonschema>=4.26",
+  "pykan>=0.2.8",
+  "nptdms>=1.11",
+  "scikit-rf>=2.0",
+  "openpyxl>=3.1",
+  "xlrd>=2.0",
+  "tqdm>=4.67",
+  "Pillow>=11",
+  "requests>=2.32",
+]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
