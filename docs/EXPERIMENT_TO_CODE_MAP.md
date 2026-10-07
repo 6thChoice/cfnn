@@ -4,9 +4,9 @@ This file maps manuscript evidence to the public reproduction package.
 
 ## Core Implementations
 
-- Foundational projected CFNN: `src/cfnn_nmi/cfnn/cfnn_poly.py`, `src/cfnn_nmi/cfnet_complicate.py`.
-- Stabilized CFNN-Hybrid / projected additive rational network: `src/cfnn_nmi/hybrid.py`, `experiments/confirmatory_models.py`, `experiments/eis_models.py`.
-- Published CoFrNet comparison implementations: `src/cfnn_nmi/CoFrNet_D.py`, `src/cfnn_nmi/CoFrNet_DL.py`.
+- Foundational projected CFNN: `src/cfnn/cfnn/cfnn_poly.py`, `src/cfnn/cfnet_complicate.py`.
+- Stabilized CFNN-Hybrid / projected additive rational network: `src/cfnn/hybrid.py`, `experiments/confirmatory_models.py`, `experiments/eis_models.py`.
+- Published CoFrNet comparison implementations: `src/cfnn/CoFrNet_D.py`, `src/cfnn/CoFrNet_DL.py`.
 
 ## Manuscript Figures
 
@@ -30,7 +30,7 @@ This file maps manuscript evidence to the public reproduction package.
   - Runner family: `experiments/run_independent_benchmark.py`, `experiments/run_parameter_matched_synthetic.py`.
   - Summaries: `results/summaries/independent_benchmark/`, `results/summaries/core_common_budget/`.
 - Common ML comparability table:
-  - Implementations: `src/cfnn_nmi/CoFrNet_D.py`, `src/cfnn_nmi/CoFrNet_DL.py`.
+  - Implementations: `src/cfnn/CoFrNet_D.py`, `src/cfnn/CoFrNet_DL.py`.
   - Downstream scripts: `experiments/downstream_benchmark.py`, `experiments/downstream_domain_baselines.py`.
   - Configs/manifests: `configs/downstream_config.json`, `results/manifests/downstream_confirmatory_run_manifest.json`.
 - Microwave Fano and Microstrip numerical claims:

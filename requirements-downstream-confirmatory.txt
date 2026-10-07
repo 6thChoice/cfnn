@@ -1,0 +1,15 @@
+# Direct dependencies recorded for the downstream confirmatory environment.
+# Python 3.13.5; CUDA runtime 12.8; NVIDIA GeForce RTX 3080.
+# Install the matching PyTorch CUDA wheel from https://download.pytorch.org/whl/cu128.
+torch==2.10.0+cu128
+numpy==2.4.1
+scipy==1.18.1
+scikit-learn==1.8.0
+matplotlib==3.10.8
+pandas==2.3.3
+jsonschema==4.26.0
+pykan==0.2.8
+nptdms==1.11.0
+scikit-rf==2.0.1
+openpyxl==3.1.5
+xlrd==2.0.2

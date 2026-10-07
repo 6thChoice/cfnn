@@ -12,8 +12,9 @@ import pandas as pd
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 ARTIFACT_ROOT = REPO_ROOT / "experiment_refine" / "peak_sensitive_results" / "artifacts"
-OUT_DIR = REPO_ROOT / "CFNN_paper_nmi" / "img" / "downstream"
+OUT_DIR = PACKAGE_ROOT / "results" / "figures"
 OUT_STEM = OUT_DIR / "downstream_performance_summary"
 
 FAMILIES = [

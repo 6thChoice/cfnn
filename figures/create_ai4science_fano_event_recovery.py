@@ -13,6 +13,7 @@ import pandas as pd
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 SUMMARY_PATH = (
     REPO_ROOT
     / "experiment_refine"
@@ -20,7 +21,7 @@ SUMMARY_PATH = (
     / "microwave_fano_event_focused_consolidation"
     / "summary.json"
 )
-OUT_DIR = REPO_ROOT / "CFNN_paper_nmi" / "img" / "ai4science"
+OUT_DIR = PACKAGE_ROOT / "results" / "figures"
 OUT_STEM = OUT_DIR / "fano_event_recovery"
 
 COMPARISON_ORDER = ["MLP", "Local nested CF control"]

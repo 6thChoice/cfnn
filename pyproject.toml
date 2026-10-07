@@ -3,10 +3,12 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cfnn-nmi-reproduction"
-version = "0.1.0"
-description = "Reproduction package for continued fraction neural networks in sharp scientific response modelling."
+name = "cfnn-reproduction"
+version = "1.0.0"
+description = "Code and reproducibility artifacts for continued fraction neural networks in sharp scientific response modelling."
 requires-python = ">=3.12"
+license = {file = "LICENSE"}
+readme = "README.md"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

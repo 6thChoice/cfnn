@@ -12,13 +12,14 @@ import numpy as np
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 RESULT_PATH = (
     REPO_ROOT
     / "experiment_refine"
     / "stability_production_results"
     / "stability_production_results.json"
 )
-OUT_DIR = REPO_ROOT / "CFNN_paper_nmi" / "img" / "stability"
+OUT_DIR = PACKAGE_ROOT / "results" / "figures"
 OUT_STEM = OUT_DIR / "cfnn_hybrid_production_diagnostic"
 
 MODELS = ["CFNN", "CFNN-Hybrid"]

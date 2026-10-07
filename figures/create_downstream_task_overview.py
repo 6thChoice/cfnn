@@ -14,9 +14,10 @@ import numpy as np
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 EXPERIMENT_ROOT = REPO_ROOT / "experiment_refine"
 RAW_ROOT = EXPERIMENT_ROOT / "downstream_data" / "raw"
-OUT_DIR = REPO_ROOT / "CFNN_paper_nmi" / "img" / "downstream"
+OUT_DIR = PACKAGE_ROOT / "results" / "figures"
 OUT_STEM = OUT_DIR / "downstream_task_overview"
 
 sys.path.insert(0, str(EXPERIMENT_ROOT))

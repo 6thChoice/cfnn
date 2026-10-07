@@ -24,7 +24,7 @@ from torch.utils.data import DataLoader, TensorDataset
 
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
-LEGACY_CODE = PACKAGE_ROOT / "src" / "cfnn_nmi" / "legacy" / "spectral_bias"
+LEGACY_CODE = PACKAGE_ROOT / "src" / "cfnn" / "legacy" / "spectral_bias"
 sys.path.insert(0, str(LEGACY_CODE))
 
 from baselines import ChebyshevKAN, RFFMLP, SIREN  # noqa: E402

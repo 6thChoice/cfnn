@@ -1,6 +1,6 @@
 {
   "source": "git_codebase/stability_and_scaling_runner/results/gradient_stability/gradient_stability_results.json",
-  "note": "Reduced cache extracted for the NMI training-stability figure; full source JSON is 428 MB and intentionally not bundled.",
+  "note": "Reduced cache extracted for the manuscript training-stability figure; full source JSON is 428 MB and intentionally not bundled.",
   "representative_case": {
     "func_name": "f7_high_freq",
     "depth": 8,

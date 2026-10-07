@@ -11,7 +11,8 @@ import numpy as np
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-OUT_DIR = REPO_ROOT / "CFNN_paper_nmi" / "img" / "freq_bias"
+PACKAGE_ROOT = Path(__file__).resolve().parents[1]
+OUT_DIR = PACKAGE_ROOT / "results" / "figures"
 OUT_STEM = OUT_DIR / "sharp_response_spectral_balance"
 
 ROWS = [

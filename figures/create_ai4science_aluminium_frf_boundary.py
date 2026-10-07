@@ -13,6 +13,7 @@ import numpy as np
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 EXPERIMENT_ROOT = REPO_ROOT / "experiment_refine"
 sys.path.insert(0, str(EXPERIMENT_ROOT))
 
@@ -21,7 +22,7 @@ from ai4science_aluminium_c import load_aluminium_frf_full  # noqa: E402
 
 RAW_ROOT = EXPERIMENT_ROOT / "downstream_data" / "raw"
 RESULT_ROOT = EXPERIMENT_ROOT / "ai4science_results"
-OUT_DIR = REPO_ROOT / "CFNN_paper_nmi" / "img" / "ai4science"
+OUT_DIR = PACKAGE_ROOT / "results" / "figures"
 OUT_STEM = OUT_DIR / "aluminium_frf_boundary"
 
 CATALOGUE_PATH = (

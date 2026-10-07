@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "files": [
+    {
+      "path": "results/figures/cfnn_hybrid_training_stability_cache.json",
+      "role": "training stability",
+      "size_bytes": 120103,
+      "sha256": "7d22a62ecdd9a637a65daff8e9a523c6f426ea47b847f63393320bb4511de495"
+    },
+    {
+      "path": "results/figures/sharp_response_mechanism_cache.npz",
+      "role": "sharp-response mechanism",
+      "size_bytes": 77759,
+      "sha256": "a8c0dc7f3ed003d9f7e43cfb5d37b41a8cfe1310c2b0d8ac3c1d5e269f96d68f"
+    },
+    {
+      "path": "results/figures/fano_response_recovery_cache.npz",
+      "role": "microwave Fano recovery",
+      "size_bytes": 38038,
+      "sha256": "0b40b7246f0651cbb3789c0a12454d51f7bf62c0f1f6e44a224f01db60691091"
+    },
+    {
+      "path": "results/figures/microstrip_low_calibration_recovery_cache.npz",
+      "role": "microstrip low-calibration recovery",
+      "size_bytes": 88630,
+      "sha256": "09c6ec51c230158f9da75cec12a37a0c0caa5da85e0428a2748ccdbb41ab00a7"
+    },
+    {
+      "path": "results/figures/microstrip_low_calibration_recovery_metrics.json",
+      "role": "microstrip event metrics",
+      "size_bytes": 1020,
+      "sha256": "d0804ffa31da2516add82aaa021e1e1d64aa4211a0d0f7cd864046004edd67d5"
+    }
+  ]
+}

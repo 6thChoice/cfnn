@@ -1,4 +1,4 @@
 # Optional dependencies used by historical common-ML text benchmarks.
-# They are not required for the main NMI figures or downstream microwave experiments.
+# They are not required for the main manuscript figures or downstream microwave experiments.
 tensorflow==2.18.0
 nltk==3.9.1
